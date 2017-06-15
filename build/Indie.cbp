@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Indie"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\usr\local\lib\OGRE\;CMake Files\..\..\..\..\usr\local\lib\OGRE\cmake\;CMake Files\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/myriam/Projet/cpp_indie_studio/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/myriam/Projet/cpp_indie_studio/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/myriam/Projet/cpp_indie_studio/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/myriam/Projet/cpp_indie_studio/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/myriam/Projet/cpp_indie_studio/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/myriam/Projet/cpp_indie_studio/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/myriam/Projet/cpp_indie_studio/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package_source">
+				<Option working_dir="/home/myriam/Projet/cpp_indie_studio/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 package_source"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package">
+				<Option working_dir="/home/myriam/Projet/cpp_indie_studio/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 package"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Indie">
+				<Option output="/home/myriam/Projet/cpp_indie_studio/build/Indie" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/myriam/Projet/cpp_indie_studio/build"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add directory="/home/myriam/Projet/cpp_indie_studio/./include"/>
+					<Add directory="/home/myriam/Projet/cpp_indie_studio/./json"/>
+					<Add directory="/usr/share/OGRE/Samples/Common/include"/>
+					<Add directory="/usr/local/include/OGRE"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/bullet"/>
+					<Add directory="/usr/local/include/cegui-0"/>
+					<Add directory="/home/myriam/.froot/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 Indie"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Indie/fast">
+				<Option output="/home/myriam/Projet/cpp_indie_studio/build/Indie" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/myriam/Projet/cpp_indie_studio/build"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add directory="/home/myriam/Projet/cpp_indie_studio/./include"/>
+					<Add directory="/home/myriam/Projet/cpp_indie_studio/./json"/>
+					<Add directory="/usr/share/OGRE/Samples/Common/include"/>
+					<Add directory="/usr/local/include/OGRE"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/bullet"/>
+					<Add directory="/usr/local/include/cegui-0"/>
+					<Add directory="/home/myriam/.froot/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 Indie/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/myriam/Projet/cpp_indie_studio/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/json/jsoncpp.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/main.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/AI/AI.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Animation/AnimationManager.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Attack/AttackManager.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Collision/CollisionBody.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Collision/CollisionCallBack.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Collision/CollisionConvertion.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Collision/CollisionManager.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Collision/CollisionObject.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Collision/HitBox.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Collision/OgreMotionState.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Components/AIScript.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Components/Animation.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Components/EntityState.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Components/LightSource.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Components/Model.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Components/PowerUpStats.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Components/Stats.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Components/Weapon.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/CoreGame.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/CustomMath.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Displayer/Displayer.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Displayer/WindowManager.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Entity/Character/Assassin.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Entity/Character/Boss.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Entity/Character/Ghost.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Entity/Character/MiniBoss.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Entity/Character/Pig.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Entity/Character/Priest.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Entity/Character/Valkyrie.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Entity/Character/Warrior.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Entity/Collectable/Ananas.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Entity/Collectable/Coin.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Entity/Collectable/Donuts.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Entity/Collectable/Hamburger.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Entity/Collectable/Icecream.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Entity/Collectable/Meat.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Entity/Destroyable/Chest.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Entity/Destroyable/Crate.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Entity/Destroyable/Vase.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Entity/Effect/Attack.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Entity/Effect/CaCAttack.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Entity/Effect/DistAttack.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Entity/Effect/HealAttack.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Entity/Effect/ZoneDistAttack.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Entity/Entity.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Entity/Environement/Ground.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Entity/Environement/Torch.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Entity/Environement/Wall.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Event/Event.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Factory/Factory.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/File/ManageFile.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Input/InputManager.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Input/KeyListener.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Loot/LootManager.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Map/MapLoader.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Menu/EndGame.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Menu/GameMenu.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Menu/Hud.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Menu/IMenu.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Menu/MainMenu.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Menu/MenuManager.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Movement/MovementMgr.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/RP/RP.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Saving/Saving.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Systems/SoundSystem.cpp">
+			<Option target="Indie"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/../../../../usr/local/lib/OGRE/cmake/FindOGRE.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\OGRE\cmake\"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/../../../../usr/local/lib/OGRE/cmake/FindPkgMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\OGRE\cmake\"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/../../../../usr/local/lib/OGRE/cmake/PreprocessorUtils.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\OGRE\cmake\"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/../../../../usr/local/lib/OGRE/cmake/FindOIS.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\OGRE\cmake\"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/../../../../usr/local/lib/OGRE/cmake/FindPkgMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\OGRE\cmake\"/>
+		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/cmake/FindCEGUI.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

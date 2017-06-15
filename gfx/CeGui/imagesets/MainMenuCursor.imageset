@@ -1,0 +1,6 @@
+<Imageset autoScaled="" imagefile="../../image/MainMenu.png" name="MainMenuCursor" nativeHorzRes="800" nativeVertRes="600" version="2">
+    <Image height="235" name="Cursor1" width="1024" xPos="0" yPos="21" />
+    <Image height="235" name="Cursor2" width="1024" xPos="0" yPos="252" />
+    <Image height="235" name="Cursor3" width="1024" xPos="0" yPos="494" />
+    <Image height="235" name="Cursor4" width="1024" xPos="0" yPos="761" />
+</Imageset>

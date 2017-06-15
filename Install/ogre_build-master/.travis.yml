@@ -1,0 +1,18 @@
+language: cpp
+sudo: required
+dist: trusty
+compiler:
+- g++
+os:
+- linux
+install: "./install_dependencies.sh"
+script: "./build.sh"
+before_deploy: "./before_deploy.sh"
+deploy:
+  provider: releases
+  api_key:
+    secure: R9ldSg00DDnzRERL+5Im5H25DgvPWwGukqsd50VrcX6L8Y3Ut5n/WDQI3Y/wmeY3u0cLvJFmvabooUk4EUMuybDdgxqRxeNHUh9HOXiX7Ul7GNH/mOzQ4Z4o7Ji5bqGuZJY+UPp2PmJF5r1vlrE8TSVWQXj9NhNdpezVYFrAX4/Iz+Aqiy2xK/PcvT9XU9ajYwIJMMk1/OW48Qi9m14Rq9JeoOeObStQm5/fbrZZD49zIiQICxgfFsfibMU/Hd9eHMJTCi3EfAFLyM0+zN/qExoS1xv5YXi4d+/Hvxkxv8+XN90aAVuthi4RJoX/JGuXiI2EkCZy0U8QkXowvjS87VvO89saJtecNSdfGIO+OsQNL8ZDCPjzrU5Aj39myoCuEwNUrr0BoIR4NQuvzhRQnRMrU36wgKvR/HpOjw4bTx4/P7pLPtTnvwU28pdEFtslaYQj6l1UYakosU45lDMi+yABdw/6wVL3xH8nGi2L0W1mjfI6MQ3sPVCSPr9mkZ21mtmvKZepgLZ3wSv4rcRL1n0JhW28ik3JNBS/vWgAsTAMYU8j+d6SYXfr+auIyOXIVIgpC4BJkMjr9HRFzn+xjQTOkK4NQtBqKKrQRYXg6UB58+5Vfin2iGOsBlIGXInKdb9bhg0rv5BHuhd52jwFfb8VBB5IrviDkYAeGXB4iFY=
+  file: ogre.v1.9.zip
+  skip_cleanup: true
+  on:
+    tags: true
