@@ -74,7 +74,6 @@ void		Gauntlet::InputManager::registerEntityAsPlayer(std::shared_ptr<Gauntlet::E
 {
   if (_id >= this->_MAX_PLAYER)
   {
-      /* exception ????*/
       return;
   }
 

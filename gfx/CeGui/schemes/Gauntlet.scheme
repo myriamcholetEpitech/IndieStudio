@@ -9,6 +9,8 @@
 	<Imageset filename="warriorLogo.imageset" />
 	<Imageset filename="game_ui.imageset" />
 	<Imageset filename="MainMenu.imageset" />
+	<Imageset filename="Fantasy.imageset" />
+	<Imageset filename="life.imageset" />
 	<Font filename="runic-mt-13.font" />
 	<Font filename="runic-mt-18.font" />
 	<Font filename="runic-mt-20.font" />

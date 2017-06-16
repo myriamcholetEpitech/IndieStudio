@@ -16,7 +16,6 @@ namespace Gauntlet
         std::string move;
         std::string attack;
 
-        //mapper par rapport à un enum ?
         Sound() = default;
         Sound(std::string const& d,
               std::string const& m,

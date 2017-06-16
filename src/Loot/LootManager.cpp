@@ -28,10 +28,7 @@ void Gauntlet::LootManager::handleDestroy(Gauntlet::Event const &event)
 
 void Gauntlet::LootManager::generateObject(Gauntlet::Entity *ent)
 {
-  std::random_device rd;
-  std::default_random_engine gen(rd());
-  std::uniform_int_distribution<int> nb(0, 99);
-  int rand = nb(gen);
+  int rand = nb(CoreGame::core->gen);
 
   if (ent->type == Entity::Type::DESTROYABLE && rand < 50)
     {

@@ -21,8 +21,6 @@ void Gauntlet::MapLoader::takeEvent(Gauntlet::Event const &event)
 
 void    Gauntlet::MapLoader::loadNextMap()
 {
-  //std::function<void(const MapLoader&)> func;
-
   if (this->loadFunctions.size() > this->indexMap)
     {
       this->loadFunctions[indexMap]();

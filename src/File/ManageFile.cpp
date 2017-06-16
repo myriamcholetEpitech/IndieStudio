@@ -31,7 +31,6 @@ void ManageFile::listFiles(std::string const& path, std::vector<std::string> &fi
     {
       if (epdf->d_type == DT_DIR && strstr(epdf->d_name, "..") == NULL && strstr(epdf->d_name,".") == NULL)
       {
-        std::cout << "tryin "<< path + "/" + epdf->d_name + "/" << std::endl;
         listFiles(path + "/" + epdf->d_name + "/", files);
       }
       if (epdf->d_type == DT_REG)

@@ -1890,6 +1890,33 @@ src/Menu/MenuManager.cpp.s:
 	$(MAKE) -f CMakeFiles/Indie.dir/build.make CMakeFiles/Indie.dir/src/Menu/MenuManager.cpp.s
 .PHONY : src/Menu/MenuManager.cpp.s
 
+src/Menu/SplashScreen.o: src/Menu/SplashScreen.cpp.o
+
+.PHONY : src/Menu/SplashScreen.o
+
+# target to build an object file
+src/Menu/SplashScreen.cpp.o:
+	$(MAKE) -f CMakeFiles/Indie.dir/build.make CMakeFiles/Indie.dir/src/Menu/SplashScreen.cpp.o
+.PHONY : src/Menu/SplashScreen.cpp.o
+
+src/Menu/SplashScreen.i: src/Menu/SplashScreen.cpp.i
+
+.PHONY : src/Menu/SplashScreen.i
+
+# target to preprocess a source file
+src/Menu/SplashScreen.cpp.i:
+	$(MAKE) -f CMakeFiles/Indie.dir/build.make CMakeFiles/Indie.dir/src/Menu/SplashScreen.cpp.i
+.PHONY : src/Menu/SplashScreen.cpp.i
+
+src/Menu/SplashScreen.s: src/Menu/SplashScreen.cpp.s
+
+.PHONY : src/Menu/SplashScreen.s
+
+# target to generate assembly for a file
+src/Menu/SplashScreen.cpp.s:
+	$(MAKE) -f CMakeFiles/Indie.dir/build.make CMakeFiles/Indie.dir/src/Menu/SplashScreen.cpp.s
+.PHONY : src/Menu/SplashScreen.cpp.s
+
 src/Movement/MovementMgr.o: src/Movement/MovementMgr.cpp.o
 
 .PHONY : src/Movement/MovementMgr.o
@@ -2202,6 +2229,9 @@ help:
 	@echo "... src/Menu/MenuManager.o"
 	@echo "... src/Menu/MenuManager.i"
 	@echo "... src/Menu/MenuManager.s"
+	@echo "... src/Menu/SplashScreen.o"
+	@echo "... src/Menu/SplashScreen.i"
+	@echo "... src/Menu/SplashScreen.s"
 	@echo "... src/Movement/MovementMgr.o"
 	@echo "... src/Movement/MovementMgr.i"
 	@echo "... src/Movement/MovementMgr.s"

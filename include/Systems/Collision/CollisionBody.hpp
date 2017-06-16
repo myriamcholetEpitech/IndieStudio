@@ -32,7 +32,6 @@ namespace Gauntlet
     /*
      *  Visible object
      */
-
     CollisionBody(std::shared_ptr<btCollisionShape> const	&shape,
 		  int 						mass,
 		  Ogre::SceneNode				*node,
@@ -42,7 +41,6 @@ namespace Gauntlet
     /*
      * Static Object
      */
-
     CollisionBody(std::shared_ptr<btCollisionShape> const	&shape,
 		  btVector3 const				&pos,
 		  std::shared_ptr<btDynamicsWorld> const	&world,
@@ -55,10 +53,6 @@ namespace Gauntlet
 
     virtual void setPosition(Ogre::Vector3 const &pos);
     virtual void setOrientation(Ogre::Quaternion const &dir);
-/*
-    virtual Ogre::Vector3 getPosition() const;
-    virtual Ogre::Quaternion getOrientation() const;
-    */
   };
 }
 

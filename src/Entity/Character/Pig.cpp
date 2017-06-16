@@ -24,7 +24,7 @@ Gauntlet::Pig::Pig(int id)
 							      Ogre::Vector3(2, 5, 2));
   Gauntlet::State		*entState = new Gauntlet::State();
   Gauntlet::Weapon              *weapon = new Gauntlet::Weapon(5, 1, Weapon::Type::CAC);
-  Gauntlet::Stats		*stat = new Gauntlet::Stats(15, 150, 1, 0, 0);
+  Gauntlet::Stats		*stat = new Gauntlet::Stats(1, 110, 1, 0, 0);
 
   Gauntlet::Animation		*animation = new Gauntlet::Animation(model->ent);
 

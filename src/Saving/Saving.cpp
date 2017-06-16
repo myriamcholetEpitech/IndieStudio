@@ -38,13 +38,26 @@ void    Gauntlet::Saving::saveScore()
     {
       f >> scores;
       f.close();
-      if (scores["score"] == Json::nullValue)
-	{
-	  std::cout << "lololol" << std::endl;
-	}
       scores["score"].append(CoreGame::core->score);
       std::ofstream ofs("../saving/scores.txt",  std::ios::out | std::ios::trunc);
       ofs << scores;
       ofs.close();
+    }
+}
+
+void	Gauntlet::Saving::fillScores(std::vector<int> &scores)
+{
+  std::ifstream f("../saving/scores.txt");
+  Json::Value scoresJson(Json::arrayValue);
+
+  if (f.is_open())
+    {
+      f >> scoresJson;
+      f.close();
+      for (auto it = scoresJson["score"].begin(); it != scoresJson["score"].end(); ++it)
+	{
+	  int sc = (*it).asInt();
+	  scores.push_back(sc);
+	}
     }
 }

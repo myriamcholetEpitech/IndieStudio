@@ -349,6 +349,9 @@
 		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Menu/MenuManager.cpp">
 			<Option target="Indie"/>
 		</Unit>
+		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Menu/SplashScreen.cpp">
+			<Option target="Indie"/>
+		</Unit>
 		<Unit filename="/home/myriam/Projet/cpp_indie_studio/src/Movement/MovementMgr.cpp">
 			<Option target="Indie"/>
 		</Unit>

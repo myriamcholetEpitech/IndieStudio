@@ -238,8 +238,6 @@ bool   Gauntlet::RP::checkDefeat(std::vector<std::shared_ptr<Entity>> const &ent
   if (nb_dead_hero == nb_hero)
     {
       Gauntlet::CoreGame::core->addEvent(Gauntlet::EventType::DEFEAT);
-      std::cout << "Event defaite" << std::endl;
-      std::cout << nb_dead_hero << "/" << nb_hero << std::endl;
       this->nbLevel = 0;
       return (true);
     }
@@ -261,8 +259,6 @@ void Gauntlet::RP::checkVictory(std::vector<std::shared_ptr<Entity>> const &enti
       if (nbEvilAlive == 0)
 	{
 	  Gauntlet::CoreGame::core->addEvent(Gauntlet::EventType::VICTORY);
-	  std::cout << "VICTOIRE" << std::endl;
-	  std::cout << nbLevel << std::endl;
 	  this->nbLevel = 0;
 	}
     }

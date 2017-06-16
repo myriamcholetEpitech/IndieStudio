@@ -1377,9 +1377,33 @@ CMakeFiles/Indie.dir/src/Menu/MainMenu.cpp.o.provides: CMakeFiles/Indie.dir/src/
 CMakeFiles/Indie.dir/src/Menu/MainMenu.cpp.o.provides.build: CMakeFiles/Indie.dir/src/Menu/MainMenu.cpp.o
 
 
+CMakeFiles/Indie.dir/src/Menu/SplashScreen.cpp.o: CMakeFiles/Indie.dir/flags.make
+CMakeFiles/Indie.dir/src/Menu/SplashScreen.cpp.o: ../src/Menu/SplashScreen.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/Indie.dir/src/Menu/SplashScreen.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Indie.dir/src/Menu/SplashScreen.cpp.o -c /home/myriam/Projet/cpp_indie_studio/src/Menu/SplashScreen.cpp
+
+CMakeFiles/Indie.dir/src/Menu/SplashScreen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Indie.dir/src/Menu/SplashScreen.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/myriam/Projet/cpp_indie_studio/src/Menu/SplashScreen.cpp > CMakeFiles/Indie.dir/src/Menu/SplashScreen.cpp.i
+
+CMakeFiles/Indie.dir/src/Menu/SplashScreen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Indie.dir/src/Menu/SplashScreen.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/myriam/Projet/cpp_indie_studio/src/Menu/SplashScreen.cpp -o CMakeFiles/Indie.dir/src/Menu/SplashScreen.cpp.s
+
+CMakeFiles/Indie.dir/src/Menu/SplashScreen.cpp.o.requires:
+
+.PHONY : CMakeFiles/Indie.dir/src/Menu/SplashScreen.cpp.o.requires
+
+CMakeFiles/Indie.dir/src/Menu/SplashScreen.cpp.o.provides: CMakeFiles/Indie.dir/src/Menu/SplashScreen.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Indie.dir/build.make CMakeFiles/Indie.dir/src/Menu/SplashScreen.cpp.o.provides.build
+.PHONY : CMakeFiles/Indie.dir/src/Menu/SplashScreen.cpp.o.provides
+
+CMakeFiles/Indie.dir/src/Menu/SplashScreen.cpp.o.provides.build: CMakeFiles/Indie.dir/src/Menu/SplashScreen.cpp.o
+
+
 CMakeFiles/Indie.dir/src/RP/RP.cpp.o: CMakeFiles/Indie.dir/flags.make
 CMakeFiles/Indie.dir/src/RP/RP.cpp.o: ../src/RP/RP.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/Indie.dir/src/RP/RP.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/Indie.dir/src/RP/RP.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Indie.dir/src/RP/RP.cpp.o -c /home/myriam/Projet/cpp_indie_studio/src/RP/RP.cpp
 
 CMakeFiles/Indie.dir/src/RP/RP.cpp.i: cmake_force
@@ -1403,7 +1427,7 @@ CMakeFiles/Indie.dir/src/RP/RP.cpp.o.provides.build: CMakeFiles/Indie.dir/src/RP
 
 CMakeFiles/Indie.dir/src/AI/AI.cpp.o: CMakeFiles/Indie.dir/flags.make
 CMakeFiles/Indie.dir/src/AI/AI.cpp.o: ../src/AI/AI.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/Indie.dir/src/AI/AI.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/Indie.dir/src/AI/AI.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Indie.dir/src/AI/AI.cpp.o -c /home/myriam/Projet/cpp_indie_studio/src/AI/AI.cpp
 
 CMakeFiles/Indie.dir/src/AI/AI.cpp.i: cmake_force
@@ -1427,7 +1451,7 @@ CMakeFiles/Indie.dir/src/AI/AI.cpp.o.provides.build: CMakeFiles/Indie.dir/src/AI
 
 CMakeFiles/Indie.dir/src/Saving/Saving.cpp.o: CMakeFiles/Indie.dir/flags.make
 CMakeFiles/Indie.dir/src/Saving/Saving.cpp.o: ../src/Saving/Saving.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/Indie.dir/src/Saving/Saving.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/Indie.dir/src/Saving/Saving.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Indie.dir/src/Saving/Saving.cpp.o -c /home/myriam/Projet/cpp_indie_studio/src/Saving/Saving.cpp
 
 CMakeFiles/Indie.dir/src/Saving/Saving.cpp.i: cmake_force
@@ -1451,7 +1475,7 @@ CMakeFiles/Indie.dir/src/Saving/Saving.cpp.o.provides.build: CMakeFiles/Indie.di
 
 CMakeFiles/Indie.dir/src/Movement/MovementMgr.cpp.o: CMakeFiles/Indie.dir/flags.make
 CMakeFiles/Indie.dir/src/Movement/MovementMgr.cpp.o: ../src/Movement/MovementMgr.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/Indie.dir/src/Movement/MovementMgr.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/Indie.dir/src/Movement/MovementMgr.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Indie.dir/src/Movement/MovementMgr.cpp.o -c /home/myriam/Projet/cpp_indie_studio/src/Movement/MovementMgr.cpp
 
 CMakeFiles/Indie.dir/src/Movement/MovementMgr.cpp.i: cmake_force
@@ -1475,7 +1499,7 @@ CMakeFiles/Indie.dir/src/Movement/MovementMgr.cpp.o.provides.build: CMakeFiles/I
 
 CMakeFiles/Indie.dir/src/Attack/AttackManager.cpp.o: CMakeFiles/Indie.dir/flags.make
 CMakeFiles/Indie.dir/src/Attack/AttackManager.cpp.o: ../src/Attack/AttackManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/Indie.dir/src/Attack/AttackManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/Indie.dir/src/Attack/AttackManager.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Indie.dir/src/Attack/AttackManager.cpp.o -c /home/myriam/Projet/cpp_indie_studio/src/Attack/AttackManager.cpp
 
 CMakeFiles/Indie.dir/src/Attack/AttackManager.cpp.i: cmake_force
@@ -1499,7 +1523,7 @@ CMakeFiles/Indie.dir/src/Attack/AttackManager.cpp.o.provides.build: CMakeFiles/I
 
 CMakeFiles/Indie.dir/src/Map/MapLoader.cpp.o: CMakeFiles/Indie.dir/flags.make
 CMakeFiles/Indie.dir/src/Map/MapLoader.cpp.o: ../src/Map/MapLoader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/Indie.dir/src/Map/MapLoader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/Indie.dir/src/Map/MapLoader.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Indie.dir/src/Map/MapLoader.cpp.o -c /home/myriam/Projet/cpp_indie_studio/src/Map/MapLoader.cpp
 
 CMakeFiles/Indie.dir/src/Map/MapLoader.cpp.i: cmake_force
@@ -1523,7 +1547,7 @@ CMakeFiles/Indie.dir/src/Map/MapLoader.cpp.o.provides.build: CMakeFiles/Indie.di
 
 CMakeFiles/Indie.dir/src/Loot/LootManager.cpp.o: CMakeFiles/Indie.dir/flags.make
 CMakeFiles/Indie.dir/src/Loot/LootManager.cpp.o: ../src/Loot/LootManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/Indie.dir/src/Loot/LootManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/Indie.dir/src/Loot/LootManager.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Indie.dir/src/Loot/LootManager.cpp.o -c /home/myriam/Projet/cpp_indie_studio/src/Loot/LootManager.cpp
 
 CMakeFiles/Indie.dir/src/Loot/LootManager.cpp.i: cmake_force
@@ -1547,7 +1571,7 @@ CMakeFiles/Indie.dir/src/Loot/LootManager.cpp.o.provides.build: CMakeFiles/Indie
 
 CMakeFiles/Indie.dir/src/Menu/Hud.cpp.o: CMakeFiles/Indie.dir/flags.make
 CMakeFiles/Indie.dir/src/Menu/Hud.cpp.o: ../src/Menu/Hud.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/Indie.dir/src/Menu/Hud.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/Indie.dir/src/Menu/Hud.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Indie.dir/src/Menu/Hud.cpp.o -c /home/myriam/Projet/cpp_indie_studio/src/Menu/Hud.cpp
 
 CMakeFiles/Indie.dir/src/Menu/Hud.cpp.i: cmake_force
@@ -1571,7 +1595,7 @@ CMakeFiles/Indie.dir/src/Menu/Hud.cpp.o.provides.build: CMakeFiles/Indie.dir/src
 
 CMakeFiles/Indie.dir/src/Entity/Collectable/Ananas.cpp.o: CMakeFiles/Indie.dir/flags.make
 CMakeFiles/Indie.dir/src/Entity/Collectable/Ananas.cpp.o: ../src/Entity/Collectable/Ananas.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/Indie.dir/src/Entity/Collectable/Ananas.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/Indie.dir/src/Entity/Collectable/Ananas.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Indie.dir/src/Entity/Collectable/Ananas.cpp.o -c /home/myriam/Projet/cpp_indie_studio/src/Entity/Collectable/Ananas.cpp
 
 CMakeFiles/Indie.dir/src/Entity/Collectable/Ananas.cpp.i: cmake_force
@@ -1595,7 +1619,7 @@ CMakeFiles/Indie.dir/src/Entity/Collectable/Ananas.cpp.o.provides.build: CMakeFi
 
 CMakeFiles/Indie.dir/src/Entity/Collectable/Hamburger.cpp.o: CMakeFiles/Indie.dir/flags.make
 CMakeFiles/Indie.dir/src/Entity/Collectable/Hamburger.cpp.o: ../src/Entity/Collectable/Hamburger.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/Indie.dir/src/Entity/Collectable/Hamburger.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/Indie.dir/src/Entity/Collectable/Hamburger.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Indie.dir/src/Entity/Collectable/Hamburger.cpp.o -c /home/myriam/Projet/cpp_indie_studio/src/Entity/Collectable/Hamburger.cpp
 
 CMakeFiles/Indie.dir/src/Entity/Collectable/Hamburger.cpp.i: cmake_force
@@ -1619,7 +1643,7 @@ CMakeFiles/Indie.dir/src/Entity/Collectable/Hamburger.cpp.o.provides.build: CMak
 
 CMakeFiles/Indie.dir/src/Entity/Character/Ghost.cpp.o: CMakeFiles/Indie.dir/flags.make
 CMakeFiles/Indie.dir/src/Entity/Character/Ghost.cpp.o: ../src/Entity/Character/Ghost.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/Indie.dir/src/Entity/Character/Ghost.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/Indie.dir/src/Entity/Character/Ghost.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Indie.dir/src/Entity/Character/Ghost.cpp.o -c /home/myriam/Projet/cpp_indie_studio/src/Entity/Character/Ghost.cpp
 
 CMakeFiles/Indie.dir/src/Entity/Character/Ghost.cpp.i: cmake_force
@@ -1643,7 +1667,7 @@ CMakeFiles/Indie.dir/src/Entity/Character/Ghost.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/Indie.dir/json/jsoncpp.cpp.o: CMakeFiles/Indie.dir/flags.make
 CMakeFiles/Indie.dir/json/jsoncpp.cpp.o: ../json/jsoncpp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/Indie.dir/json/jsoncpp.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/Indie.dir/json/jsoncpp.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Indie.dir/json/jsoncpp.cpp.o -c /home/myriam/Projet/cpp_indie_studio/json/jsoncpp.cpp
 
 CMakeFiles/Indie.dir/json/jsoncpp.cpp.i: cmake_force
@@ -1722,6 +1746,7 @@ Indie_OBJECTS = \
 "CMakeFiles/Indie.dir/src/Menu/GameMenu.cpp.o" \
 "CMakeFiles/Indie.dir/src/Menu/EndGame.cpp.o" \
 "CMakeFiles/Indie.dir/src/Menu/MainMenu.cpp.o" \
+"CMakeFiles/Indie.dir/src/Menu/SplashScreen.cpp.o" \
 "CMakeFiles/Indie.dir/src/RP/RP.cpp.o" \
 "CMakeFiles/Indie.dir/src/AI/AI.cpp.o" \
 "CMakeFiles/Indie.dir/src/Saving/Saving.cpp.o" \
@@ -1793,6 +1818,7 @@ Indie: CMakeFiles/Indie.dir/src/Menu/MenuManager.cpp.o
 Indie: CMakeFiles/Indie.dir/src/Menu/GameMenu.cpp.o
 Indie: CMakeFiles/Indie.dir/src/Menu/EndGame.cpp.o
 Indie: CMakeFiles/Indie.dir/src/Menu/MainMenu.cpp.o
+Indie: CMakeFiles/Indie.dir/src/Menu/SplashScreen.cpp.o
 Indie: CMakeFiles/Indie.dir/src/RP/RP.cpp.o
 Indie: CMakeFiles/Indie.dir/src/AI/AI.cpp.o
 Indie: CMakeFiles/Indie.dir/src/Saving/Saving.cpp.o
@@ -1832,7 +1858,7 @@ Indie: /usr/lib/x86_64-linux-gnu/libBulletSoftBody.so
 Indie: /usr/local/lib/libCEGUIBase-0.so
 Indie: /usr/local/lib/libCEGUIOgreRenderer-0.so
 Indie: CMakeFiles/Indie.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Linking CXX executable Indie"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Linking CXX executable Indie"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Indie.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1895,6 +1921,7 @@ CMakeFiles/Indie.dir/requires: CMakeFiles/Indie.dir/src/Menu/MenuManager.cpp.o.r
 CMakeFiles/Indie.dir/requires: CMakeFiles/Indie.dir/src/Menu/GameMenu.cpp.o.requires
 CMakeFiles/Indie.dir/requires: CMakeFiles/Indie.dir/src/Menu/EndGame.cpp.o.requires
 CMakeFiles/Indie.dir/requires: CMakeFiles/Indie.dir/src/Menu/MainMenu.cpp.o.requires
+CMakeFiles/Indie.dir/requires: CMakeFiles/Indie.dir/src/Menu/SplashScreen.cpp.o.requires
 CMakeFiles/Indie.dir/requires: CMakeFiles/Indie.dir/src/RP/RP.cpp.o.requires
 CMakeFiles/Indie.dir/requires: CMakeFiles/Indie.dir/src/AI/AI.cpp.o.requires
 CMakeFiles/Indie.dir/requires: CMakeFiles/Indie.dir/src/Saving/Saving.cpp.o.requires

@@ -25,6 +25,8 @@ namespace Gauntlet
     MAIN_MENU,
     NEW_GAME,
     ENTER,
+    SUMMONING,
+    SPAWN_BOSS,
     SAVE,
     LOAD,
     DESTROY,
@@ -51,11 +53,11 @@ namespace Gauntlet
   {
       enum class Type : int
       {
-	UP = 0,
-	DOWN = 1,
-	LEFT = 2,
-	RIGHT = 3,
-	CUSTOM = 4
+    	UP = 0,
+	    DOWN = 1,
+	    LEFT = 2,
+	    RIGHT = 3,
+	    CUSTOM = 4
       };
 
       Ogre::Vector3	customDir;
@@ -64,7 +66,7 @@ namespace Gauntlet
 
       virtual ~MoveEvent() {}
       std::vector<Gauntlet::MoveEvent::Type> type;
-    };
+  };
 
   std::ostream &	operator<<(std::ostream& istream, Gauntlet::Event const & event);
 };

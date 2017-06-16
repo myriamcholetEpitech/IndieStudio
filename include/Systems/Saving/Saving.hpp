@@ -16,10 +16,11 @@ namespace Gauntlet
       void saveScore();
 
     public:
-        Saving() {};
-        ~Saving() {};
+      Saving() {};
+      ~Saving() {};
 
-        void takeEvent(Gauntlet::Event const &);
+      void takeEvent(Gauntlet::Event const &);
+      static void fillScores(std::vector<int> &);
     };
 }
 

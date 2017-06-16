@@ -5,7 +5,7 @@
 // Login   <my-lan.aragon@epitech.eu>
 // 
 // Started on  Tue May  9 17:15:34 2017 Mymy Aragon
-// Last update Wed Jun 14 14:30:44 2017 benito
+// Last update Fri Jun 16 11:13:41 2017 benito
 //
 
 #include <Systems/Displayer/WindowManager.hpp>
@@ -16,10 +16,11 @@
 
 const unsigned int Gauntlet::CoreGame::levels = 3;
 
-std::unique_ptr<Gauntlet::CoreGame>	  Gauntlet::CoreGame::core = nullptr;
+std::unique_ptr<Gauntlet::CoreGame>		Gauntlet::CoreGame::core = nullptr;
 std::vector<std::shared_ptr<Gauntlet::Event> >	Gauntlet::CoreGame::events;
-bool                            Gauntlet::CoreGame::isMenuOn = false;
-int                             Gauntlet::CoreGame::score = 0;
+bool                            		Gauntlet::CoreGame::isMenuOn = true;
+int                             		Gauntlet::CoreGame::score = 0;
+unsigned int					Gauntlet::CoreGame::numberOfPlayer = 1;
 
 Ogre::Real			Gauntlet::CoreGame::frameRate;
 
@@ -36,7 +37,8 @@ Gauntlet::CoreGame::CoreGame()
 	  _lootMgr(),
 	  _menuManager(),
 	  _ai(),
-	  _savingMgr()
+	  _savingMgr(),
+      gen(rd())
 {
   this->_winMgr.reset(new Gauntlet::WindowManager(this->_displayer.getRenderWindow(),
 					      this->_displayer.getSceneManager(),
@@ -45,7 +47,6 @@ Gauntlet::CoreGame::CoreGame()
   this->_inputMgr.reset(new Gauntlet::InputManager(this->_displayer.getRenderWindow()));
   this->_collisionMgr.reset(new Gauntlet::CollisionManager(this->_displayer.getSceneManager()));
 
-  this->isMenuOn = false;
   this->score = 0;
 }
 
@@ -55,18 +56,12 @@ Gauntlet::CoreGame::~CoreGame()
 
 void		Gauntlet::CoreGame::go()
 {
+  this->_menuManager.addSplashScreen();
   this->_menuManager.addMainMenu();
-  this->_menuManager.setActiveMenu(Gauntlet::MenuType::MAIN_MENU);
-  this->addEvent(Gauntlet::EventType::MAIN_MENU);
+  this->_menuManager.setActiveMenu(Gauntlet::MenuType::SPLASHSCREEN, true);
 
   this->addPlayer<Gauntlet::Entity>();
-  //this->addPlayer<Gauntlet::Warrior>();
-  //this->addPlayer<Gauntlet::Valkyrie>();
-  //this->addPlayer<Gauntlet::Assassin>();
-  //_ai.addPlayer(valkyrie);
-  //_ai.addPlayer(priest);
-  //_ai.addPlayer(warrior);
-  //_ai.addPlayer(assassin);
+
   this->_displayer.startRendering();
 
 }
@@ -91,10 +86,12 @@ void		Gauntlet::CoreGame::initGame()
 
   this->_inputMgr->resetId();
 
-  this->addPlayer<Gauntlet::Warrior>(true);
-  this->addPlayer<Gauntlet::Valkyrie>(true);
-  this->addPlayer<Gauntlet::Priest>();
-  this->addPlayer<Gauntlet::Assassin>();
+  unsigned int c = 0;
+  this->addPlayer<Gauntlet::Warrior>(this->numberOfPlayer <= c++);
+  this->addPlayer<Gauntlet::Valkyrie>(this->numberOfPlayer <= c++);
+  this->addPlayer<Gauntlet::Priest>(this->numberOfPlayer <= c++);
+  this->addPlayer<Gauntlet::Assassin>(this->numberOfPlayer <= c++);
+
   this->_menuManager.addHud(this->_heroes);
 }
 
@@ -114,7 +111,6 @@ void		Gauntlet::CoreGame::gameTurn()
   /*
   *	Treat Event
   */
-
   std::vector<std::shared_ptr<Gauntlet::Event> > copyEvent = this->events;
   this->events.clear();
   if (!copyEvent.empty())
@@ -199,6 +195,7 @@ bool		Gauntlet::CoreGame::isAllowedToEvent(const std::shared_ptr<Gauntlet::Event
     	return (true);
       case Gauntlet::EventType::MENU :
 	    return (true);
+
       case Gauntlet::EventType::SAVE :
 	    return (true);
       case Gauntlet::EventType::LOAD :
@@ -248,5 +245,6 @@ void		Gauntlet::CoreGame::newGame()
   this->destroyAllEntity();
   this->_mapLoader.restartGame();
   this->initGame();
-  this->getMenuMgr().setActiveMenu(Gauntlet::MenuType::HUD);
+  this->getMenuMgr().setActiveMenu(Gauntlet::MenuType::MAIN_MENU, false);
+  this->getMenuMgr().setActiveMenu(Gauntlet::MenuType::HUD, true);
 }

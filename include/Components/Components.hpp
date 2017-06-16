@@ -25,34 +25,4 @@ struct IComponent
   virtual ~IComponent() {}
 };
 
-
-// // struct ClassInfo : public IComponent
-// // {
-// //   //enum correspondant au type d'entité
-// // };
-
-
-// struct	Attack : public IComponent
-// {
-//   int	dammage;
-//   int	speed;
-//   int	range; // Pourrait être un objet plus complexe, dépend des collisions
-//   virtual ~Attack() {}
-// };
-
-// struct	Asset : public IComponent
-// {
-//   std::string name;//Cf Ogre
-//   virtual ~Asset() {}
-// };
-
-// struct	SoundAnimation : public IComponent
-// {
-//   std::string onDeath;
-//   std::string onAttack;
-//   std::string onTheMove;
-
-//   virtual ~SoundAnimation() {}
-// };
-
 # endif //COMPONENTS_HPP_

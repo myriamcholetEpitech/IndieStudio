@@ -38,14 +38,13 @@ namespace	Gauntlet
     void					updateMenu();
     void					takeEvent(Gauntlet::Event const &event);
     void					show(bool isShowed);
-
+    void 					setActive(bool active);
     void					initStats(std::vector<std::shared_ptr<Entity>> const &heroes);
    private:
     CEGUI::Window				*_root;
     std::vector<Gauntlet::PlayerHudData>	_player;
     CEGUI::Window				*_score;
 
-    void 					swapMenu();
     std::string			        	getNewBar(int value);
 
     CEGUI::Window				*_text;

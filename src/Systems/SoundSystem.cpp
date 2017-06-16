@@ -16,11 +16,14 @@
 
 const std::string Gauntlet::SoundSystem::musicByLevelPath = "../audio/music/in_game";
 const std::string Gauntlet::SoundSystem::musicForMenuPath = "../audio/music/menu";
-//const std::string Gauntlet::SoundSystem::musicForDefeatPath = "../audio/music/in_game";
+const std::string Gauntlet::SoundSystem::musicForDefeatPath = "../audio/music/defeat";
+const std::string Gauntlet::SoundSystem::musicForVictoryPath = "../audio/music/victory";
 const std::string Gauntlet::SoundSystem::soundPath = "../audio/sfx";
 
 Gauntlet::SoundSystem::SoundSystem()
 {
+    soundVolume = 100.0;
+    musicVolume = 80.0;
     std::string dir(Gauntlet::SoundSystem::soundPath);
 
     std::vector<std::string> files;
@@ -45,11 +48,14 @@ Gauntlet::SoundSystem::SoundSystem()
         dir = Gauntlet::SoundSystem::musicByLevelPath;
         auto key = std::to_string(i + 1);
         dir += "/level" + key;
-        std::cout << dir << std::endl;
-        this->loadDirOfMusic(dir, files, _musicBuffers);
+	this->loadDirOfMusic(dir, files, _musicBuffers);
     }
     files.clear();
     this->loadDirOfMusic(Gauntlet::SoundSystem::musicForMenuPath, files, _mainMenu);
+    files.clear();
+    this->loadDirOfMusic(Gauntlet::SoundSystem::musicForDefeatPath, files, _defeat);
+    files.clear();
+    this->loadDirOfMusic(Gauntlet::SoundSystem::musicForVictoryPath, files, _victory);
 }
 
 void            Gauntlet::SoundSystem::playSound(std::string const& name)
@@ -65,7 +71,6 @@ void            Gauntlet::SoundSystem::loadDirOfMusic(std::string const& dir,
     std::for_each(files.begin(), files.end(), [this, &vec](std::string const &file) {
         auto m = std::make_unique<sf::Music>();
         if (m->openFromFile(file)) {
-            std::cout << "loaded music " << file << std::endl;
             vec.push_back(std::move(m));
         }
         else
@@ -78,6 +83,7 @@ void           Gauntlet::SoundSystem::handleMove(std::shared_ptr<Gauntlet::Entit
     auto&      s = _soundBuffers[entity->get<Gauntlet::Sound>().move];
     s.second.play();
     s.second.setLoop(true);
+    s.second.setVolume(this->soundVolume);
 }
 
 void           Gauntlet::SoundSystem::handleIdle(std::shared_ptr<Gauntlet::Entity> const &entity)
@@ -90,18 +96,18 @@ void           Gauntlet::SoundSystem::handleIdle(std::shared_ptr<Gauntlet::Entit
 void           Gauntlet::SoundSystem::handleAttack(std::shared_ptr<Gauntlet::Entity> const &entity)
 {
   _soundBuffers[entity->get<Gauntlet::Sound>().attack].second.play();
-  //std::cout << "still attacking " << _soundBuffers[entity->get<Gauntlet::Sound>().attack].getStatus() << std::endl;
+  _soundBuffers[entity->get<Gauntlet::Sound>().attack].second.setVolume(this->soundVolume);
 }
 
 void           Gauntlet::SoundSystem::handleDestroy(std::shared_ptr<Gauntlet::Entity> const &entity)
 {
   _soundBuffers[entity->get<Gauntlet::Sound>().death].second.play();
+  _soundBuffers[entity->get<Gauntlet::Sound>().death].second.setVolume(this->soundVolume);
 }
 
-void           Gauntlet::SoundSystem::handleCollision(std::shared_ptr<Gauntlet::Entity> const&    )
+void           Gauntlet::SoundSystem::handleCollision(std::shared_ptr<Gauntlet::Entity> const&)
 {
-    //this->playSound(entity->get<Gauntlet::Sound>().attack);
-    //si entité.etat == attack -> bruit de collision
+
 }
 
 void Gauntlet::SoundSystem::stopMusic()
@@ -121,20 +127,79 @@ void Gauntlet::SoundSystem::handleMenu()
         this->_mainMenu.front()->play();
         this->_mainMenu.front()->setLoop(true);
         playing = this->_mainMenu.front().get();
+        playing->setVolume(this->musicVolume);
     }
 }
 
 void Gauntlet::SoundSystem::handleLevelEnd()
 {
-    std::cerr << "playing " << counter << " of " << this->_musicBuffers.size() << std::endl;
+    if (this->_victory.size() > 0 && this->playing == this->_victory.front().get())
+        return ;
     this->stopMusic();
     if (counter < _musicBuffers.size())
     {
         this->_musicBuffers[counter]->play();
-        std::cerr << this->_musicBuffers[counter]->getStatus() << std::endl;
         playing = this->_musicBuffers[counter].get();
+        playing->setVolume(this->musicVolume);
     }
     ++counter;
+}
+
+void             Gauntlet::SoundSystem::setSoundVolume(float volume)
+{
+    if (volume <= 100.0)
+        soundVolume = volume;
+}
+
+void             Gauntlet::SoundSystem::setMusicVolume(float volume)
+{
+    if (volume <= 100.0)
+    {
+        musicVolume = volume;
+        if (this->playing) {
+            playing->setVolume(volume);
+        }
+    }
+}
+
+float     Gauntlet::SoundSystem::getSoundVolume() const
+{
+    return (soundVolume);
+}
+
+float     Gauntlet::SoundSystem::getMusicVolume() const
+{
+    return (musicVolume);
+}
+
+void Gauntlet::SoundSystem::handleDefeat()
+{
+    this->stopMusic();
+    if (this->_defeat.size() > 0)
+    {
+        this->_defeat.front()->play();
+        playing = this->_defeat.front().get();
+        playing->setVolume(this->musicVolume);
+    }
+}
+
+void Gauntlet::SoundSystem::handleVictory()
+{
+    this->stopMusic();
+    if (this->_victory.size() > 0)
+    {
+        this->_victory.front()->play();
+        playing = this->_victory.front().get();
+        playing->setVolume(this->musicVolume);
+    }
+}
+
+void Gauntlet::SoundSystem::handleBoss(std::shared_ptr<Gauntlet::Entity> const &entity)
+{
+    _soundBuffers[entity->get<Gauntlet::Sound>().death].second.play();
+    _soundBuffers[entity->get<Gauntlet::Sound>().death].second.setVolume(this->soundVolume);
+
+    std::cerr << entity->get<Gauntlet::Sound>().death << "  -    " << _soundBuffers[entity->get<Gauntlet::Sound>().death].second.getStatus() << std::endl;
 }
 
 void            Gauntlet::SoundSystem::takeEvent(Gauntlet::Event const &event)
@@ -158,23 +223,27 @@ void            Gauntlet::SoundSystem::takeEvent(Gauntlet::Event const &event)
         	    this->handleDestroy(event._entities.front());
         	    break;
             case EventType::LEVEL_END :
-                std::cout << "levellll end" << std::endl;
                 this->handleLevelEnd();
                 break;
             case EventType::NEW_GAME :
-                std::cout << "neeew end" << std::endl;
                 this->handleLevelEnd();
                 break;
             case EventType::MAIN_MENU :
                 this->handleMenu();
                 break;
-	    case EventType::DEFEAT :
-	      this->counter = 0;
-	    break;
-	    case EventType::VICTORY :
-	      this->counter = 0;
-            default:
+    	    case EventType::DEFEAT :
+                this->handleDefeat();
+    	        this->counter = 0;
+    	        break;
+	        case EventType::VICTORY :
+                this->handleVictory();
+	            this->counter = 0;
                 break;
+            case EventType::SPAWN_BOSS:
+                this->handleBoss(event._entities.front());
+                break;
+            default:
+              break;
         }
     }
     catch (std::runtime_error const&) {}

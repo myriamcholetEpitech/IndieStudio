@@ -1,12 +1,12 @@
-// darkBallrIngMat genrated by blender2ogre 0.5.8
+// darkBallrINGMat genrated by blender2ogre 0.5.8
 
-material darkBallrIngMat 
+material darkBallrINGMat 
 {
     receive_shadows on 
 
     technique
     {
-        pass darkBallrIngMat
+        pass darkBallrINGMat
         {
             ambient 0.09083779156208038 0.0020459943916648626 0.0017174939857795835 1.0
             diffuse 0.09083779156208038 0.0020459943916648626 0.0017174939857795835 1.0

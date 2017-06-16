@@ -532,11 +532,29 @@ Indie_BINARY_DIR:STATIC=/home/myriam/Projet/cpp_indie_studio/build
 //Value Computed by CMake
 Indie_SOURCE_DIR:STATIC=/home/myriam/Projet/cpp_indie_studio
 
+//Path to a file.
+OGRE_Bites_INCLUDE_DIR:PATH=/usr/local/include/OGRE/Bites
+
+//Path to a library.
+OGRE_Bites_LIBRARY_DBG:FILEPATH=OGRE_Bites_LIBRARY_DBG-NOTFOUND
+
+//Path to a library.
+OGRE_Bites_LIBRARY_REL:FILEPATH=/usr/local/lib/libOgreBites.so
+
 //x
 OGRE_CONFIG_INCLUDE_DIR:PATH=/usr/local/include/OGRE
 
 //x
 OGRE_FRAMEWORK_PATH:STRING=NOTFOUND
+
+//Path to a file.
+OGRE_HLMS_INCLUDE_DIR:PATH=/usr/local/include/OGRE/HLMS
+
+//Path to a library.
+OGRE_HLMS_LIBRARY_DBG:FILEPATH=OGRE_HLMS_LIBRARY_DBG-NOTFOUND
+
+//Path to a library.
+OGRE_HLMS_LIBRARY_REL:FILEPATH=/usr/local/lib/libOgreHLMS.so
 
 //x
 OGRE_INCLUDE_DIR:PATH=/usr/local/include/OGRE
@@ -552,6 +570,15 @@ OGRE_LIBRARY_REL:FILEPATH=/usr/local/lib/libOgreMain.so
 
 //x
 OGRE_MEDIA_DIR:PATH=/usr/local/share/OGRE/Media
+
+//Path to a file.
+OGRE_MeshLodGenerator_INCLUDE_DIR:PATH=/usr/local/include/OGRE/MeshLodGenerator
+
+//Path to a library.
+OGRE_MeshLodGenerator_LIBRARY_DBG:FILEPATH=OGRE_MeshLodGenerator_LIBRARY_DBG-NOTFOUND
+
+//Path to a library.
+OGRE_MeshLodGenerator_LIBRARY_REL:FILEPATH=/usr/local/lib/libOgreMeshLodGenerator.so
 
 //x
 OGRE_Overlay_INCLUDE_DIR:PATH=/usr/local/include/OGRE/Overlay
@@ -698,16 +725,16 @@ OGRE_RenderSystem_Direct3D9_LIBRARY_FWK:STRING=NOTFOUND
 OGRE_RenderSystem_Direct3D9_LIBRARY_REL:FILEPATH=OGRE_RenderSystem_Direct3D9_LIBRARY_REL-NOTFOUND
 
 //x
-OGRE_RenderSystem_GL3Plus_INCLUDE_DIR:PATH=OGRE_RenderSystem_GL3Plus_INCLUDE_DIR-NOTFOUND
+OGRE_RenderSystem_GL3Plus_INCLUDE_DIR:PATH=/usr/local/include/OGRE/RenderSystems/GL3Plus
 
 //x
-OGRE_RenderSystem_GL3Plus_LIBRARY_DBG:FILEPATH=OGRE_RenderSystem_GL3Plus_LIBRARY_DBG-NOTFOUND
+OGRE_RenderSystem_GL3Plus_LIBRARY_DBG:FILEPATH=/usr/local/lib/OGRE/RenderSystem_GL3Plus.so
 
 //x
 OGRE_RenderSystem_GL3Plus_LIBRARY_FWK:STRING=NOTFOUND
 
 //x
-OGRE_RenderSystem_GL3Plus_LIBRARY_REL:FILEPATH=OGRE_RenderSystem_GL3Plus_LIBRARY_REL-NOTFOUND
+OGRE_RenderSystem_GL3Plus_LIBRARY_REL:FILEPATH=/usr/local/lib/OGRE/RenderSystem_GL3Plus.so
 
 //x
 OGRE_RenderSystem_GLES2_INCLUDE_DIR:PATH=OGRE_RenderSystem_GLES2_INCLUDE_DIR-NOTFOUND
@@ -1402,8 +1429,20 @@ CPACK_SOURCE_ZIP-ADVANCED:INTERNAL=1
 FIND_PACKAGE_MESSAGE_DETAILS_Bullet:INTERNAL=[/usr/lib/x86_64-linux-gnu/libBulletDynamics.so][/usr/lib/x86_64-linux-gnu/libBulletCollision.so][/usr/lib/x86_64-linux-gnu/libLinearMath.so][/usr/lib/x86_64-linux-gnu/libBulletSoftBody.so][/usr/include/bullet][v()]
 //Details about finding PkgConfig
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.1()]
+//ADVANCED property for variable: OGRE_Bites_INCLUDE_DIR
+OGRE_Bites_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Bites_LIBRARY_DBG
+OGRE_Bites_LIBRARY_DBG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_Bites_LIBRARY_REL
+OGRE_Bites_LIBRARY_REL-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OGRE_CONFIG_INCLUDE_DIR
 OGRE_CONFIG_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_HLMS_INCLUDE_DIR
+OGRE_HLMS_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_HLMS_LIBRARY_DBG
+OGRE_HLMS_LIBRARY_DBG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_HLMS_LIBRARY_REL
+OGRE_HLMS_LIBRARY_REL-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OGRE_INCLUDE_DIR
 OGRE_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OGRE_LIBRARY_DBG
@@ -1414,6 +1453,12 @@ OGRE_LIBRARY_FWK-ADVANCED:INTERNAL=1
 OGRE_LIBRARY_REL-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OGRE_MEDIA_DIR
 OGRE_MEDIA_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_MeshLodGenerator_INCLUDE_DIR
+OGRE_MeshLodGenerator_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_MeshLodGenerator_LIBRARY_DBG
+OGRE_MeshLodGenerator_LIBRARY_DBG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGRE_MeshLodGenerator_LIBRARY_REL
+OGRE_MeshLodGenerator_LIBRARY_REL-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OGRE_Overlay_INCLUDE_DIR
 OGRE_Overlay_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OGRE_Overlay_LIBRARY_DBG

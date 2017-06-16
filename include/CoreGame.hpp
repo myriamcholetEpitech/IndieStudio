@@ -11,6 +11,9 @@
 #ifndef CORE_GAME_HPP_
 # define CORE_GAME_HPP_
 
+#include <random>
+#include <thread>
+#include <chrono>
 #include "Systems/Attack/AttackManager.hpp"
 #include "Systems/Displayer/Displayer.hpp"
 #include "Systems/Sound/SoundSystem.hpp"
@@ -35,29 +38,31 @@ namespace	Gauntlet
 {
   class		CoreGame
   {
-    Gauntlet::Displayer						_displayer;
-    std::unique_ptr<Gauntlet::CollisionManager>			_collisionMgr;
-    std::unique_ptr<Gauntlet::WindowManager>			_winMgr;
-    Gauntlet::AnimationManager					_animationMgr;
-    Gauntlet::SoundSystem					_soundMgr;
-    std::unique_ptr<Gauntlet::InputManager>			_inputMgr;
-    Gauntlet::RP						_rp;
-    Gauntlet::MovementMgr					_mvmMgr;
-    Gauntlet::AttackManager					_attackMgr;
-    Gauntlet::MapLoader						_mapLoader;
-    Gauntlet::LootManager					_lootMgr;
-    Gauntlet::MenuManager					_menuManager;
-    Gauntlet::AI						_ai;
-    Gauntlet::Saving                                            _savingMgr;
+    Gauntlet::Displayer							_displayer;
+    std::unique_ptr<Gauntlet::CollisionManager>				_collisionMgr;
+    std::unique_ptr<Gauntlet::WindowManager>				_winMgr;
+    Gauntlet::AnimationManager						_animationMgr;
+    Gauntlet::SoundSystem						_soundMgr;
+    std::unique_ptr<Gauntlet::InputManager>				_inputMgr;
+    Gauntlet::RP						        _rp;
+    Gauntlet::MovementMgr						_mvmMgr;
+    Gauntlet::AttackManager						_attackMgr;
+    Gauntlet::MapLoader							_mapLoader;
+    Gauntlet::LootManager						_lootMgr;
+    Gauntlet::MenuManager						_menuManager;
+    Gauntlet::AI						        _ai;
+    Gauntlet::Saving                            			_savingMgr;
 
-    std::vector<std::shared_ptr<Entity>>			_entities;
-    std::vector<std::shared_ptr<Entity>>			_heroes;
+    std::vector<std::shared_ptr<Entity>>		_entities;
+    std::vector<std::shared_ptr<Entity>>		_heroes;
 
    public:
     static std::vector<std::shared_ptr<Gauntlet::Event> >	events;
     static bool							isMenuOn;
     static int							score;
-    static const unsigned int			levels;
+    static const unsigned int					levels;
+    static unsigned int						numberOfPlayer;
+
 
   public:
     CoreGame();
@@ -68,6 +73,7 @@ namespace	Gauntlet
     Gauntlet::MovementMgr&		getMovementMgr() { return (this->_mvmMgr); }
     Gauntlet::AnimationManager&		getAnimationMgr() { return (this->_animationMgr); }
     Gauntlet::MenuManager&		getMenuMgr() { return (this->_menuManager); }
+    Gauntlet::SoundSystem&		getSoundMgr() { return (this->_soundMgr); }
 
     std::vector<std::shared_ptr<Gauntlet::Entity>> const& getEntities() const { return (this->_entities); };
 
@@ -89,8 +95,12 @@ namespace	Gauntlet
     template <typename PlayerClass>
     void 		addPlayer(bool ia = false);
 
-    static Ogre::Real	frameRate;
-    static std::unique_ptr<CoreGame> core;
+    std::random_device                  rd;
+    std::default_random_engine          gen;
+
+
+    static Ogre::Real			frameRate;
+    static std::unique_ptr<CoreGame> 	core;
   };
 }
 

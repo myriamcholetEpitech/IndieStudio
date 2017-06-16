@@ -23,14 +23,9 @@ Gauntlet::Displayer::Displayer() :
   /*
    *  INIT OGRE
    */
-
   this->root->setRenderSystem(this->rs);
-
-  this->rs->setConfigOption("Full Screen", "No");
-  //this->rs->setConfigOption("Video Mode", "19 x 1000 @ 32-bit colour");
-
+  this->rs->setConfigOption("Full Screen", "Yes");
   this->window = root->initialise(true, "Gauntlet");
-
   this->setupResources();
 
   /*
@@ -68,7 +63,6 @@ void			Gauntlet::Displayer::setupResources()
 	  archName = i->second;
 	  Ogre::ResourceGroupManager::getSingleton().addResourceLocation(archName, typeName, secName);
 	}
-      std::cout << "while (seci.hasMoreElements())" << std::endl;
     }
 
   Ogre::TextureManager::getSingleton().setDefaultNumMipmaps(5);
@@ -92,14 +86,6 @@ void			Gauntlet::Displayer::setupBackground()
   this->sceneMgr->setAmbientLight(Ogre::ColourValue(0, 0, 0));
 
   this->sceneMgr->setShadowTechnique(Ogre::SHADOWTYPE_STENCIL_ADDITIVE);
-
-  //this->gloablLightNode = this->createLight(this->sceneMgr->getRootSceneNode(),
-  //					    Ogre::Vector3(0, 25, 0),
-  //					    Ogre::ColourValue(0.8, 0.8, 0.8),
-  //					    Ogre::ColourValue(0.8, 0.8, 0.8),
-  //					    150, this->gloablLight,
-  //					    Ogre::Light::LT_POINT);
-
 }
 
 bool			Gauntlet::Displayer::isOpen()

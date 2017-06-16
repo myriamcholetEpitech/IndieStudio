@@ -48,6 +48,7 @@ CMakeFiles/Indie.dir/main.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -65,8 +66,10 @@ CMakeFiles/Indie.dir/main.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/main.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -671,6 +674,7 @@ CMakeFiles/Indie.dir/src/AI/AI.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -688,8 +692,10 @@ CMakeFiles/Indie.dir/src/AI/AI.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/AI/AI.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -1290,6 +1296,7 @@ CMakeFiles/Indie.dir/src/Animation/AnimationManager.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -1307,8 +1314,10 @@ CMakeFiles/Indie.dir/src/Animation/AnimationManager.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/Animation/AnimationManager.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -1909,6 +1918,7 @@ CMakeFiles/Indie.dir/src/Attack/AttackManager.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -1926,8 +1936,10 @@ CMakeFiles/Indie.dir/src/Attack/AttackManager.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/Attack/AttackManager.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -2824,6 +2836,7 @@ CMakeFiles/Indie.dir/src/Collision/CollisionCallBack.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -2841,8 +2854,10 @@ CMakeFiles/Indie.dir/src/Collision/CollisionCallBack.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/Collision/CollisionCallBack.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -3736,6 +3751,7 @@ CMakeFiles/Indie.dir/src/Collision/CollisionManager.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -3753,8 +3769,10 @@ CMakeFiles/Indie.dir/src/Collision/CollisionManager.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/Collision/CollisionManager.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -5241,6 +5259,7 @@ CMakeFiles/Indie.dir/src/Components/AIScript.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -5258,8 +5277,10 @@ CMakeFiles/Indie.dir/src/Components/AIScript.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/Components/AIScript.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -5817,13 +5838,54 @@ CMakeFiles/Indie.dir/src/Components/AIScript.cpp.o
  /usr/local/include/cegui-0/CEGUI/widgets/ButtonBase.h
  /usr/local/include/cegui-0/CEGUI/widgets/ToggleButton.h
 CMakeFiles/Indie.dir/src/Components/Animation.cpp.o
+ .././include/AI/AI.hpp
  .././include/Components/Animation.hpp
  .././include/Components/Components.hpp
  .././include/Components/EntityState.hpp
+ .././include/Components/LightSource.hpp
  .././include/Components/Model.hpp
+ .././include/Components/PowerUpStats.hpp
+ .././include/Components/Sound.hpp
+ .././include/Components/Stats.hpp
+ .././include/Components/Weapon.hpp
+ .././include/CoreGame.hpp
+ .././include/CustomMath.hpp
+ .././include/Entity/Character/Assassin.hpp
+ .././include/Entity/Character/Hero.hpp
+ .././include/Entity/Character/Pig.hpp
+ .././include/Entity/Character/Priest.hpp
+ .././include/Entity/Character/Valkyrie.hpp
+ .././include/Entity/Character/Warrior.hpp
+ .././include/Entity/Collectable/Coin.hpp
+ .././include/Entity/Collectable/Donuts.hpp
+ .././include/Entity/Collectable/Icecream.hpp
+ .././include/Entity/Collectable/Meat.hpp
+ .././include/Entity/Destroyable/Chest.hpp
+ .././include/Entity/Destroyable/Crate.hpp
+ .././include/Entity/Destroyable/Vase.hpp
+ .././include/Entity/Effect/Attack.hpp
+ .././include/Entity/Effect/CaCAttack.hpp
+ .././include/Entity/Effect/DistAttack.hpp
+ .././include/Entity/Effect/HealAttack.hpp
+ .././include/Entity/Effect/ZoneDistAttack.hpp
  .././include/Entity/Entity.hpp
+ .././include/Entity/Environement/Ground.hpp
+ .././include/Entity/Environement/Torch.hpp
+ .././include/Entity/Environement/Wall.hpp
  .././include/Event/Event.hpp
+ .././include/Factory/Factory.hpp
+ .././include/Factory/FactoryImplem.hpp
+ .././include/Menu/EndGame.hpp
+ .././include/Menu/GameMenu.hpp
+ .././include/Menu/Hud.hpp
+ .././include/Menu/IMenu.hpp
+ .././include/Menu/MainMenu.hpp
+ .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
+ .././include/Movement/MovementManager.hpp
+ .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
+ .././include/Systems/Attack/AttackManager.hpp
  .././include/Systems/Collision/CollisionBody.hpp
  .././include/Systems/Collision/CollisionCallBack.hpp
  .././include/Systems/Collision/CollisionConvertion.hpp
@@ -5835,7 +5897,12 @@ CMakeFiles/Indie.dir/src/Components/Animation.cpp.o
  .././include/Systems/Displayer/WindowManager.hpp
  .././include/Systems/Input/InputManager.hpp
  .././include/Systems/Input/KeyListener.hpp
+ .././include/Systems/Loot/LootManager.hpp
+ .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
+ .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/Components/Animation.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -6142,6 +6209,256 @@ CMakeFiles/Indie.dir/src/Components/Animation.cpp.o
  /usr/local/include/OGRE/Threading/OgreThreadHeadersBoost.h
  /usr/local/include/OGRE/Threading/OgreThreadHeadersPoco.h
  /usr/local/include/OGRE/Threading/OgreThreadHeadersTBB.h
+ /usr/local/include/SFML/Audio.hpp
+ /usr/local/include/SFML/Audio/AlResource.hpp
+ /usr/local/include/SFML/Audio/Export.hpp
+ /usr/local/include/SFML/Audio/InputSoundFile.hpp
+ /usr/local/include/SFML/Audio/Listener.hpp
+ /usr/local/include/SFML/Audio/Music.hpp
+ /usr/local/include/SFML/Audio/OutputSoundFile.hpp
+ /usr/local/include/SFML/Audio/Sound.hpp
+ /usr/local/include/SFML/Audio/SoundBuffer.hpp
+ /usr/local/include/SFML/Audio/SoundBufferRecorder.hpp
+ /usr/local/include/SFML/Audio/SoundFileFactory.hpp
+ /usr/local/include/SFML/Audio/SoundFileFactory.inl
+ /usr/local/include/SFML/Audio/SoundFileReader.hpp
+ /usr/local/include/SFML/Audio/SoundFileWriter.hpp
+ /usr/local/include/SFML/Audio/SoundRecorder.hpp
+ /usr/local/include/SFML/Audio/SoundSource.hpp
+ /usr/local/include/SFML/Audio/SoundStream.hpp
+ /usr/local/include/SFML/Config.hpp
+ /usr/local/include/SFML/System.hpp
+ /usr/local/include/SFML/System/Clock.hpp
+ /usr/local/include/SFML/System/Err.hpp
+ /usr/local/include/SFML/System/Export.hpp
+ /usr/local/include/SFML/System/FileInputStream.hpp
+ /usr/local/include/SFML/System/InputStream.hpp
+ /usr/local/include/SFML/System/Lock.hpp
+ /usr/local/include/SFML/System/MemoryInputStream.hpp
+ /usr/local/include/SFML/System/Mutex.hpp
+ /usr/local/include/SFML/System/NonCopyable.hpp
+ /usr/local/include/SFML/System/Sleep.hpp
+ /usr/local/include/SFML/System/String.hpp
+ /usr/local/include/SFML/System/String.inl
+ /usr/local/include/SFML/System/Thread.hpp
+ /usr/local/include/SFML/System/Thread.inl
+ /usr/local/include/SFML/System/ThreadLocal.hpp
+ /usr/local/include/SFML/System/ThreadLocalPtr.hpp
+ /usr/local/include/SFML/System/ThreadLocalPtr.inl
+ /usr/local/include/SFML/System/Time.hpp
+ /usr/local/include/SFML/System/Utf.hpp
+ /usr/local/include/SFML/System/Utf.inl
+ /usr/local/include/SFML/System/Vector2.hpp
+ /usr/local/include/SFML/System/Vector2.inl
+ /usr/local/include/SFML/System/Vector3.hpp
+ /usr/local/include/SFML/System/Vector3.inl
+ /usr/local/include/cegui-0/CEGUI/Affector.h
+ /usr/local/include/cegui-0/CEGUI/Animation.h
+ /usr/local/include/cegui-0/CEGUI/AnimationInstance.h
+ /usr/local/include/cegui-0/CEGUI/AnimationManager.h
+ /usr/local/include/cegui-0/CEGUI/Base.h
+ /usr/local/include/cegui-0/CEGUI/BasicImage.h
+ /usr/local/include/cegui-0/CEGUI/BasicRenderedStringParser.h
+ /usr/local/include/cegui-0/CEGUI/BidiVisualMapping.h
+ /usr/local/include/cegui-0/CEGUI/BoundSlot.h
+ /usr/local/include/cegui-0/CEGUI/CEGUI.h
+ /usr/local/include/cegui-0/CEGUI/CentredRenderedString.h
+ /usr/local/include/cegui-0/CEGUI/ChainedXMLHandler.h
+ /usr/local/include/cegui-0/CEGUI/Clipboard.h
+ /usr/local/include/cegui-0/CEGUI/Colour.h
+ /usr/local/include/cegui-0/CEGUI/ColourRect.h
+ /usr/local/include/cegui-0/CEGUI/Config.h
+ /usr/local/include/cegui-0/CEGUI/CoordConverter.h
+ /usr/local/include/cegui-0/CEGUI/DataContainer.h
+ /usr/local/include/cegui-0/CEGUI/DefaultLogger.h
+ /usr/local/include/cegui-0/CEGUI/DefaultRenderedStringParser.h
+ /usr/local/include/cegui-0/CEGUI/DefaultResourceProvider.h
+ /usr/local/include/cegui-0/CEGUI/DynamicModule.h
+ /usr/local/include/cegui-0/CEGUI/Element.h
+ /usr/local/include/cegui-0/CEGUI/Event.h
+ /usr/local/include/cegui-0/CEGUI/EventArgs.h
+ /usr/local/include/cegui-0/CEGUI/EventSet.h
+ /usr/local/include/cegui-0/CEGUI/Exceptions.h
+ /usr/local/include/cegui-0/CEGUI/FactoryModule.h
+ /usr/local/include/cegui-0/CEGUI/FactoryRegisterer.h
+ /usr/local/include/cegui-0/CEGUI/Font.h
+ /usr/local/include/cegui-0/CEGUI/FontGlyph.h
+ /usr/local/include/cegui-0/CEGUI/FontManager.h
+ /usr/local/include/cegui-0/CEGUI/Font_xmlHandler.h
+ /usr/local/include/cegui-0/CEGUI/FormattedRenderedString.h
+ /usr/local/include/cegui-0/CEGUI/ForwardRefs.h
+ /usr/local/include/cegui-0/CEGUI/FreeFunctionSlot.h
+ /usr/local/include/cegui-0/CEGUI/FunctorCopySlot.h
+ /usr/local/include/cegui-0/CEGUI/FunctorPointerSlot.h
+ /usr/local/include/cegui-0/CEGUI/FunctorReferenceBinder.h
+ /usr/local/include/cegui-0/CEGUI/FunctorReferenceSlot.h
+ /usr/local/include/cegui-0/CEGUI/GUIContext.h
+ /usr/local/include/cegui-0/CEGUI/GeometryBuffer.h
+ /usr/local/include/cegui-0/CEGUI/GlobalEventSet.h
+ /usr/local/include/cegui-0/CEGUI/IconvStringTranscoder.h
+ /usr/local/include/cegui-0/CEGUI/Image.h
+ /usr/local/include/cegui-0/CEGUI/ImageCodec.h
+ /usr/local/include/cegui-0/CEGUI/ImageFactory.h
+ /usr/local/include/cegui-0/CEGUI/ImageManager.h
+ /usr/local/include/cegui-0/CEGUI/InjectedInputReceiver.h
+ /usr/local/include/cegui-0/CEGUI/InputEvent.h
+ /usr/local/include/cegui-0/CEGUI/Interpolator.h
+ /usr/local/include/cegui-0/CEGUI/IteratorBase.h
+ /usr/local/include/cegui-0/CEGUI/JustifiedRenderedString.h
+ /usr/local/include/cegui-0/CEGUI/KeyFrame.h
+ /usr/local/include/cegui-0/CEGUI/LeftAlignedRenderedString.h
+ /usr/local/include/cegui-0/CEGUI/LinkedEvent.h
+ /usr/local/include/cegui-0/CEGUI/Logger.h
+ /usr/local/include/cegui-0/CEGUI/MemberFunctionSlot.h
+ /usr/local/include/cegui-0/CEGUI/MemoryAllocatedObject.h
+ /usr/local/include/cegui-0/CEGUI/MemoryAllocation.h
+ /usr/local/include/cegui-0/CEGUI/MemorySTLWrapper.h
+ /usr/local/include/cegui-0/CEGUI/MouseCursor.h
+ /usr/local/include/cegui-0/CEGUI/NamedElement.h
+ /usr/local/include/cegui-0/CEGUI/NamedXMLResourceManager.h
+ /usr/local/include/cegui-0/CEGUI/Property.h
+ /usr/local/include/cegui-0/CEGUI/PropertyHelper.h
+ /usr/local/include/cegui-0/CEGUI/PropertySet.h
+ /usr/local/include/cegui-0/CEGUI/Quaternion.h
+ /usr/local/include/cegui-0/CEGUI/Rect.h
+ /usr/local/include/cegui-0/CEGUI/RefCounted.h
+ /usr/local/include/cegui-0/CEGUI/RegexMatcher.h
+ /usr/local/include/cegui-0/CEGUI/RenderEffect.h
+ /usr/local/include/cegui-0/CEGUI/RenderEffectFactory.h
+ /usr/local/include/cegui-0/CEGUI/RenderEffectManager.h
+ /usr/local/include/cegui-0/CEGUI/RenderQueue.h
+ /usr/local/include/cegui-0/CEGUI/RenderTarget.h
+ /usr/local/include/cegui-0/CEGUI/RenderedString.h
+ /usr/local/include/cegui-0/CEGUI/RenderedStringComponent.h
+ /usr/local/include/cegui-0/CEGUI/RenderedStringImageComponent.h
+ /usr/local/include/cegui-0/CEGUI/RenderedStringParser.h
+ /usr/local/include/cegui-0/CEGUI/RenderedStringTextComponent.h
+ /usr/local/include/cegui-0/CEGUI/RenderedStringWidgetComponent.h
+ /usr/local/include/cegui-0/CEGUI/RenderedStringWordWrapper.h
+ /usr/local/include/cegui-0/CEGUI/Renderer.h
+ /usr/local/include/cegui-0/CEGUI/RendererModules/Ogre/Renderer.h
+ /usr/local/include/cegui-0/CEGUI/RenderingContext.h
+ /usr/local/include/cegui-0/CEGUI/RenderingSurface.h
+ /usr/local/include/cegui-0/CEGUI/RenderingWindow.h
+ /usr/local/include/cegui-0/CEGUI/ResourceProvider.h
+ /usr/local/include/cegui-0/CEGUI/RightAlignedRenderedString.h
+ /usr/local/include/cegui-0/CEGUI/Scheme.h
+ /usr/local/include/cegui-0/CEGUI/SchemeManager.h
+ /usr/local/include/cegui-0/CEGUI/Scheme_xmlHandler.h
+ /usr/local/include/cegui-0/CEGUI/ScriptModule.h
+ /usr/local/include/cegui-0/CEGUI/SimpleTimer.h
+ /usr/local/include/cegui-0/CEGUI/Singleton.h
+ /usr/local/include/cegui-0/CEGUI/Size.h
+ /usr/local/include/cegui-0/CEGUI/SlotFunctorBase.h
+ /usr/local/include/cegui-0/CEGUI/String.h
+ /usr/local/include/cegui-0/CEGUI/StringTranscoder.h
+ /usr/local/include/cegui-0/CEGUI/SubscriberSlot.h
+ /usr/local/include/cegui-0/CEGUI/System.h
+ /usr/local/include/cegui-0/CEGUI/SystemKeys.h
+ /usr/local/include/cegui-0/CEGUI/TextUtils.h
+ /usr/local/include/cegui-0/CEGUI/Texture.h
+ /usr/local/include/cegui-0/CEGUI/TextureTarget.h
+ /usr/local/include/cegui-0/CEGUI/TplInterpolators.h
+ /usr/local/include/cegui-0/CEGUI/TplProperty.h
+ /usr/local/include/cegui-0/CEGUI/TplWRFactoryRegisterer.h
+ /usr/local/include/cegui-0/CEGUI/TplWindowFactory.h
+ /usr/local/include/cegui-0/CEGUI/TplWindowFactoryRegisterer.h
+ /usr/local/include/cegui-0/CEGUI/TplWindowProperty.h
+ /usr/local/include/cegui-0/CEGUI/TplWindowRendererFactory.h
+ /usr/local/include/cegui-0/CEGUI/TypedProperty.h
+ /usr/local/include/cegui-0/CEGUI/UDim.h
+ /usr/local/include/cegui-0/CEGUI/Vector.h
+ /usr/local/include/cegui-0/CEGUI/Version.h
+ /usr/local/include/cegui-0/CEGUI/Vertex.h
+ /usr/local/include/cegui-0/CEGUI/Win32StringTranscoder.h
+ /usr/local/include/cegui-0/CEGUI/Window.h
+ /usr/local/include/cegui-0/CEGUI/WindowFactory.h
+ /usr/local/include/cegui-0/CEGUI/WindowFactoryManager.h
+ /usr/local/include/cegui-0/CEGUI/WindowManager.h
+ /usr/local/include/cegui-0/CEGUI/WindowRenderer.h
+ /usr/local/include/cegui-0/CEGUI/WindowRendererManager.h
+ /usr/local/include/cegui-0/CEGUI/XMLAttributes.h
+ /usr/local/include/cegui-0/CEGUI/XMLHandler.h
+ /usr/local/include/cegui-0/CEGUI/XMLParser.h
+ /usr/local/include/cegui-0/CEGUI/XMLSerializer.h
+ /usr/local/include/cegui-0/CEGUI/falagard/././././ComponentBase.h
+ /usr/local/include/cegui-0/CEGUI/falagard/././././SectionSpecification.h
+ /usr/local/include/cegui-0/CEGUI/falagard/./././Dimensions.h
+ /usr/local/include/cegui-0/CEGUI/falagard/./././FrameComponent.h
+ /usr/local/include/cegui-0/CEGUI/falagard/./././ImageryComponent.h
+ /usr/local/include/cegui-0/CEGUI/falagard/./././LayerSpecification.h
+ /usr/local/include/cegui-0/CEGUI/falagard/./././TextComponent.h
+ /usr/local/include/cegui-0/CEGUI/falagard/././EventLinkDefinition.h
+ /usr/local/include/cegui-0/CEGUI/falagard/././ImagerySection.h
+ /usr/local/include/cegui-0/CEGUI/falagard/././NamedArea.h
+ /usr/local/include/cegui-0/CEGUI/falagard/././NamedDefinitionCollator.h
+ /usr/local/include/cegui-0/CEGUI/falagard/././PropertyDefinition.h
+ /usr/local/include/cegui-0/CEGUI/falagard/././PropertyInitialiser.h
+ /usr/local/include/cegui-0/CEGUI/falagard/././PropertyLinkDefinition.h
+ /usr/local/include/cegui-0/CEGUI/falagard/././StateImagery.h
+ /usr/local/include/cegui-0/CEGUI/falagard/././WidgetComponent.h
+ /usr/local/include/cegui-0/CEGUI/falagard/./Enums.h
+ /usr/local/include/cegui-0/CEGUI/falagard/./WidgetLookFeel.h
+ /usr/local/include/cegui-0/CEGUI/falagard/ComponentBase.h
+ /usr/local/include/cegui-0/CEGUI/falagard/Dimensions.h
+ /usr/local/include/cegui-0/CEGUI/falagard/Enums.h
+ /usr/local/include/cegui-0/CEGUI/falagard/EventAction.h
+ /usr/local/include/cegui-0/CEGUI/falagard/FalagardPropertyBase.h
+ /usr/local/include/cegui-0/CEGUI/falagard/FormattingSetting.h
+ /usr/local/include/cegui-0/CEGUI/falagard/PropertyDefinitionBase.h
+ /usr/local/include/cegui-0/CEGUI/falagard/PropertyInitialiser.h
+ /usr/local/include/cegui-0/CEGUI/falagard/WidgetLookManager.h
+ /usr/local/include/cegui-0/CEGUI/falagard/XMLEnumHelper.h
+ /usr/local/include/cegui-0/CEGUI/falagard/XMLHandler.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./././ItemListBase.h
+ /usr/local/include/cegui-0/CEGUI/widgets/././ButtonBase.h
+ /usr/local/include/cegui-0/CEGUI/widgets/././LayoutContainer.h
+ /usr/local/include/cegui-0/CEGUI/widgets/././ListHeaderSegment.h
+ /usr/local/include/cegui-0/CEGUI/widgets/././MenuBase.h
+ /usr/local/include/cegui-0/CEGUI/widgets/././ScrolledItemListBase.h
+ /usr/local/include/cegui-0/CEGUI/widgets/././SequentialLayoutContainer.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./ClippedContainer.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./ComboDropList.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./Combobox.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./DefaultWindow.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./DragContainer.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./Editbox.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./FrameWindow.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./GridLayoutContainer.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./GroupBox.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./HorizontalLayoutContainer.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./ItemEntry.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./ItemListbox.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./LayoutCell.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./ListHeader.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./Listbox.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./ListboxItem.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./ListboxTextItem.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./MenuItem.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./Menubar.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./MultiColumnList.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./MultiLineEditbox.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./PopupMenu.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./ProgressBar.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./PushButton.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./RadioButton.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./ScrollablePane.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./Scrollbar.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./ScrolledContainer.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./Slider.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./Spinner.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./TabButton.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./TabControl.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./Thumb.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./Titlebar.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./ToggleButton.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./Tooltip.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./Tree.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./TreeItem.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./VerticalLayoutContainer.h
+ /usr/local/include/cegui-0/CEGUI/widgets/All.h
+ /usr/local/include/cegui-0/CEGUI/widgets/ButtonBase.h
+ /usr/local/include/cegui-0/CEGUI/widgets/ToggleButton.h
 CMakeFiles/Indie.dir/src/Components/EntityState.cpp.o
  .././include/Components/Components.hpp
  .././include/Components/EntityState.hpp
@@ -6382,6 +6699,7 @@ CMakeFiles/Indie.dir/src/Components/LightSource.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -6399,8 +6717,10 @@ CMakeFiles/Indie.dir/src/Components/LightSource.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/Components/LightSource.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -7001,6 +7321,7 @@ CMakeFiles/Indie.dir/src/Components/Model.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -7018,8 +7339,10 @@ CMakeFiles/Indie.dir/src/Components/Model.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/Components/Model.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -7851,6 +8174,7 @@ CMakeFiles/Indie.dir/src/CoreGame.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -7868,8 +8192,10 @@ CMakeFiles/Indie.dir/src/CoreGame.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/CoreGame.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -8665,6 +8991,7 @@ CMakeFiles/Indie.dir/src/Displayer/Displayer.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -8682,8 +9009,10 @@ CMakeFiles/Indie.dir/src/Displayer/Displayer.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/Displayer/Displayer.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -9284,6 +9613,7 @@ CMakeFiles/Indie.dir/src/Displayer/WindowManager.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -9301,8 +9631,10 @@ CMakeFiles/Indie.dir/src/Displayer/WindowManager.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/Displayer/WindowManager.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -9904,6 +10236,7 @@ CMakeFiles/Indie.dir/src/Entity/Character/Assassin.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -9921,8 +10254,10 @@ CMakeFiles/Indie.dir/src/Entity/Character/Assassin.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/Entity/Character/Assassin.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -10525,6 +10860,7 @@ CMakeFiles/Indie.dir/src/Entity/Character/Boss.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -10542,8 +10878,10 @@ CMakeFiles/Indie.dir/src/Entity/Character/Boss.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/Entity/Character/Boss.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -11146,6 +11484,7 @@ CMakeFiles/Indie.dir/src/Entity/Character/Ghost.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -11163,8 +11502,10 @@ CMakeFiles/Indie.dir/src/Entity/Character/Ghost.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/Entity/Character/Ghost.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -11767,6 +12108,7 @@ CMakeFiles/Indie.dir/src/Entity/Character/MiniBoss.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -11784,8 +12126,10 @@ CMakeFiles/Indie.dir/src/Entity/Character/MiniBoss.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/Entity/Character/MiniBoss.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -12387,6 +12731,7 @@ CMakeFiles/Indie.dir/src/Entity/Character/Pig.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -12404,8 +12749,10 @@ CMakeFiles/Indie.dir/src/Entity/Character/Pig.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/Entity/Character/Pig.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -13007,6 +13354,7 @@ CMakeFiles/Indie.dir/src/Entity/Character/Priest.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -13024,8 +13372,10 @@ CMakeFiles/Indie.dir/src/Entity/Character/Priest.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/Entity/Character/Priest.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -13627,6 +13977,7 @@ CMakeFiles/Indie.dir/src/Entity/Character/Valkyrie.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -13644,8 +13995,10 @@ CMakeFiles/Indie.dir/src/Entity/Character/Valkyrie.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/Entity/Character/Valkyrie.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -14247,6 +14600,7 @@ CMakeFiles/Indie.dir/src/Entity/Character/Warrior.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -14264,8 +14618,10 @@ CMakeFiles/Indie.dir/src/Entity/Character/Warrior.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/Entity/Character/Warrior.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -16850,6 +17206,7 @@ CMakeFiles/Indie.dir/src/Entity/Destroyable/Chest.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -16867,8 +17224,10 @@ CMakeFiles/Indie.dir/src/Entity/Destroyable/Chest.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/Entity/Destroyable/Chest.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -17469,6 +17828,7 @@ CMakeFiles/Indie.dir/src/Entity/Destroyable/Crate.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -17486,8 +17846,10 @@ CMakeFiles/Indie.dir/src/Entity/Destroyable/Crate.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/Entity/Destroyable/Crate.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -18088,6 +18450,7 @@ CMakeFiles/Indie.dir/src/Entity/Destroyable/Vase.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -18105,8 +18468,10 @@ CMakeFiles/Indie.dir/src/Entity/Destroyable/Vase.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/Entity/Destroyable/Vase.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -21856,6 +22221,7 @@ CMakeFiles/Indie.dir/src/Factory/Factory.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -21873,8 +22239,10 @@ CMakeFiles/Indie.dir/src/Factory/Factory.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/Factory/Factory.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -22678,6 +23046,7 @@ CMakeFiles/Indie.dir/src/Input/KeyListener.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -22695,8 +23064,10 @@ CMakeFiles/Indie.dir/src/Input/KeyListener.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/Input/KeyListener.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -23299,6 +23670,7 @@ CMakeFiles/Indie.dir/src/Loot/LootManager.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -23316,8 +23688,10 @@ CMakeFiles/Indie.dir/src/Loot/LootManager.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/Loot/LootManager.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -23918,6 +24292,7 @@ CMakeFiles/Indie.dir/src/Map/MapLoader.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -23935,8 +24310,10 @@ CMakeFiles/Indie.dir/src/Map/MapLoader.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/Map/MapLoader.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -24537,6 +24914,7 @@ CMakeFiles/Indie.dir/src/Menu/EndGame.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -24554,8 +24932,10 @@ CMakeFiles/Indie.dir/src/Menu/EndGame.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/Menu/EndGame.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -25156,6 +25536,7 @@ CMakeFiles/Indie.dir/src/Menu/GameMenu.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -25173,8 +25554,10 @@ CMakeFiles/Indie.dir/src/Menu/GameMenu.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/Menu/GameMenu.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -25775,6 +26158,7 @@ CMakeFiles/Indie.dir/src/Menu/Hud.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -25792,8 +26176,10 @@ CMakeFiles/Indie.dir/src/Menu/Hud.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/Menu/Hud.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -26592,6 +26978,7 @@ CMakeFiles/Indie.dir/src/Menu/MainMenu.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -26609,8 +26996,10 @@ CMakeFiles/Indie.dir/src/Menu/MainMenu.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/Menu/MainMenu.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -27211,6 +27600,7 @@ CMakeFiles/Indie.dir/src/Menu/MenuManager.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -27228,9 +27618,633 @@ CMakeFiles/Indie.dir/src/Menu/MenuManager.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/Menu/MenuManager.cpp
+ /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
+ /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
+ /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
+ /usr/include/bullet/BulletCollision/BroadphaseCollision/btCollisionAlgorithm.h
+ /usr/include/bullet/BulletCollision/BroadphaseCollision/btDbvt.h
+ /usr/include/bullet/BulletCollision/BroadphaseCollision/btDbvtBroadphase.h
+ /usr/include/bullet/BulletCollision/BroadphaseCollision/btDispatcher.h
+ /usr/include/bullet/BulletCollision/BroadphaseCollision/btMultiSapBroadphase.h
+ /usr/include/bullet/BulletCollision/BroadphaseCollision/btOverlappingPairCache.h
+ /usr/include/bullet/BulletCollision/BroadphaseCollision/btOverlappingPairCallback.h
+ /usr/include/bullet/BulletCollision/BroadphaseCollision/btQuantizedBvh.h
+ /usr/include/bullet/BulletCollision/BroadphaseCollision/btSimpleBroadphase.h
+ /usr/include/bullet/BulletCollision/CollisionDispatch/btActivatingCollisionAlgorithm.h
+ /usr/include/bullet/BulletCollision/CollisionDispatch/btCollisionConfiguration.h
+ /usr/include/bullet/BulletCollision/CollisionDispatch/btCollisionCreateFunc.h
+ /usr/include/bullet/BulletCollision/CollisionDispatch/btCollisionDispatcher.h
+ /usr/include/bullet/BulletCollision/CollisionDispatch/btCollisionObject.h
+ /usr/include/bullet/BulletCollision/CollisionDispatch/btCollisionObjectWrapper.h
+ /usr/include/bullet/BulletCollision/CollisionDispatch/btCollisionWorld.h
+ /usr/include/bullet/BulletCollision/CollisionDispatch/btConvexConvexAlgorithm.h
+ /usr/include/bullet/BulletCollision/CollisionDispatch/btDefaultCollisionConfiguration.h
+ /usr/include/bullet/BulletCollision/CollisionDispatch/btManifoldResult.h
+ /usr/include/bullet/BulletCollision/CollisionDispatch/btSphereSphereCollisionAlgorithm.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btBoxShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btBvhTriangleMeshShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btCapsuleShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btCollisionMargin.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btCollisionShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btCompoundShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btConcaveShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btConeShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btConvexHullShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btConvexInternalShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btConvexShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btConvexTriangleMeshShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btCylinderShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btEmptyShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btMultiSphereShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btOptimizedBvh.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btPolyhedralConvexShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btScaledBvhTriangleMeshShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btSphereShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btStaticPlaneShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btStridingMeshInterface.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btTetrahedronShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btTriangleCallback.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btTriangleIndexVertexArray.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btTriangleInfoMap.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btTriangleMesh.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btTriangleMeshShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btTriangleShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btUniformScalingShape.h
+ /usr/include/bullet/BulletCollision/Gimpact/btBoxCollision.h
+ /usr/include/bullet/BulletCollision/Gimpact/btClipPolygon.h
+ /usr/include/bullet/BulletCollision/Gimpact/btGImpactBvh.h
+ /usr/include/bullet/BulletCollision/Gimpact/btGImpactCollisionAlgorithm.h
+ /usr/include/bullet/BulletCollision/Gimpact/btGImpactQuantizedBvh.h
+ /usr/include/bullet/BulletCollision/Gimpact/btGImpactShape.h
+ /usr/include/bullet/BulletCollision/Gimpact/btGeometryOperations.h
+ /usr/include/bullet/BulletCollision/Gimpact/btQuantization.h
+ /usr/include/bullet/BulletCollision/Gimpact/btTriangleShapeEx.h
+ /usr/include/bullet/BulletCollision/NarrowPhaseCollision/btDiscreteCollisionDetectorInterface.h
+ /usr/include/bullet/BulletCollision/NarrowPhaseCollision/btGjkPairDetector.h
+ /usr/include/bullet/BulletCollision/NarrowPhaseCollision/btManifoldPoint.h
+ /usr/include/bullet/BulletCollision/NarrowPhaseCollision/btPersistentManifold.h
+ /usr/include/bullet/BulletCollision/NarrowPhaseCollision/btSimplexSolverInterface.h
+ /usr/include/bullet/BulletCollision/NarrowPhaseCollision/btVoronoiSimplexSolver.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btConeTwistConstraint.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btConstraintSolver.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btContactSolverInfo.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btFixedConstraint.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btGearConstraint.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btGeneric6DofConstraint.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btGeneric6DofSpring2Constraint.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btGeneric6DofSpringConstraint.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btHinge2Constraint.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btHingeConstraint.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btJacobianEntry.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btPoint2PointConstraint.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btSequentialImpulseConstraintSolver.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btSliderConstraint.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btSolverBody.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btSolverConstraint.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btTypedConstraint.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btUniversalConstraint.h
+ /usr/include/bullet/BulletDynamics/Dynamics/btActionInterface.h
+ /usr/include/bullet/BulletDynamics/Dynamics/btDiscreteDynamicsWorld.h
+ /usr/include/bullet/BulletDynamics/Dynamics/btDynamicsWorld.h
+ /usr/include/bullet/BulletDynamics/Dynamics/btRigidBody.h
+ /usr/include/bullet/BulletDynamics/Dynamics/btSimpleDynamicsWorld.h
+ /usr/include/bullet/BulletDynamics/Vehicle/btRaycastVehicle.h
+ /usr/include/bullet/BulletDynamics/Vehicle/btVehicleRaycaster.h
+ /usr/include/bullet/BulletDynamics/Vehicle/btWheelInfo.h
+ /usr/include/bullet/LinearMath/btAabbUtil2.h
+ /usr/include/bullet/LinearMath/btAlignedAllocator.h
+ /usr/include/bullet/LinearMath/btAlignedObjectArray.h
+ /usr/include/bullet/LinearMath/btDefaultMotionState.h
+ /usr/include/bullet/LinearMath/btGeometryUtil.h
+ /usr/include/bullet/LinearMath/btHashMap.h
+ /usr/include/bullet/LinearMath/btIDebugDraw.h
+ /usr/include/bullet/LinearMath/btMatrix3x3.h
+ /usr/include/bullet/LinearMath/btMinMax.h
+ /usr/include/bullet/LinearMath/btMotionState.h
+ /usr/include/bullet/LinearMath/btQuadWord.h
+ /usr/include/bullet/LinearMath/btQuaternion.h
+ /usr/include/bullet/LinearMath/btQuickprof.h
+ /usr/include/bullet/LinearMath/btScalar.h
+ /usr/include/bullet/LinearMath/btSerializer.h
+ /usr/include/bullet/LinearMath/btTransform.h
+ /usr/include/bullet/LinearMath/btTransformUtil.h
+ /usr/include/bullet/LinearMath/btVector3.h
+ /usr/include/bullet/btBulletCollisionCommon.h
+ /usr/include/bullet/btBulletDynamicsCommon.h
+ /usr/local/include/OGRE/GLX/OgreTimerImp.h
+ /usr/local/include/OGRE/Ogre.h
+ /usr/local/include/OGRE/OgreAlignedAllocator.h
+ /usr/local/include/OGRE/OgreAnimable.h
+ /usr/local/include/OGRE/OgreAnimation.h
+ /usr/local/include/OGRE/OgreAnimationState.h
+ /usr/local/include/OGRE/OgreAnimationTrack.h
+ /usr/local/include/OGRE/OgreAny.h
+ /usr/local/include/OGRE/OgreArchive.h
+ /usr/local/include/OGRE/OgreArchiveManager.h
+ /usr/local/include/OGRE/OgreAtomicScalar.h
+ /usr/local/include/OGRE/OgreAutoParamDataSource.h
+ /usr/local/include/OGRE/OgreAxisAlignedBox.h
+ /usr/local/include/OGRE/OgreBillboard.h
+ /usr/local/include/OGRE/OgreBillboardChain.h
+ /usr/local/include/OGRE/OgreBillboardSet.h
+ /usr/local/include/OGRE/OgreBlendMode.h
+ /usr/local/include/OGRE/OgreBone.h
+ /usr/local/include/OGRE/OgreBuildSettings.h
+ /usr/local/include/OGRE/OgreCamera.h
+ /usr/local/include/OGRE/OgreColourValue.h
+ /usr/local/include/OGRE/OgreCommon.h
+ /usr/local/include/OGRE/OgreCompositionPass.h
+ /usr/local/include/OGRE/OgreCompositionTargetPass.h
+ /usr/local/include/OGRE/OgreCompositionTechnique.h
+ /usr/local/include/OGRE/OgreCompositor.h
+ /usr/local/include/OGRE/OgreCompositorChain.h
+ /usr/local/include/OGRE/OgreCompositorInstance.h
+ /usr/local/include/OGRE/OgreCompositorManager.h
+ /usr/local/include/OGRE/OgreConfig.h
+ /usr/local/include/OGRE/OgreConfigFile.h
+ /usr/local/include/OGRE/OgreConfigOptionMap.h
+ /usr/local/include/OGRE/OgreController.h
+ /usr/local/include/OGRE/OgreControllerManager.h
+ /usr/local/include/OGRE/OgreConvexBody.h
+ /usr/local/include/OGRE/OgreDataStream.h
+ /usr/local/include/OGRE/OgreEdgeListBuilder.h
+ /usr/local/include/OGRE/OgreEntity.h
+ /usr/local/include/OGRE/OgreException.h
+ /usr/local/include/OGRE/OgreFactoryObj.h
+ /usr/local/include/OGRE/OgreFrameListener.h
+ /usr/local/include/OGRE/OgreFrustum.h
+ /usr/local/include/OGRE/OgreGpuProgram.h
+ /usr/local/include/OGRE/OgreGpuProgramManager.h
+ /usr/local/include/OGRE/OgreGpuProgramParams.h
+ /usr/local/include/OGRE/OgreHardwareBuffer.h
+ /usr/local/include/OGRE/OgreHardwareBufferManager.h
+ /usr/local/include/OGRE/OgreHardwareCounterBuffer.h
+ /usr/local/include/OGRE/OgreHardwareIndexBuffer.h
+ /usr/local/include/OGRE/OgreHardwareOcclusionQuery.h
+ /usr/local/include/OGRE/OgreHardwarePixelBuffer.h
+ /usr/local/include/OGRE/OgreHardwareUniformBuffer.h
+ /usr/local/include/OGRE/OgreHardwareVertexBuffer.h
+ /usr/local/include/OGRE/OgreHeaderPrefix.h
+ /usr/local/include/OGRE/OgreHeaderSuffix.h
+ /usr/local/include/OGRE/OgreHighLevelGpuProgram.h
+ /usr/local/include/OGRE/OgreHighLevelGpuProgramManager.h
+ /usr/local/include/OGRE/OgreImage.h
+ /usr/local/include/OGRE/OgreInstanceBatch.h
+ /usr/local/include/OGRE/OgreInstanceManager.h
+ /usr/local/include/OGRE/OgreInstancedEntity.h
+ /usr/local/include/OGRE/OgreInstancedGeometry.h
+ /usr/local/include/OGRE/OgreIteratorRange.h
+ /usr/local/include/OGRE/OgreIteratorWrapper.h
+ /usr/local/include/OGRE/OgreIteratorWrappers.h
+ /usr/local/include/OGRE/OgreKeyFrame.h
+ /usr/local/include/OGRE/OgreLight.h
+ /usr/local/include/OGRE/OgreLodListener.h
+ /usr/local/include/OGRE/OgreLodStrategy.h
+ /usr/local/include/OGRE/OgreLodStrategyManager.h
+ /usr/local/include/OGRE/OgreLog.h
+ /usr/local/include/OGRE/OgreLogManager.h
+ /usr/local/include/OGRE/OgreManualObject.h
+ /usr/local/include/OGRE/OgreMaterial.h
+ /usr/local/include/OGRE/OgreMaterialManager.h
+ /usr/local/include/OGRE/OgreMaterialSerializer.h
+ /usr/local/include/OGRE/OgreMath.h
+ /usr/local/include/OGRE/OgreMatrix3.h
+ /usr/local/include/OGRE/OgreMatrix4.h
+ /usr/local/include/OGRE/OgreMemoryAllocatedObject.h
+ /usr/local/include/OGRE/OgreMemoryAllocatorConfig.h
+ /usr/local/include/OGRE/OgreMemoryNedAlloc.h
+ /usr/local/include/OGRE/OgreMemoryNedPooling.h
+ /usr/local/include/OGRE/OgreMemorySTLAllocator.h
+ /usr/local/include/OGRE/OgreMemoryStdAlloc.h
+ /usr/local/include/OGRE/OgreMemoryTracker.h
+ /usr/local/include/OGRE/OgreMesh.h
+ /usr/local/include/OGRE/OgreMeshManager.h
+ /usr/local/include/OGRE/OgreMeshSerializer.h
+ /usr/local/include/OGRE/OgreMeshSerializerImpl.h
+ /usr/local/include/OGRE/OgreMovableObject.h
+ /usr/local/include/OGRE/OgreMovablePlane.h
+ /usr/local/include/OGRE/OgreNameGenerator.h
+ /usr/local/include/OGRE/OgreNode.h
+ /usr/local/include/OGRE/OgreParticle.h
+ /usr/local/include/OGRE/OgreParticleAffector.h
+ /usr/local/include/OGRE/OgreParticleEmitter.h
+ /usr/local/include/OGRE/OgreParticleEmitterCommands.h
+ /usr/local/include/OGRE/OgreParticleIterator.h
+ /usr/local/include/OGRE/OgreParticleSystem.h
+ /usr/local/include/OGRE/OgreParticleSystemManager.h
+ /usr/local/include/OGRE/OgrePass.h
+ /usr/local/include/OGRE/OgrePatchMesh.h
+ /usr/local/include/OGRE/OgrePatchSurface.h
+ /usr/local/include/OGRE/OgrePixelFormat.h
+ /usr/local/include/OGRE/OgrePlane.h
+ /usr/local/include/OGRE/OgrePlaneBoundedVolume.h
+ /usr/local/include/OGRE/OgrePlatform.h
+ /usr/local/include/OGRE/OgrePlatformInformation.h
+ /usr/local/include/OGRE/OgrePolygon.h
+ /usr/local/include/OGRE/OgrePose.h
+ /usr/local/include/OGRE/OgrePredefinedControllers.h
+ /usr/local/include/OGRE/OgrePrerequisites.h
+ /usr/local/include/OGRE/OgreProfiler.h
+ /usr/local/include/OGRE/OgreQuaternion.h
+ /usr/local/include/OGRE/OgreRadixSort.h
+ /usr/local/include/OGRE/OgreRay.h
+ /usr/local/include/OGRE/OgreRectangle2D.h
+ /usr/local/include/OGRE/OgreRenderObjectListener.h
+ /usr/local/include/OGRE/OgreRenderOperation.h
+ /usr/local/include/OGRE/OgreRenderQueue.h
+ /usr/local/include/OGRE/OgreRenderQueueInvocation.h
+ /usr/local/include/OGRE/OgreRenderQueueListener.h
+ /usr/local/include/OGRE/OgreRenderQueueSortingGrouping.h
+ /usr/local/include/OGRE/OgreRenderSystem.h
+ /usr/local/include/OGRE/OgreRenderSystemCapabilities.h
+ /usr/local/include/OGRE/OgreRenderTarget.h
+ /usr/local/include/OGRE/OgreRenderTargetListener.h
+ /usr/local/include/OGRE/OgreRenderTexture.h
+ /usr/local/include/OGRE/OgreRenderToVertexBuffer.h
+ /usr/local/include/OGRE/OgreRenderWindow.h
+ /usr/local/include/OGRE/OgreRenderable.h
+ /usr/local/include/OGRE/OgreResource.h
+ /usr/local/include/OGRE/OgreResourceBackgroundQueue.h
+ /usr/local/include/OGRE/OgreResourceGroupManager.h
+ /usr/local/include/OGRE/OgreResourceManager.h
+ /usr/local/include/OGRE/OgreRibbonTrail.h
+ /usr/local/include/OGRE/OgreRoot.h
+ /usr/local/include/OGRE/OgreRotationalSpline.h
+ /usr/local/include/OGRE/OgreSceneManager.h
+ /usr/local/include/OGRE/OgreSceneManagerEnumerator.h
+ /usr/local/include/OGRE/OgreSceneNode.h
+ /usr/local/include/OGRE/OgreSceneQuery.h
+ /usr/local/include/OGRE/OgreScriptLoader.h
+ /usr/local/include/OGRE/OgreSerializer.h
+ /usr/local/include/OGRE/OgreShadowCameraSetup.h
+ /usr/local/include/OGRE/OgreShadowCameraSetupFocused.h
+ /usr/local/include/OGRE/OgreShadowCameraSetupLiSPSM.h
+ /usr/local/include/OGRE/OgreShadowCameraSetupPSSM.h
+ /usr/local/include/OGRE/OgreShadowCameraSetupPlaneOptimal.h
+ /usr/local/include/OGRE/OgreShadowCaster.h
+ /usr/local/include/OGRE/OgreShadowTextureManager.h
+ /usr/local/include/OGRE/OgreSharedPtr.h
+ /usr/local/include/OGRE/OgreSimpleRenderable.h
+ /usr/local/include/OGRE/OgreSimpleSpline.h
+ /usr/local/include/OGRE/OgreSingleton.h
+ /usr/local/include/OGRE/OgreSkeleton.h
+ /usr/local/include/OGRE/OgreSkeletonInstance.h
+ /usr/local/include/OGRE/OgreSkeletonManager.h
+ /usr/local/include/OGRE/OgreSkeletonSerializer.h
+ /usr/local/include/OGRE/OgreSphere.h
+ /usr/local/include/OGRE/OgreStaticGeometry.h
+ /usr/local/include/OGRE/OgreStdHeaders.h
+ /usr/local/include/OGRE/OgreString.h
+ /usr/local/include/OGRE/OgreStringConverter.h
+ /usr/local/include/OGRE/OgreStringInterface.h
+ /usr/local/include/OGRE/OgreStringVector.h
+ /usr/local/include/OGRE/OgreSubEntity.h
+ /usr/local/include/OGRE/OgreSubMesh.h
+ /usr/local/include/OGRE/OgreTechnique.h
+ /usr/local/include/OGRE/OgreTexture.h
+ /usr/local/include/OGRE/OgreTextureManager.h
+ /usr/local/include/OGRE/OgreTextureUnitState.h
+ /usr/local/include/OGRE/OgreTimer.h
+ /usr/local/include/OGRE/OgreUserObjectBindings.h
+ /usr/local/include/OGRE/OgreVector2.h
+ /usr/local/include/OGRE/OgreVector3.h
+ /usr/local/include/OGRE/OgreVector4.h
+ /usr/local/include/OGRE/OgreVertexBoneAssignment.h
+ /usr/local/include/OGRE/OgreVertexIndexData.h
+ /usr/local/include/OGRE/OgreViewport.h
+ /usr/local/include/OGRE/OgreWindowEventUtilities.h
+ /usr/local/include/OGRE/OgreWorkQueue.h
+ /usr/local/include/OGRE/Threading/OgreThreadDefines.h
+ /usr/local/include/OGRE/Threading/OgreThreadDefinesBoost.h
+ /usr/local/include/OGRE/Threading/OgreThreadDefinesNone.h
+ /usr/local/include/OGRE/Threading/OgreThreadDefinesPoco.h
+ /usr/local/include/OGRE/Threading/OgreThreadDefinesTBB.h
+ /usr/local/include/OGRE/Threading/OgreThreadHeaders.h
+ /usr/local/include/OGRE/Threading/OgreThreadHeadersBoost.h
+ /usr/local/include/OGRE/Threading/OgreThreadHeadersPoco.h
+ /usr/local/include/OGRE/Threading/OgreThreadHeadersTBB.h
+ /usr/local/include/SFML/Audio.hpp
+ /usr/local/include/SFML/Audio/AlResource.hpp
+ /usr/local/include/SFML/Audio/Export.hpp
+ /usr/local/include/SFML/Audio/InputSoundFile.hpp
+ /usr/local/include/SFML/Audio/Listener.hpp
+ /usr/local/include/SFML/Audio/Music.hpp
+ /usr/local/include/SFML/Audio/OutputSoundFile.hpp
+ /usr/local/include/SFML/Audio/Sound.hpp
+ /usr/local/include/SFML/Audio/SoundBuffer.hpp
+ /usr/local/include/SFML/Audio/SoundBufferRecorder.hpp
+ /usr/local/include/SFML/Audio/SoundFileFactory.hpp
+ /usr/local/include/SFML/Audio/SoundFileFactory.inl
+ /usr/local/include/SFML/Audio/SoundFileReader.hpp
+ /usr/local/include/SFML/Audio/SoundFileWriter.hpp
+ /usr/local/include/SFML/Audio/SoundRecorder.hpp
+ /usr/local/include/SFML/Audio/SoundSource.hpp
+ /usr/local/include/SFML/Audio/SoundStream.hpp
+ /usr/local/include/SFML/Config.hpp
+ /usr/local/include/SFML/System.hpp
+ /usr/local/include/SFML/System/Clock.hpp
+ /usr/local/include/SFML/System/Err.hpp
+ /usr/local/include/SFML/System/Export.hpp
+ /usr/local/include/SFML/System/FileInputStream.hpp
+ /usr/local/include/SFML/System/InputStream.hpp
+ /usr/local/include/SFML/System/Lock.hpp
+ /usr/local/include/SFML/System/MemoryInputStream.hpp
+ /usr/local/include/SFML/System/Mutex.hpp
+ /usr/local/include/SFML/System/NonCopyable.hpp
+ /usr/local/include/SFML/System/Sleep.hpp
+ /usr/local/include/SFML/System/String.hpp
+ /usr/local/include/SFML/System/String.inl
+ /usr/local/include/SFML/System/Thread.hpp
+ /usr/local/include/SFML/System/Thread.inl
+ /usr/local/include/SFML/System/ThreadLocal.hpp
+ /usr/local/include/SFML/System/ThreadLocalPtr.hpp
+ /usr/local/include/SFML/System/ThreadLocalPtr.inl
+ /usr/local/include/SFML/System/Time.hpp
+ /usr/local/include/SFML/System/Utf.hpp
+ /usr/local/include/SFML/System/Utf.inl
+ /usr/local/include/SFML/System/Vector2.hpp
+ /usr/local/include/SFML/System/Vector2.inl
+ /usr/local/include/SFML/System/Vector3.hpp
+ /usr/local/include/SFML/System/Vector3.inl
+ /usr/local/include/cegui-0/CEGUI/Affector.h
+ /usr/local/include/cegui-0/CEGUI/Animation.h
+ /usr/local/include/cegui-0/CEGUI/AnimationInstance.h
+ /usr/local/include/cegui-0/CEGUI/AnimationManager.h
+ /usr/local/include/cegui-0/CEGUI/Base.h
+ /usr/local/include/cegui-0/CEGUI/BasicImage.h
+ /usr/local/include/cegui-0/CEGUI/BasicRenderedStringParser.h
+ /usr/local/include/cegui-0/CEGUI/BidiVisualMapping.h
+ /usr/local/include/cegui-0/CEGUI/BoundSlot.h
+ /usr/local/include/cegui-0/CEGUI/CEGUI.h
+ /usr/local/include/cegui-0/CEGUI/CentredRenderedString.h
+ /usr/local/include/cegui-0/CEGUI/ChainedXMLHandler.h
+ /usr/local/include/cegui-0/CEGUI/Clipboard.h
+ /usr/local/include/cegui-0/CEGUI/Colour.h
+ /usr/local/include/cegui-0/CEGUI/ColourRect.h
+ /usr/local/include/cegui-0/CEGUI/Config.h
+ /usr/local/include/cegui-0/CEGUI/CoordConverter.h
+ /usr/local/include/cegui-0/CEGUI/DataContainer.h
+ /usr/local/include/cegui-0/CEGUI/DefaultLogger.h
+ /usr/local/include/cegui-0/CEGUI/DefaultRenderedStringParser.h
+ /usr/local/include/cegui-0/CEGUI/DefaultResourceProvider.h
+ /usr/local/include/cegui-0/CEGUI/DynamicModule.h
+ /usr/local/include/cegui-0/CEGUI/Element.h
+ /usr/local/include/cegui-0/CEGUI/Event.h
+ /usr/local/include/cegui-0/CEGUI/EventArgs.h
+ /usr/local/include/cegui-0/CEGUI/EventSet.h
+ /usr/local/include/cegui-0/CEGUI/Exceptions.h
+ /usr/local/include/cegui-0/CEGUI/FactoryModule.h
+ /usr/local/include/cegui-0/CEGUI/FactoryRegisterer.h
+ /usr/local/include/cegui-0/CEGUI/Font.h
+ /usr/local/include/cegui-0/CEGUI/FontGlyph.h
+ /usr/local/include/cegui-0/CEGUI/FontManager.h
+ /usr/local/include/cegui-0/CEGUI/Font_xmlHandler.h
+ /usr/local/include/cegui-0/CEGUI/FormattedRenderedString.h
+ /usr/local/include/cegui-0/CEGUI/ForwardRefs.h
+ /usr/local/include/cegui-0/CEGUI/FreeFunctionSlot.h
+ /usr/local/include/cegui-0/CEGUI/FunctorCopySlot.h
+ /usr/local/include/cegui-0/CEGUI/FunctorPointerSlot.h
+ /usr/local/include/cegui-0/CEGUI/FunctorReferenceBinder.h
+ /usr/local/include/cegui-0/CEGUI/FunctorReferenceSlot.h
+ /usr/local/include/cegui-0/CEGUI/GUIContext.h
+ /usr/local/include/cegui-0/CEGUI/GeometryBuffer.h
+ /usr/local/include/cegui-0/CEGUI/GlobalEventSet.h
+ /usr/local/include/cegui-0/CEGUI/IconvStringTranscoder.h
+ /usr/local/include/cegui-0/CEGUI/Image.h
+ /usr/local/include/cegui-0/CEGUI/ImageCodec.h
+ /usr/local/include/cegui-0/CEGUI/ImageFactory.h
+ /usr/local/include/cegui-0/CEGUI/ImageManager.h
+ /usr/local/include/cegui-0/CEGUI/InjectedInputReceiver.h
+ /usr/local/include/cegui-0/CEGUI/InputEvent.h
+ /usr/local/include/cegui-0/CEGUI/Interpolator.h
+ /usr/local/include/cegui-0/CEGUI/IteratorBase.h
+ /usr/local/include/cegui-0/CEGUI/JustifiedRenderedString.h
+ /usr/local/include/cegui-0/CEGUI/KeyFrame.h
+ /usr/local/include/cegui-0/CEGUI/LeftAlignedRenderedString.h
+ /usr/local/include/cegui-0/CEGUI/LinkedEvent.h
+ /usr/local/include/cegui-0/CEGUI/Logger.h
+ /usr/local/include/cegui-0/CEGUI/MemberFunctionSlot.h
+ /usr/local/include/cegui-0/CEGUI/MemoryAllocatedObject.h
+ /usr/local/include/cegui-0/CEGUI/MemoryAllocation.h
+ /usr/local/include/cegui-0/CEGUI/MemorySTLWrapper.h
+ /usr/local/include/cegui-0/CEGUI/MouseCursor.h
+ /usr/local/include/cegui-0/CEGUI/NamedElement.h
+ /usr/local/include/cegui-0/CEGUI/NamedXMLResourceManager.h
+ /usr/local/include/cegui-0/CEGUI/Property.h
+ /usr/local/include/cegui-0/CEGUI/PropertyHelper.h
+ /usr/local/include/cegui-0/CEGUI/PropertySet.h
+ /usr/local/include/cegui-0/CEGUI/Quaternion.h
+ /usr/local/include/cegui-0/CEGUI/Rect.h
+ /usr/local/include/cegui-0/CEGUI/RefCounted.h
+ /usr/local/include/cegui-0/CEGUI/RegexMatcher.h
+ /usr/local/include/cegui-0/CEGUI/RenderEffect.h
+ /usr/local/include/cegui-0/CEGUI/RenderEffectFactory.h
+ /usr/local/include/cegui-0/CEGUI/RenderEffectManager.h
+ /usr/local/include/cegui-0/CEGUI/RenderQueue.h
+ /usr/local/include/cegui-0/CEGUI/RenderTarget.h
+ /usr/local/include/cegui-0/CEGUI/RenderedString.h
+ /usr/local/include/cegui-0/CEGUI/RenderedStringComponent.h
+ /usr/local/include/cegui-0/CEGUI/RenderedStringImageComponent.h
+ /usr/local/include/cegui-0/CEGUI/RenderedStringParser.h
+ /usr/local/include/cegui-0/CEGUI/RenderedStringTextComponent.h
+ /usr/local/include/cegui-0/CEGUI/RenderedStringWidgetComponent.h
+ /usr/local/include/cegui-0/CEGUI/RenderedStringWordWrapper.h
+ /usr/local/include/cegui-0/CEGUI/Renderer.h
+ /usr/local/include/cegui-0/CEGUI/RendererModules/Ogre/Renderer.h
+ /usr/local/include/cegui-0/CEGUI/RenderingContext.h
+ /usr/local/include/cegui-0/CEGUI/RenderingSurface.h
+ /usr/local/include/cegui-0/CEGUI/RenderingWindow.h
+ /usr/local/include/cegui-0/CEGUI/ResourceProvider.h
+ /usr/local/include/cegui-0/CEGUI/RightAlignedRenderedString.h
+ /usr/local/include/cegui-0/CEGUI/Scheme.h
+ /usr/local/include/cegui-0/CEGUI/SchemeManager.h
+ /usr/local/include/cegui-0/CEGUI/Scheme_xmlHandler.h
+ /usr/local/include/cegui-0/CEGUI/ScriptModule.h
+ /usr/local/include/cegui-0/CEGUI/SimpleTimer.h
+ /usr/local/include/cegui-0/CEGUI/Singleton.h
+ /usr/local/include/cegui-0/CEGUI/Size.h
+ /usr/local/include/cegui-0/CEGUI/SlotFunctorBase.h
+ /usr/local/include/cegui-0/CEGUI/String.h
+ /usr/local/include/cegui-0/CEGUI/StringTranscoder.h
+ /usr/local/include/cegui-0/CEGUI/SubscriberSlot.h
+ /usr/local/include/cegui-0/CEGUI/System.h
+ /usr/local/include/cegui-0/CEGUI/SystemKeys.h
+ /usr/local/include/cegui-0/CEGUI/TextUtils.h
+ /usr/local/include/cegui-0/CEGUI/Texture.h
+ /usr/local/include/cegui-0/CEGUI/TextureTarget.h
+ /usr/local/include/cegui-0/CEGUI/TplInterpolators.h
+ /usr/local/include/cegui-0/CEGUI/TplProperty.h
+ /usr/local/include/cegui-0/CEGUI/TplWRFactoryRegisterer.h
+ /usr/local/include/cegui-0/CEGUI/TplWindowFactory.h
+ /usr/local/include/cegui-0/CEGUI/TplWindowFactoryRegisterer.h
+ /usr/local/include/cegui-0/CEGUI/TplWindowProperty.h
+ /usr/local/include/cegui-0/CEGUI/TplWindowRendererFactory.h
+ /usr/local/include/cegui-0/CEGUI/TypedProperty.h
+ /usr/local/include/cegui-0/CEGUI/UDim.h
+ /usr/local/include/cegui-0/CEGUI/Vector.h
+ /usr/local/include/cegui-0/CEGUI/Version.h
+ /usr/local/include/cegui-0/CEGUI/Vertex.h
+ /usr/local/include/cegui-0/CEGUI/Win32StringTranscoder.h
+ /usr/local/include/cegui-0/CEGUI/Window.h
+ /usr/local/include/cegui-0/CEGUI/WindowFactory.h
+ /usr/local/include/cegui-0/CEGUI/WindowFactoryManager.h
+ /usr/local/include/cegui-0/CEGUI/WindowManager.h
+ /usr/local/include/cegui-0/CEGUI/WindowRenderer.h
+ /usr/local/include/cegui-0/CEGUI/WindowRendererManager.h
+ /usr/local/include/cegui-0/CEGUI/XMLAttributes.h
+ /usr/local/include/cegui-0/CEGUI/XMLHandler.h
+ /usr/local/include/cegui-0/CEGUI/XMLParser.h
+ /usr/local/include/cegui-0/CEGUI/XMLSerializer.h
+ /usr/local/include/cegui-0/CEGUI/falagard/././././ComponentBase.h
+ /usr/local/include/cegui-0/CEGUI/falagard/././././SectionSpecification.h
+ /usr/local/include/cegui-0/CEGUI/falagard/./././Dimensions.h
+ /usr/local/include/cegui-0/CEGUI/falagard/./././FrameComponent.h
+ /usr/local/include/cegui-0/CEGUI/falagard/./././ImageryComponent.h
+ /usr/local/include/cegui-0/CEGUI/falagard/./././LayerSpecification.h
+ /usr/local/include/cegui-0/CEGUI/falagard/./././TextComponent.h
+ /usr/local/include/cegui-0/CEGUI/falagard/././EventLinkDefinition.h
+ /usr/local/include/cegui-0/CEGUI/falagard/././ImagerySection.h
+ /usr/local/include/cegui-0/CEGUI/falagard/././NamedArea.h
+ /usr/local/include/cegui-0/CEGUI/falagard/././NamedDefinitionCollator.h
+ /usr/local/include/cegui-0/CEGUI/falagard/././PropertyDefinition.h
+ /usr/local/include/cegui-0/CEGUI/falagard/././PropertyInitialiser.h
+ /usr/local/include/cegui-0/CEGUI/falagard/././PropertyLinkDefinition.h
+ /usr/local/include/cegui-0/CEGUI/falagard/././StateImagery.h
+ /usr/local/include/cegui-0/CEGUI/falagard/././WidgetComponent.h
+ /usr/local/include/cegui-0/CEGUI/falagard/./Enums.h
+ /usr/local/include/cegui-0/CEGUI/falagard/./WidgetLookFeel.h
+ /usr/local/include/cegui-0/CEGUI/falagard/ComponentBase.h
+ /usr/local/include/cegui-0/CEGUI/falagard/Dimensions.h
+ /usr/local/include/cegui-0/CEGUI/falagard/Enums.h
+ /usr/local/include/cegui-0/CEGUI/falagard/EventAction.h
+ /usr/local/include/cegui-0/CEGUI/falagard/FalagardPropertyBase.h
+ /usr/local/include/cegui-0/CEGUI/falagard/FormattingSetting.h
+ /usr/local/include/cegui-0/CEGUI/falagard/PropertyDefinitionBase.h
+ /usr/local/include/cegui-0/CEGUI/falagard/PropertyInitialiser.h
+ /usr/local/include/cegui-0/CEGUI/falagard/WidgetLookManager.h
+ /usr/local/include/cegui-0/CEGUI/falagard/XMLEnumHelper.h
+ /usr/local/include/cegui-0/CEGUI/falagard/XMLHandler.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./././ItemListBase.h
+ /usr/local/include/cegui-0/CEGUI/widgets/././ButtonBase.h
+ /usr/local/include/cegui-0/CEGUI/widgets/././LayoutContainer.h
+ /usr/local/include/cegui-0/CEGUI/widgets/././ListHeaderSegment.h
+ /usr/local/include/cegui-0/CEGUI/widgets/././MenuBase.h
+ /usr/local/include/cegui-0/CEGUI/widgets/././ScrolledItemListBase.h
+ /usr/local/include/cegui-0/CEGUI/widgets/././SequentialLayoutContainer.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./ClippedContainer.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./ComboDropList.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./Combobox.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./DefaultWindow.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./DragContainer.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./Editbox.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./FrameWindow.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./GridLayoutContainer.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./GroupBox.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./HorizontalLayoutContainer.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./ItemEntry.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./ItemListbox.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./LayoutCell.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./ListHeader.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./Listbox.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./ListboxItem.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./ListboxTextItem.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./MenuItem.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./Menubar.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./MultiColumnList.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./MultiLineEditbox.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./PopupMenu.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./ProgressBar.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./PushButton.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./RadioButton.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./ScrollablePane.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./Scrollbar.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./ScrolledContainer.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./Slider.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./Spinner.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./TabButton.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./TabControl.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./Thumb.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./Titlebar.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./ToggleButton.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./Tooltip.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./Tree.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./TreeItem.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./VerticalLayoutContainer.h
+ /usr/local/include/cegui-0/CEGUI/widgets/All.h
+ /usr/local/include/cegui-0/CEGUI/widgets/ButtonBase.h
+ /usr/local/include/cegui-0/CEGUI/widgets/ToggleButton.h
+CMakeFiles/Indie.dir/src/Menu/SplashScreen.cpp.o
+ .././include/AI/AI.hpp
+ .././include/Components/Animation.hpp
+ .././include/Components/Components.hpp
+ .././include/Components/EntityState.hpp
+ .././include/Components/LightSource.hpp
+ .././include/Components/Model.hpp
+ .././include/Components/PowerUpStats.hpp
+ .././include/Components/Sound.hpp
+ .././include/Components/Stats.hpp
+ .././include/Components/Weapon.hpp
+ .././include/CoreGame.hpp
+ .././include/CustomMath.hpp
+ .././include/Entity/Character/Assassin.hpp
+ .././include/Entity/Character/Hero.hpp
+ .././include/Entity/Character/Pig.hpp
+ .././include/Entity/Character/Priest.hpp
+ .././include/Entity/Character/Valkyrie.hpp
+ .././include/Entity/Character/Warrior.hpp
+ .././include/Entity/Collectable/Coin.hpp
+ .././include/Entity/Collectable/Donuts.hpp
+ .././include/Entity/Collectable/Icecream.hpp
+ .././include/Entity/Collectable/Meat.hpp
+ .././include/Entity/Destroyable/Chest.hpp
+ .././include/Entity/Destroyable/Crate.hpp
+ .././include/Entity/Destroyable/Vase.hpp
+ .././include/Entity/Effect/Attack.hpp
+ .././include/Entity/Effect/CaCAttack.hpp
+ .././include/Entity/Effect/DistAttack.hpp
+ .././include/Entity/Effect/HealAttack.hpp
+ .././include/Entity/Effect/ZoneDistAttack.hpp
+ .././include/Entity/Entity.hpp
+ .././include/Entity/Environement/Ground.hpp
+ .././include/Entity/Environement/Torch.hpp
+ .././include/Entity/Environement/Wall.hpp
+ .././include/Event/Event.hpp
+ .././include/Factory/Factory.hpp
+ .././include/Factory/FactoryImplem.hpp
+ .././include/Menu/EndGame.hpp
+ .././include/Menu/GameMenu.hpp
+ .././include/Menu/Hud.hpp
+ .././include/Menu/IMenu.hpp
+ .././include/Menu/MainMenu.hpp
+ .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
+ .././include/Movement/MovementManager.hpp
+ .././include/RP/RP.hpp
+ .././include/Systems/Animation/AnimationManager.hpp
+ .././include/Systems/Attack/AttackManager.hpp
+ .././include/Systems/Collision/CollisionBody.hpp
+ .././include/Systems/Collision/CollisionCallBack.hpp
+ .././include/Systems/Collision/CollisionConvertion.hpp
+ .././include/Systems/Collision/CollisionManager.hpp
+ .././include/Systems/Collision/CollisionObject.hpp
+ .././include/Systems/Collision/HitBox.hpp
+ .././include/Systems/Collision/OgreMotionState.hpp
+ .././include/Systems/Displayer/Displayer.hpp
+ .././include/Systems/Displayer/WindowManager.hpp
+ .././include/Systems/Input/InputManager.hpp
+ .././include/Systems/Input/KeyListener.hpp
+ .././include/Systems/Loot/LootManager.hpp
+ .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
+ .././include/Systems/Sound/SoundSystem.hpp
+ .././include/Systems/System.hpp
+ .././json/json/json.h
+ /home/myriam/Projet/cpp_indie_studio/src/Menu/SplashScreen.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
@@ -27830,6 +28844,7 @@ CMakeFiles/Indie.dir/src/Movement/MovementMgr.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -27847,8 +28862,10 @@ CMakeFiles/Indie.dir/src/Movement/MovementMgr.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/Movement/MovementMgr.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -28449,6 +29466,7 @@ CMakeFiles/Indie.dir/src/RP/RP.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -28466,8 +29484,10 @@ CMakeFiles/Indie.dir/src/RP/RP.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/RP/RP.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
@@ -29025,13 +30045,185 @@ CMakeFiles/Indie.dir/src/RP/RP.cpp.o
  /usr/local/include/cegui-0/CEGUI/widgets/ButtonBase.h
  /usr/local/include/cegui-0/CEGUI/widgets/ToggleButton.h
 CMakeFiles/Indie.dir/src/Saving/Saving.cpp.o
+ .././include/AI/AI.hpp
+ .././include/Components/Animation.hpp
  .././include/Components/Components.hpp
+ .././include/Components/EntityState.hpp
+ .././include/Components/LightSource.hpp
+ .././include/Components/Model.hpp
+ .././include/Components/PowerUpStats.hpp
+ .././include/Components/Sound.hpp
+ .././include/Components/Stats.hpp
+ .././include/Components/Weapon.hpp
+ .././include/CoreGame.hpp
+ .././include/CustomMath.hpp
+ .././include/Entity/Character/Assassin.hpp
+ .././include/Entity/Character/Hero.hpp
+ .././include/Entity/Character/Pig.hpp
+ .././include/Entity/Character/Priest.hpp
+ .././include/Entity/Character/Valkyrie.hpp
+ .././include/Entity/Character/Warrior.hpp
+ .././include/Entity/Collectable/Coin.hpp
+ .././include/Entity/Collectable/Donuts.hpp
+ .././include/Entity/Collectable/Icecream.hpp
+ .././include/Entity/Collectable/Meat.hpp
+ .././include/Entity/Destroyable/Chest.hpp
+ .././include/Entity/Destroyable/Crate.hpp
+ .././include/Entity/Destroyable/Vase.hpp
+ .././include/Entity/Effect/Attack.hpp
+ .././include/Entity/Effect/CaCAttack.hpp
+ .././include/Entity/Effect/DistAttack.hpp
+ .././include/Entity/Effect/HealAttack.hpp
+ .././include/Entity/Effect/ZoneDistAttack.hpp
  .././include/Entity/Entity.hpp
+ .././include/Entity/Environement/Ground.hpp
+ .././include/Entity/Environement/Torch.hpp
+ .././include/Entity/Environement/Wall.hpp
  .././include/Event/Event.hpp
+ .././include/Factory/Factory.hpp
+ .././include/Factory/FactoryImplem.hpp
+ .././include/Menu/EndGame.hpp
+ .././include/Menu/GameMenu.hpp
+ .././include/Menu/Hud.hpp
+ .././include/Menu/IMenu.hpp
+ .././include/Menu/MainMenu.hpp
+ .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
+ .././include/Movement/MovementManager.hpp
+ .././include/RP/RP.hpp
+ .././include/Systems/Animation/AnimationManager.hpp
+ .././include/Systems/Attack/AttackManager.hpp
+ .././include/Systems/Collision/CollisionBody.hpp
+ .././include/Systems/Collision/CollisionCallBack.hpp
+ .././include/Systems/Collision/CollisionConvertion.hpp
+ .././include/Systems/Collision/CollisionManager.hpp
+ .././include/Systems/Collision/CollisionObject.hpp
+ .././include/Systems/Collision/HitBox.hpp
+ .././include/Systems/Collision/OgreMotionState.hpp
+ .././include/Systems/Displayer/Displayer.hpp
+ .././include/Systems/Displayer/WindowManager.hpp
+ .././include/Systems/Input/InputManager.hpp
+ .././include/Systems/Input/KeyListener.hpp
+ .././include/Systems/Loot/LootManager.hpp
+ .././include/Systems/Map/MapLoader.hpp
  .././include/Systems/Saving/Saving.hpp
+ .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
  .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/Saving/Saving.cpp
+ /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
+ /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h
+ /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h
+ /usr/include/bullet/BulletCollision/BroadphaseCollision/btCollisionAlgorithm.h
+ /usr/include/bullet/BulletCollision/BroadphaseCollision/btDbvt.h
+ /usr/include/bullet/BulletCollision/BroadphaseCollision/btDbvtBroadphase.h
+ /usr/include/bullet/BulletCollision/BroadphaseCollision/btDispatcher.h
+ /usr/include/bullet/BulletCollision/BroadphaseCollision/btMultiSapBroadphase.h
+ /usr/include/bullet/BulletCollision/BroadphaseCollision/btOverlappingPairCache.h
+ /usr/include/bullet/BulletCollision/BroadphaseCollision/btOverlappingPairCallback.h
+ /usr/include/bullet/BulletCollision/BroadphaseCollision/btQuantizedBvh.h
+ /usr/include/bullet/BulletCollision/BroadphaseCollision/btSimpleBroadphase.h
+ /usr/include/bullet/BulletCollision/CollisionDispatch/btActivatingCollisionAlgorithm.h
+ /usr/include/bullet/BulletCollision/CollisionDispatch/btCollisionConfiguration.h
+ /usr/include/bullet/BulletCollision/CollisionDispatch/btCollisionCreateFunc.h
+ /usr/include/bullet/BulletCollision/CollisionDispatch/btCollisionDispatcher.h
+ /usr/include/bullet/BulletCollision/CollisionDispatch/btCollisionObject.h
+ /usr/include/bullet/BulletCollision/CollisionDispatch/btCollisionObjectWrapper.h
+ /usr/include/bullet/BulletCollision/CollisionDispatch/btCollisionWorld.h
+ /usr/include/bullet/BulletCollision/CollisionDispatch/btConvexConvexAlgorithm.h
+ /usr/include/bullet/BulletCollision/CollisionDispatch/btDefaultCollisionConfiguration.h
+ /usr/include/bullet/BulletCollision/CollisionDispatch/btManifoldResult.h
+ /usr/include/bullet/BulletCollision/CollisionDispatch/btSphereSphereCollisionAlgorithm.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btBoxShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btBvhTriangleMeshShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btCapsuleShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btCollisionMargin.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btCollisionShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btCompoundShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btConcaveShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btConeShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btConvexHullShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btConvexInternalShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btConvexShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btConvexTriangleMeshShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btCylinderShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btEmptyShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btMultiSphereShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btOptimizedBvh.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btPolyhedralConvexShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btScaledBvhTriangleMeshShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btSphereShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btStaticPlaneShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btStridingMeshInterface.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btTetrahedronShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btTriangleCallback.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btTriangleIndexVertexArray.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btTriangleInfoMap.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btTriangleMesh.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btTriangleMeshShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btTriangleShape.h
+ /usr/include/bullet/BulletCollision/CollisionShapes/btUniformScalingShape.h
+ /usr/include/bullet/BulletCollision/Gimpact/btBoxCollision.h
+ /usr/include/bullet/BulletCollision/Gimpact/btClipPolygon.h
+ /usr/include/bullet/BulletCollision/Gimpact/btGImpactBvh.h
+ /usr/include/bullet/BulletCollision/Gimpact/btGImpactCollisionAlgorithm.h
+ /usr/include/bullet/BulletCollision/Gimpact/btGImpactQuantizedBvh.h
+ /usr/include/bullet/BulletCollision/Gimpact/btGImpactShape.h
+ /usr/include/bullet/BulletCollision/Gimpact/btGeometryOperations.h
+ /usr/include/bullet/BulletCollision/Gimpact/btQuantization.h
+ /usr/include/bullet/BulletCollision/Gimpact/btTriangleShapeEx.h
+ /usr/include/bullet/BulletCollision/NarrowPhaseCollision/btDiscreteCollisionDetectorInterface.h
+ /usr/include/bullet/BulletCollision/NarrowPhaseCollision/btGjkPairDetector.h
+ /usr/include/bullet/BulletCollision/NarrowPhaseCollision/btManifoldPoint.h
+ /usr/include/bullet/BulletCollision/NarrowPhaseCollision/btPersistentManifold.h
+ /usr/include/bullet/BulletCollision/NarrowPhaseCollision/btSimplexSolverInterface.h
+ /usr/include/bullet/BulletCollision/NarrowPhaseCollision/btVoronoiSimplexSolver.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btConeTwistConstraint.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btConstraintSolver.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btContactSolverInfo.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btFixedConstraint.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btGearConstraint.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btGeneric6DofConstraint.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btGeneric6DofSpring2Constraint.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btGeneric6DofSpringConstraint.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btHinge2Constraint.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btHingeConstraint.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btJacobianEntry.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btPoint2PointConstraint.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btSequentialImpulseConstraintSolver.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btSliderConstraint.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btSolverBody.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btSolverConstraint.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btTypedConstraint.h
+ /usr/include/bullet/BulletDynamics/ConstraintSolver/btUniversalConstraint.h
+ /usr/include/bullet/BulletDynamics/Dynamics/btActionInterface.h
+ /usr/include/bullet/BulletDynamics/Dynamics/btDiscreteDynamicsWorld.h
+ /usr/include/bullet/BulletDynamics/Dynamics/btDynamicsWorld.h
+ /usr/include/bullet/BulletDynamics/Dynamics/btRigidBody.h
+ /usr/include/bullet/BulletDynamics/Dynamics/btSimpleDynamicsWorld.h
+ /usr/include/bullet/BulletDynamics/Vehicle/btRaycastVehicle.h
+ /usr/include/bullet/BulletDynamics/Vehicle/btVehicleRaycaster.h
+ /usr/include/bullet/BulletDynamics/Vehicle/btWheelInfo.h
+ /usr/include/bullet/LinearMath/btAabbUtil2.h
+ /usr/include/bullet/LinearMath/btAlignedAllocator.h
+ /usr/include/bullet/LinearMath/btAlignedObjectArray.h
+ /usr/include/bullet/LinearMath/btDefaultMotionState.h
+ /usr/include/bullet/LinearMath/btGeometryUtil.h
+ /usr/include/bullet/LinearMath/btHashMap.h
+ /usr/include/bullet/LinearMath/btIDebugDraw.h
+ /usr/include/bullet/LinearMath/btMatrix3x3.h
+ /usr/include/bullet/LinearMath/btMinMax.h
+ /usr/include/bullet/LinearMath/btMotionState.h
+ /usr/include/bullet/LinearMath/btQuadWord.h
+ /usr/include/bullet/LinearMath/btQuaternion.h
+ /usr/include/bullet/LinearMath/btQuickprof.h
+ /usr/include/bullet/LinearMath/btScalar.h
+ /usr/include/bullet/LinearMath/btSerializer.h
+ /usr/include/bullet/LinearMath/btTransform.h
+ /usr/include/bullet/LinearMath/btTransformUtil.h
+ /usr/include/bullet/LinearMath/btVector3.h
+ /usr/include/bullet/btBulletCollisionCommon.h
+ /usr/include/bullet/btBulletDynamicsCommon.h
  /usr/local/include/OGRE/GLX/OgreTimerImp.h
  /usr/local/include/OGRE/Ogre.h
  /usr/local/include/OGRE/OgreAlignedAllocator.h
@@ -29224,6 +30416,256 @@ CMakeFiles/Indie.dir/src/Saving/Saving.cpp.o
  /usr/local/include/OGRE/Threading/OgreThreadHeadersBoost.h
  /usr/local/include/OGRE/Threading/OgreThreadHeadersPoco.h
  /usr/local/include/OGRE/Threading/OgreThreadHeadersTBB.h
+ /usr/local/include/SFML/Audio.hpp
+ /usr/local/include/SFML/Audio/AlResource.hpp
+ /usr/local/include/SFML/Audio/Export.hpp
+ /usr/local/include/SFML/Audio/InputSoundFile.hpp
+ /usr/local/include/SFML/Audio/Listener.hpp
+ /usr/local/include/SFML/Audio/Music.hpp
+ /usr/local/include/SFML/Audio/OutputSoundFile.hpp
+ /usr/local/include/SFML/Audio/Sound.hpp
+ /usr/local/include/SFML/Audio/SoundBuffer.hpp
+ /usr/local/include/SFML/Audio/SoundBufferRecorder.hpp
+ /usr/local/include/SFML/Audio/SoundFileFactory.hpp
+ /usr/local/include/SFML/Audio/SoundFileFactory.inl
+ /usr/local/include/SFML/Audio/SoundFileReader.hpp
+ /usr/local/include/SFML/Audio/SoundFileWriter.hpp
+ /usr/local/include/SFML/Audio/SoundRecorder.hpp
+ /usr/local/include/SFML/Audio/SoundSource.hpp
+ /usr/local/include/SFML/Audio/SoundStream.hpp
+ /usr/local/include/SFML/Config.hpp
+ /usr/local/include/SFML/System.hpp
+ /usr/local/include/SFML/System/Clock.hpp
+ /usr/local/include/SFML/System/Err.hpp
+ /usr/local/include/SFML/System/Export.hpp
+ /usr/local/include/SFML/System/FileInputStream.hpp
+ /usr/local/include/SFML/System/InputStream.hpp
+ /usr/local/include/SFML/System/Lock.hpp
+ /usr/local/include/SFML/System/MemoryInputStream.hpp
+ /usr/local/include/SFML/System/Mutex.hpp
+ /usr/local/include/SFML/System/NonCopyable.hpp
+ /usr/local/include/SFML/System/Sleep.hpp
+ /usr/local/include/SFML/System/String.hpp
+ /usr/local/include/SFML/System/String.inl
+ /usr/local/include/SFML/System/Thread.hpp
+ /usr/local/include/SFML/System/Thread.inl
+ /usr/local/include/SFML/System/ThreadLocal.hpp
+ /usr/local/include/SFML/System/ThreadLocalPtr.hpp
+ /usr/local/include/SFML/System/ThreadLocalPtr.inl
+ /usr/local/include/SFML/System/Time.hpp
+ /usr/local/include/SFML/System/Utf.hpp
+ /usr/local/include/SFML/System/Utf.inl
+ /usr/local/include/SFML/System/Vector2.hpp
+ /usr/local/include/SFML/System/Vector2.inl
+ /usr/local/include/SFML/System/Vector3.hpp
+ /usr/local/include/SFML/System/Vector3.inl
+ /usr/local/include/cegui-0/CEGUI/Affector.h
+ /usr/local/include/cegui-0/CEGUI/Animation.h
+ /usr/local/include/cegui-0/CEGUI/AnimationInstance.h
+ /usr/local/include/cegui-0/CEGUI/AnimationManager.h
+ /usr/local/include/cegui-0/CEGUI/Base.h
+ /usr/local/include/cegui-0/CEGUI/BasicImage.h
+ /usr/local/include/cegui-0/CEGUI/BasicRenderedStringParser.h
+ /usr/local/include/cegui-0/CEGUI/BidiVisualMapping.h
+ /usr/local/include/cegui-0/CEGUI/BoundSlot.h
+ /usr/local/include/cegui-0/CEGUI/CEGUI.h
+ /usr/local/include/cegui-0/CEGUI/CentredRenderedString.h
+ /usr/local/include/cegui-0/CEGUI/ChainedXMLHandler.h
+ /usr/local/include/cegui-0/CEGUI/Clipboard.h
+ /usr/local/include/cegui-0/CEGUI/Colour.h
+ /usr/local/include/cegui-0/CEGUI/ColourRect.h
+ /usr/local/include/cegui-0/CEGUI/Config.h
+ /usr/local/include/cegui-0/CEGUI/CoordConverter.h
+ /usr/local/include/cegui-0/CEGUI/DataContainer.h
+ /usr/local/include/cegui-0/CEGUI/DefaultLogger.h
+ /usr/local/include/cegui-0/CEGUI/DefaultRenderedStringParser.h
+ /usr/local/include/cegui-0/CEGUI/DefaultResourceProvider.h
+ /usr/local/include/cegui-0/CEGUI/DynamicModule.h
+ /usr/local/include/cegui-0/CEGUI/Element.h
+ /usr/local/include/cegui-0/CEGUI/Event.h
+ /usr/local/include/cegui-0/CEGUI/EventArgs.h
+ /usr/local/include/cegui-0/CEGUI/EventSet.h
+ /usr/local/include/cegui-0/CEGUI/Exceptions.h
+ /usr/local/include/cegui-0/CEGUI/FactoryModule.h
+ /usr/local/include/cegui-0/CEGUI/FactoryRegisterer.h
+ /usr/local/include/cegui-0/CEGUI/Font.h
+ /usr/local/include/cegui-0/CEGUI/FontGlyph.h
+ /usr/local/include/cegui-0/CEGUI/FontManager.h
+ /usr/local/include/cegui-0/CEGUI/Font_xmlHandler.h
+ /usr/local/include/cegui-0/CEGUI/FormattedRenderedString.h
+ /usr/local/include/cegui-0/CEGUI/ForwardRefs.h
+ /usr/local/include/cegui-0/CEGUI/FreeFunctionSlot.h
+ /usr/local/include/cegui-0/CEGUI/FunctorCopySlot.h
+ /usr/local/include/cegui-0/CEGUI/FunctorPointerSlot.h
+ /usr/local/include/cegui-0/CEGUI/FunctorReferenceBinder.h
+ /usr/local/include/cegui-0/CEGUI/FunctorReferenceSlot.h
+ /usr/local/include/cegui-0/CEGUI/GUIContext.h
+ /usr/local/include/cegui-0/CEGUI/GeometryBuffer.h
+ /usr/local/include/cegui-0/CEGUI/GlobalEventSet.h
+ /usr/local/include/cegui-0/CEGUI/IconvStringTranscoder.h
+ /usr/local/include/cegui-0/CEGUI/Image.h
+ /usr/local/include/cegui-0/CEGUI/ImageCodec.h
+ /usr/local/include/cegui-0/CEGUI/ImageFactory.h
+ /usr/local/include/cegui-0/CEGUI/ImageManager.h
+ /usr/local/include/cegui-0/CEGUI/InjectedInputReceiver.h
+ /usr/local/include/cegui-0/CEGUI/InputEvent.h
+ /usr/local/include/cegui-0/CEGUI/Interpolator.h
+ /usr/local/include/cegui-0/CEGUI/IteratorBase.h
+ /usr/local/include/cegui-0/CEGUI/JustifiedRenderedString.h
+ /usr/local/include/cegui-0/CEGUI/KeyFrame.h
+ /usr/local/include/cegui-0/CEGUI/LeftAlignedRenderedString.h
+ /usr/local/include/cegui-0/CEGUI/LinkedEvent.h
+ /usr/local/include/cegui-0/CEGUI/Logger.h
+ /usr/local/include/cegui-0/CEGUI/MemberFunctionSlot.h
+ /usr/local/include/cegui-0/CEGUI/MemoryAllocatedObject.h
+ /usr/local/include/cegui-0/CEGUI/MemoryAllocation.h
+ /usr/local/include/cegui-0/CEGUI/MemorySTLWrapper.h
+ /usr/local/include/cegui-0/CEGUI/MouseCursor.h
+ /usr/local/include/cegui-0/CEGUI/NamedElement.h
+ /usr/local/include/cegui-0/CEGUI/NamedXMLResourceManager.h
+ /usr/local/include/cegui-0/CEGUI/Property.h
+ /usr/local/include/cegui-0/CEGUI/PropertyHelper.h
+ /usr/local/include/cegui-0/CEGUI/PropertySet.h
+ /usr/local/include/cegui-0/CEGUI/Quaternion.h
+ /usr/local/include/cegui-0/CEGUI/Rect.h
+ /usr/local/include/cegui-0/CEGUI/RefCounted.h
+ /usr/local/include/cegui-0/CEGUI/RegexMatcher.h
+ /usr/local/include/cegui-0/CEGUI/RenderEffect.h
+ /usr/local/include/cegui-0/CEGUI/RenderEffectFactory.h
+ /usr/local/include/cegui-0/CEGUI/RenderEffectManager.h
+ /usr/local/include/cegui-0/CEGUI/RenderQueue.h
+ /usr/local/include/cegui-0/CEGUI/RenderTarget.h
+ /usr/local/include/cegui-0/CEGUI/RenderedString.h
+ /usr/local/include/cegui-0/CEGUI/RenderedStringComponent.h
+ /usr/local/include/cegui-0/CEGUI/RenderedStringImageComponent.h
+ /usr/local/include/cegui-0/CEGUI/RenderedStringParser.h
+ /usr/local/include/cegui-0/CEGUI/RenderedStringTextComponent.h
+ /usr/local/include/cegui-0/CEGUI/RenderedStringWidgetComponent.h
+ /usr/local/include/cegui-0/CEGUI/RenderedStringWordWrapper.h
+ /usr/local/include/cegui-0/CEGUI/Renderer.h
+ /usr/local/include/cegui-0/CEGUI/RendererModules/Ogre/Renderer.h
+ /usr/local/include/cegui-0/CEGUI/RenderingContext.h
+ /usr/local/include/cegui-0/CEGUI/RenderingSurface.h
+ /usr/local/include/cegui-0/CEGUI/RenderingWindow.h
+ /usr/local/include/cegui-0/CEGUI/ResourceProvider.h
+ /usr/local/include/cegui-0/CEGUI/RightAlignedRenderedString.h
+ /usr/local/include/cegui-0/CEGUI/Scheme.h
+ /usr/local/include/cegui-0/CEGUI/SchemeManager.h
+ /usr/local/include/cegui-0/CEGUI/Scheme_xmlHandler.h
+ /usr/local/include/cegui-0/CEGUI/ScriptModule.h
+ /usr/local/include/cegui-0/CEGUI/SimpleTimer.h
+ /usr/local/include/cegui-0/CEGUI/Singleton.h
+ /usr/local/include/cegui-0/CEGUI/Size.h
+ /usr/local/include/cegui-0/CEGUI/SlotFunctorBase.h
+ /usr/local/include/cegui-0/CEGUI/String.h
+ /usr/local/include/cegui-0/CEGUI/StringTranscoder.h
+ /usr/local/include/cegui-0/CEGUI/SubscriberSlot.h
+ /usr/local/include/cegui-0/CEGUI/System.h
+ /usr/local/include/cegui-0/CEGUI/SystemKeys.h
+ /usr/local/include/cegui-0/CEGUI/TextUtils.h
+ /usr/local/include/cegui-0/CEGUI/Texture.h
+ /usr/local/include/cegui-0/CEGUI/TextureTarget.h
+ /usr/local/include/cegui-0/CEGUI/TplInterpolators.h
+ /usr/local/include/cegui-0/CEGUI/TplProperty.h
+ /usr/local/include/cegui-0/CEGUI/TplWRFactoryRegisterer.h
+ /usr/local/include/cegui-0/CEGUI/TplWindowFactory.h
+ /usr/local/include/cegui-0/CEGUI/TplWindowFactoryRegisterer.h
+ /usr/local/include/cegui-0/CEGUI/TplWindowProperty.h
+ /usr/local/include/cegui-0/CEGUI/TplWindowRendererFactory.h
+ /usr/local/include/cegui-0/CEGUI/TypedProperty.h
+ /usr/local/include/cegui-0/CEGUI/UDim.h
+ /usr/local/include/cegui-0/CEGUI/Vector.h
+ /usr/local/include/cegui-0/CEGUI/Version.h
+ /usr/local/include/cegui-0/CEGUI/Vertex.h
+ /usr/local/include/cegui-0/CEGUI/Win32StringTranscoder.h
+ /usr/local/include/cegui-0/CEGUI/Window.h
+ /usr/local/include/cegui-0/CEGUI/WindowFactory.h
+ /usr/local/include/cegui-0/CEGUI/WindowFactoryManager.h
+ /usr/local/include/cegui-0/CEGUI/WindowManager.h
+ /usr/local/include/cegui-0/CEGUI/WindowRenderer.h
+ /usr/local/include/cegui-0/CEGUI/WindowRendererManager.h
+ /usr/local/include/cegui-0/CEGUI/XMLAttributes.h
+ /usr/local/include/cegui-0/CEGUI/XMLHandler.h
+ /usr/local/include/cegui-0/CEGUI/XMLParser.h
+ /usr/local/include/cegui-0/CEGUI/XMLSerializer.h
+ /usr/local/include/cegui-0/CEGUI/falagard/././././ComponentBase.h
+ /usr/local/include/cegui-0/CEGUI/falagard/././././SectionSpecification.h
+ /usr/local/include/cegui-0/CEGUI/falagard/./././Dimensions.h
+ /usr/local/include/cegui-0/CEGUI/falagard/./././FrameComponent.h
+ /usr/local/include/cegui-0/CEGUI/falagard/./././ImageryComponent.h
+ /usr/local/include/cegui-0/CEGUI/falagard/./././LayerSpecification.h
+ /usr/local/include/cegui-0/CEGUI/falagard/./././TextComponent.h
+ /usr/local/include/cegui-0/CEGUI/falagard/././EventLinkDefinition.h
+ /usr/local/include/cegui-0/CEGUI/falagard/././ImagerySection.h
+ /usr/local/include/cegui-0/CEGUI/falagard/././NamedArea.h
+ /usr/local/include/cegui-0/CEGUI/falagard/././NamedDefinitionCollator.h
+ /usr/local/include/cegui-0/CEGUI/falagard/././PropertyDefinition.h
+ /usr/local/include/cegui-0/CEGUI/falagard/././PropertyInitialiser.h
+ /usr/local/include/cegui-0/CEGUI/falagard/././PropertyLinkDefinition.h
+ /usr/local/include/cegui-0/CEGUI/falagard/././StateImagery.h
+ /usr/local/include/cegui-0/CEGUI/falagard/././WidgetComponent.h
+ /usr/local/include/cegui-0/CEGUI/falagard/./Enums.h
+ /usr/local/include/cegui-0/CEGUI/falagard/./WidgetLookFeel.h
+ /usr/local/include/cegui-0/CEGUI/falagard/ComponentBase.h
+ /usr/local/include/cegui-0/CEGUI/falagard/Dimensions.h
+ /usr/local/include/cegui-0/CEGUI/falagard/Enums.h
+ /usr/local/include/cegui-0/CEGUI/falagard/EventAction.h
+ /usr/local/include/cegui-0/CEGUI/falagard/FalagardPropertyBase.h
+ /usr/local/include/cegui-0/CEGUI/falagard/FormattingSetting.h
+ /usr/local/include/cegui-0/CEGUI/falagard/PropertyDefinitionBase.h
+ /usr/local/include/cegui-0/CEGUI/falagard/PropertyInitialiser.h
+ /usr/local/include/cegui-0/CEGUI/falagard/WidgetLookManager.h
+ /usr/local/include/cegui-0/CEGUI/falagard/XMLEnumHelper.h
+ /usr/local/include/cegui-0/CEGUI/falagard/XMLHandler.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./././ItemListBase.h
+ /usr/local/include/cegui-0/CEGUI/widgets/././ButtonBase.h
+ /usr/local/include/cegui-0/CEGUI/widgets/././LayoutContainer.h
+ /usr/local/include/cegui-0/CEGUI/widgets/././ListHeaderSegment.h
+ /usr/local/include/cegui-0/CEGUI/widgets/././MenuBase.h
+ /usr/local/include/cegui-0/CEGUI/widgets/././ScrolledItemListBase.h
+ /usr/local/include/cegui-0/CEGUI/widgets/././SequentialLayoutContainer.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./ClippedContainer.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./ComboDropList.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./Combobox.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./DefaultWindow.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./DragContainer.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./Editbox.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./FrameWindow.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./GridLayoutContainer.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./GroupBox.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./HorizontalLayoutContainer.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./ItemEntry.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./ItemListbox.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./LayoutCell.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./ListHeader.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./Listbox.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./ListboxItem.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./ListboxTextItem.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./MenuItem.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./Menubar.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./MultiColumnList.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./MultiLineEditbox.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./PopupMenu.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./ProgressBar.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./PushButton.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./RadioButton.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./ScrollablePane.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./Scrollbar.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./ScrolledContainer.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./Slider.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./Spinner.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./TabButton.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./TabControl.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./Thumb.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./Titlebar.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./ToggleButton.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./Tooltip.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./Tree.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./TreeItem.h
+ /usr/local/include/cegui-0/CEGUI/widgets/./VerticalLayoutContainer.h
+ /usr/local/include/cegui-0/CEGUI/widgets/All.h
+ /usr/local/include/cegui-0/CEGUI/widgets/ButtonBase.h
+ /usr/local/include/cegui-0/CEGUI/widgets/ToggleButton.h
 CMakeFiles/Indie.dir/src/Systems/SoundSystem.cpp.o
  .././include/AI/AI.hpp
  .././include/Components/Animation.hpp
@@ -29269,6 +30711,7 @@ CMakeFiles/Indie.dir/src/Systems/SoundSystem.cpp.o
  .././include/Menu/IMenu.hpp
  .././include/Menu/MainMenu.hpp
  .././include/Menu/MenuManager.hpp
+ .././include/Menu/SplashScreen.hpp
  .././include/Movement/MovementManager.hpp
  .././include/RP/RP.hpp
  .././include/Systems/Animation/AnimationManager.hpp
@@ -29286,8 +30729,10 @@ CMakeFiles/Indie.dir/src/Systems/SoundSystem.cpp.o
  .././include/Systems/Input/KeyListener.hpp
  .././include/Systems/Loot/LootManager.hpp
  .././include/Systems/Map/MapLoader.hpp
+ .././include/Systems/Saving/Saving.hpp
  .././include/Systems/Sound/SoundSystem.hpp
  .././include/Systems/System.hpp
+ .././json/json/json.h
  /home/myriam/Projet/cpp_indie_studio/src/Systems/SoundSystem.cpp
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btAxisSweep3.h
  /usr/include/bullet/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h

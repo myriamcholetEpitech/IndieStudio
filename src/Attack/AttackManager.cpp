@@ -22,14 +22,10 @@ void					Gauntlet::AttackManager::destroyEnt(Gauntlet::Entity* ent)
 
   if (attack != this->_attacks.end())
     {
-//      if (attack->attacker)
-//	Gauntlet::CoreGame::core->addEvent(Gauntlet::EventType::ATTACK_END,
-//					   attack->attacker);
       this->_attacks.erase(attack, this->_attacks.end());
     }
 
   //Check if attacker die
-
   for (auto & attackIt : this->_attacks)
     {
       if (attackIt.attacker.get() == ent)
@@ -64,7 +60,6 @@ void					Gauntlet::AttackManager::updateTrajectorys()
 
 void					Gauntlet::AttackManager::generateAttack(std::shared_ptr<Gauntlet::Entity> const& entity)
 {
-  //Attacker
   Gauntlet::Model			*model = entity->getPtr<Gauntlet::Model>();
   Gauntlet::Weapon			*weapon = entity->getPtr<Gauntlet::Weapon>();
   int                                   i = 0;

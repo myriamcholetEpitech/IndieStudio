@@ -15,10 +15,12 @@ namespace Gauntlet
         virtual  std::pair<std::shared_ptr<Gauntlet::Entity>, float >  chooseTarget(std::shared_ptr<Entity> const&,
                                                         std::vector<std::shared_ptr<Gauntlet::Entity>> const&) const = 0;
         virtual Gauntlet::Event *makeAction(std::shared_ptr<Entity> const&,
-                                      std::vector<std::shared_ptr<Gauntlet::Entity>> const&) const = 0;
-        Gauntlet::Event         *HitOrRun(std::pair<std::shared_ptr<Gauntlet::Entity>, float > const& ret,
-                                          std::shared_ptr<Entity> const& s) const;
-        bool                    youMayTurn(std::pair<std::shared_ptr<Gauntlet::Entity>, float > const& ret,
+                                      std::vector<std::shared_ptr<Gauntlet::Entity>> const&) = 0;
+        virtual Gauntlet::Event         *HitOrRun(std::pair<std::shared_ptr<Gauntlet::Entity>, float > const& ret,
+                                          std::shared_ptr<Entity> const& s);
+        std::vector<float> calculDir(std::shared_ptr<Entity> const&,
+                                          std::pair<std::shared_ptr<Gauntlet::Entity>, float > const&) const;
+        bool                    youMayTurn(std::vector<float> const&,
                                            std::shared_ptr<Entity> const& s) const;
 
         virtual ~IAIScript() {};
@@ -46,7 +48,7 @@ namespace Gauntlet
     struct PigScript : public IBaseFighter
     {
         virtual Gauntlet::Event *makeAction(std::shared_ptr<Entity> const& s,
-                                      std::vector<std::shared_ptr<Gauntlet::Entity>> const& heroes) const override ;
+                                      std::vector<std::shared_ptr<Gauntlet::Entity>> const& heroes) override ;
         virtual ~PigScript() {};
     };
 
@@ -55,15 +57,30 @@ namespace Gauntlet
         virtual  std::pair<std::shared_ptr<Gauntlet::Entity>, float >  chooseTarget(std::shared_ptr<Entity> const&,
                                                                     std::vector<std::shared_ptr<Gauntlet::Entity>> const&) const override ;
         virtual Gauntlet::Event *makeAction(std::shared_ptr<Entity> const& s,
-                                            std::vector<std::shared_ptr<Gauntlet::Entity>> const& heroes) const override ;
+                                            std::vector<std::shared_ptr<Gauntlet::Entity>> const& heroes) override ;
         virtual ~GhostScript() {};
+    };
+
+    struct BossScript : public IBaseFighter
+    {
+        std::uniform_int_distribution<int> x;
+        std::uniform_int_distribution<int> z;
+
+        //std::queue<int> summonings;
+
+        BossScript();
+        virtual Gauntlet::Event *makeAction(std::shared_ptr<Entity> const& s,
+                                            std::vector<std::shared_ptr<Gauntlet::Entity>> const& heroes) override ;
+        virtual Gauntlet::Event         *HitOrRun(std::pair<std::shared_ptr<Gauntlet::Entity>, float > const& ret,
+                                                  std::shared_ptr<Entity> const& s) override ;
+        virtual ~BossScript() {};
     };
 
     struct ValkyrieScript : public IHeroScript, public IBaseFighter
     {
         ValkyrieScript(std::vector<std::shared_ptr<Entity> >const& a) : IHeroScript(a) {};
         virtual Gauntlet::Event *makeAction(std::shared_ptr<Entity> const& s,
-                                      std::vector<std::shared_ptr<Gauntlet::Entity>> const& heroes) const override ;
+                                      std::vector<std::shared_ptr<Gauntlet::Entity>> const& heroes) override ;
         virtual ~ValkyrieScript() {};
     };
 
@@ -78,7 +95,7 @@ namespace Gauntlet
     {
         PriestScript(std::vector<std::shared_ptr<Entity> >const& a) : IHeroScript(a) {};
         virtual Gauntlet::Event *makeAction(std::shared_ptr<Entity> const& s,
-                                            std::vector<std::shared_ptr<Gauntlet::Entity>> const& heroes) const override ;
+                                            std::vector<std::shared_ptr<Gauntlet::Entity>> const& heroes) override ;
         virtual  std::pair<std::shared_ptr<Gauntlet::Entity>, float >  chooseTarget(std::shared_ptr<Entity> const&,
                                                                     std::vector<std::shared_ptr<Gauntlet::Entity>> const&) const override ;
         virtual ~PriestScript() {};
@@ -88,7 +105,7 @@ namespace Gauntlet
     {
         AssassinScript(std::vector<std::shared_ptr<Entity> >const& a) : IHeroScript(a) {};
         virtual Gauntlet::Event *makeAction(std::shared_ptr<Entity> const& s,
-                                            std::vector<std::shared_ptr<Gauntlet::Entity>> const& heroes) const override ;
+                                            std::vector<std::shared_ptr<Gauntlet::Entity>> const& heroes) override ;
         virtual ~AssassinScript() {};
     };
 }

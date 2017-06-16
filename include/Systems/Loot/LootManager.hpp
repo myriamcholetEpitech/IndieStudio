@@ -15,11 +15,12 @@ namespace Gauntlet
 {
   class LootManager : public System
   {
+    std::uniform_int_distribution<int> nb;
     void	handleDestroy(Gauntlet::Event const &);
     void	generateObject(Gauntlet::Entity *);
 
    public:
-    LootManager() {};
+    LootManager() : nb(0, 99) {};
     ~LootManager() {};
 
     void	takeEvent(Gauntlet::Event const &);

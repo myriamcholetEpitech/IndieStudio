@@ -46,7 +46,6 @@ void			Gauntlet::CollisionBody::initObject(int				mass,
 {
   btTransform		defaultPos(orientation, pos);
 
-  //this->_motionState = new btDefaultMotionState(defaultPos);
   this->_motionState.reset(new Gauntlet::OgreMotionState(defaultPos,
 							 this->_node,
 							 offset));

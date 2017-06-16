@@ -143,8 +143,9 @@ SET(SOURCES
         src/Menu/IMenu.cpp
         src/Menu/MenuManager.cpp
         src/Menu/GameMenu.cpp
-	src/Menu/EndGame.cpp
+        src/Menu/EndGame.cpp
         src/Menu/MainMenu.cpp
+        src/Menu/SplashScreen.cpp
 	
         src/RP/RP.cpp
 

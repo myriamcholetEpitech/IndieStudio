@@ -33,16 +33,7 @@ namespace Gauntlet
 			    const btCollisionObjectWrapper *colObj1,
 			    int partId1, int index1);
 
-  bool	ContactProcessedCallBack(btManifoldPoint& cp,
-				       void	*body0,
-				       void	*body1);
-  bool	ContactDestroyedCallback(void* userPersistentData);
 };
 
-/*
-YourContext foo;
-ContactSensorCallback callback(*tgtBody, foo);
-world->contactTest(tgtBody,callback);
-*/
 
 #endif //INDIE_COLLISIONCALLBACK_HPP

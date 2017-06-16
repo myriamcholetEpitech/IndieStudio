@@ -6,12 +6,11 @@
 #include <Factory/Factory.hpp>
 #include "Systems/Collision/CollisionCallBack.hpp"
 
-Gauntlet::CollisionCallBack::CollisionCallBack(btRigidBody				*/*body*/,
-					       std::shared_ptr<btDynamicsWorld> const	&/*world*/)
+Gauntlet::CollisionCallBack::CollisionCallBack(btRigidBody				*,
+					       std::shared_ptr<btDynamicsWorld> const	&)
 	: btCollisionWorld::ContactResultCallback(),
 	  _body()
 {
-//  world->contactTest(body, *this);
 }
 
 bool Gauntlet::CollisionCallBack::needsCollision(btBroadphaseProxy *proxy) const
@@ -41,8 +40,6 @@ btScalar		Gauntlet::CollisionCallBack::addSingleResult(btManifoldPoint			&cp,
 	return (0);
       pt = cp.m_localPointB;
     }
-  // do stuff with the collision point
-
 
   return (0);
 }
@@ -75,16 +72,3 @@ bool			Gauntlet::ContactAddedCallBack(btManifoldPoint& /*cp*/,
     }
   return (true);
 }
-/*
-bool			Gauntlet::ContactProcessedCallBack(btManifoldPoint& cp,
-							       void	*body0,
-							       void	*body1)
-{
-  return (true);
-}
-
-bool			Gauntlet::ContactDestroyedCallback(void* userPersistentData)
-{
-  return (true);
-}
-*/

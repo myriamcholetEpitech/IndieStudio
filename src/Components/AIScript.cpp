@@ -9,17 +9,17 @@
 #include "Components/Model.hpp"
 #include "Components/Stats.hpp"
 
-bool Gauntlet::IAIScript::youMayTurn(std::pair<std::shared_ptr<Gauntlet::Entity>, float> const &ret,
-                                     std::shared_ptr<Entity> const &s) const
+std::vector<float> Gauntlet::IAIScript::calculDir(std::shared_ptr<Entity> const &s,
+                                    std::pair<std::shared_ptr<Gauntlet::Entity>, float> const &ret) const
 {
     Gauntlet::Model *model = s->getPtr<Gauntlet::Model>();
     if (!ret.first)
-        return (false);
+        throw std::runtime_error("Error with model");
     Gauntlet::Model *retModel = ret.first->getPtr<Gauntlet::Model>();
 
     if (!model ||
         !retModel)
-        return false;
+        throw std::runtime_error("Error with model");
 
     auto const &actualX = model->dirVec.x;
     auto const &actualZ = model->dirVec.z;
@@ -28,44 +28,52 @@ bool Gauntlet::IAIScript::youMayTurn(std::pair<std::shared_ptr<Gauntlet::Entity>
                                model->node->getPosition().x));
     auto dirZ = (AI::calculDir(retModel->node->getPosition().z,
                                model->node->getPosition().z));
+    return (std::vector<float>{dirX, dirZ, actualX, actualZ});
+}
 
-    if (dirX != actualX ||
-        dirZ != actualZ)
-    {
-        /* angle ? */
-        auto *event = new Gauntlet::MoveEvent;
-        if (dirX == -1.0f)
-            event->type.push_back(Gauntlet::MoveEvent::Type::LEFT);
-        else if (dirX == 1.0f)
-            event->type.push_back(Gauntlet::MoveEvent::Type::RIGHT);
-        if (dirZ == -1.0f)
-            event->type.push_back(Gauntlet::MoveEvent::Type::UP);
-        else if (dirZ == 1.0f)
-            event->type.push_back(Gauntlet::MoveEvent::Type::DOWN);
-        event->_entities.push_back(s);
-        Gauntlet::CoreGame::core->events.emplace_back(event);
-        return (true);
-    }
+bool Gauntlet::IAIScript::youMayTurn(std::vector<float> const& dir,
+                                     std::shared_ptr<Entity> const &s) const
+{
+     auto dirX = dir[0];
+     auto dirZ = dir[1];
+     auto actualX = dir[2];
+     auto actualZ = dir[3];
+     if (dirX != actualX ||
+         dirZ != actualZ) {
+         auto *event = new Gauntlet::MoveEvent;
+         if (dirX == -1.0f)
+             event->type.push_back(Gauntlet::MoveEvent::Type::LEFT);
+         else if (dirX == 1.0f)
+             event->type.push_back(Gauntlet::MoveEvent::Type::RIGHT);
+         if (dirZ == -1.0f)
+             event->type.push_back(Gauntlet::MoveEvent::Type::UP);
+         else if (dirZ == 1.0f)
+             event->type.push_back(Gauntlet::MoveEvent::Type::DOWN);
+         event->_entities.push_back(s);
+         Gauntlet::CoreGame::core->events.emplace_back(event);
+         return (true);
+     }
     return (false);
 }
 
 Gauntlet::Event* Gauntlet::IAIScript::HitOrRun(std::pair<std::shared_ptr<Gauntlet::Entity>, float > const& ret,
-                                               std::shared_ptr<Entity> const& s) const
+                                               std::shared_ptr<Entity> const& s)
 {
     Gauntlet::Event *event = nullptr;
 
-    if (ret.second < s->get<Gauntlet::Weapon>().rangeEnd.x && ret.second != 0.0)
-      {
-        if (this->youMayTurn(ret, s) == true)
-	  Gauntlet::CoreGame::core->addEvent(Gauntlet::EventType::IDLE, s);
-        event = new Gauntlet::Event(Gauntlet::EventType::ATTACK);
-      }
-    else if (ret.second != -1.0)
-      {
-	this->youMayTurn(ret, s);
-      }
-    else
-      event = new Gauntlet::Event(Gauntlet::EventType::IDLE);
+    try {
+
+        if (ret.second < s->get<Gauntlet::Weapon>().rangeEnd.x && ret.second != 0.0) {
+            auto dir = this->calculDir(s, ret);
+            this->youMayTurn(dir, s);
+            event = new Gauntlet::Event(Gauntlet::EventType::ATTACK);
+        } else if (ret.second != -1.0) {
+            auto rdir = this->calculDir(s, ret);
+            this->youMayTurn(rdir, s);
+        } else
+            event = new Gauntlet::Event(Gauntlet::EventType::IDLE);
+    }
+    catch (std::exception const&) {}
     return (event);
 }
 
@@ -122,7 +130,47 @@ std::pair<std::shared_ptr<Gauntlet::Entity>, float > Gauntlet::GhostScript::choo
 }
 
 Gauntlet::Event    *Gauntlet::PigScript::makeAction(std::shared_ptr<Entity> const& s,
-                            std::vector<std::shared_ptr<Gauntlet::Entity>> const& heroes) const
+                            std::vector<std::shared_ptr<Gauntlet::Entity>> const& heroes)
+{
+    auto ret = this->chooseTarget(s, heroes);
+
+    return (this->HitOrRun(ret, s));
+}
+
+Gauntlet::BossScript::BossScript() : x(0, 1), z(0, 1)
+{
+}
+
+Gauntlet::Event* Gauntlet::BossScript::HitOrRun(std::pair<std::shared_ptr<Gauntlet::Entity>, float > const& ret,
+                                               std::shared_ptr<Entity> const& s)
+{
+    Gauntlet::Event *event = nullptr;
+
+    try {
+
+        if (ret.second < s->get<Gauntlet::Weapon>().rangeEnd.x && ret.second != 0.0) {
+            auto dir = this->calculDir(s, ret);
+            auto &dirX = dir[0];
+            auto &dirZ = dir[1];
+
+            if (x(CoreGame::core->gen) == 1)
+                dirX *= -1.0;
+            if (z(CoreGame::core->gen) == 1)
+                dirZ *= -1.0;
+            this->youMayTurn(dir, s);
+            event = new Gauntlet::Event(Gauntlet::EventType::ATTACK);
+        } else if (ret.second != -1.0) {
+            auto rdir = this->calculDir(s, ret);
+            this->youMayTurn(rdir, s);
+        } else
+            event = new Gauntlet::Event(Gauntlet::EventType::IDLE);
+    }
+    catch (std::exception const&) {}
+    return (event);
+}
+
+Gauntlet::Event* Gauntlet::BossScript::makeAction(std::shared_ptr<Entity> const &s,
+                                                  std::vector<std::shared_ptr<Gauntlet::Entity>> const &heroes)
 {
     auto ret = this->chooseTarget(s, heroes);
 
@@ -130,7 +178,7 @@ Gauntlet::Event    *Gauntlet::PigScript::makeAction(std::shared_ptr<Entity> cons
 }
 
 Gauntlet::Event* Gauntlet::GhostScript::makeAction(std::shared_ptr<Entity> const &s,
-                                                   std::vector<std::shared_ptr<Gauntlet::Entity>> const &heroes) const
+                                                   std::vector<std::shared_ptr<Gauntlet::Entity>> const &heroes)
 {
     auto ret = this->chooseTarget(s, heroes);
 
@@ -138,7 +186,7 @@ Gauntlet::Event* Gauntlet::GhostScript::makeAction(std::shared_ptr<Entity> const
 }
 
 Gauntlet::Event    *Gauntlet::ValkyrieScript::makeAction(std::shared_ptr<Entity> const &s,
-                                                         std::vector<std::shared_ptr<Gauntlet::Entity>> const &) const
+                                                         std::vector<std::shared_ptr<Gauntlet::Entity>> const &)
 {
     auto ret = this->chooseTarget(s, this->refOnArmy);
 
@@ -176,8 +224,6 @@ std::pair<std::shared_ptr<Gauntlet::Entity>, float > Gauntlet::PriestScript::cho
 Gauntlet::Event* Gauntlet::Runner::runAway(std::shared_ptr<Entity> const &s,
                                            std::pair<std::shared_ptr<Gauntlet::Entity>, float> const &ret) const
 {
-    //std::cerr << "fuir" << std::endl;
-    /* fuir */
     Gauntlet::Model *model = s->getPtr<Gauntlet::Model>();
     Gauntlet::Model *retModel = ret.first->getPtr<Gauntlet::Model>();
 
@@ -198,7 +244,6 @@ Gauntlet::Event* Gauntlet::Runner::runAway(std::shared_ptr<Entity> const &s,
     if (dirX != actualX ||
         dirZ != actualZ)
     {
-        /* constructeur pour factoriser lel (dirX, dirZ) */
         auto *event = new Gauntlet::MoveEvent;
         if (dirX == -1.0f)
             event->type.push_back(Gauntlet::MoveEvent::Type::LEFT);
@@ -208,19 +253,16 @@ Gauntlet::Event* Gauntlet::Runner::runAway(std::shared_ptr<Entity> const &s,
             event->type.push_back(Gauntlet::MoveEvent::Type::UP);
         else if (dirZ == 1.0f)
             event->type.push_back(Gauntlet::MoveEvent::Type::DOWN);
-        std::cerr << "en fuite" << std::endl;
         return (event);
     }
-    std::cerr << "quenellier depuis 1997 (" << dirX << " - " << actualX << ") (" << dirX << " - " << actualX << ")" <<  std::endl;
     return (nullptr);
 }
 
 Gauntlet::Event* Gauntlet::PriestScript::makeAction(std::shared_ptr<Entity> const &s,
-                                                    std::vector<std::shared_ptr<Gauntlet::Entity>> const &heroes) const
+                                                    std::vector<std::shared_ptr<Gauntlet::Entity>> const &heroes)
 {
     auto retEvil = this->Gauntlet::IBaseFighter::chooseTarget(s, this->refOnArmy);
 
-    //std::cout << "l'ennemi le plus proche est à " << retEvil.second << std::endl;
     if (retEvil.second < 15.0 && retEvil.second != 0.0 && retEvil.second != -1.0)
     {
         return (this->runAway(s, retEvil));
@@ -229,23 +271,19 @@ Gauntlet::Event* Gauntlet::PriestScript::makeAction(std::shared_ptr<Entity> cons
     auto retGood = this->chooseTarget(s, heroes);
     if (retGood.first)
     {
-        //std::cerr << "soin/se rapprocher (" << retGood.second << ")"<< std::endl;
-        return (this->HitOrRun(retGood, s));
+          return (this->HitOrRun(retGood, s));
     }
-    //std::cerr << "taper/se rapprocher (" << retEvil.second << ")" << std::endl;
-    return (this->HitOrRun(retEvil, s));
+      return (this->HitOrRun(retEvil, s));
 }
 
 Gauntlet::Event* Gauntlet::AssassinScript::makeAction(std::shared_ptr<Entity> const &s,
-                                                      std::vector<std::shared_ptr<Gauntlet::Entity>> const &) const
+                                                      std::vector<std::shared_ptr<Gauntlet::Entity>> const &)
 {
     auto retEvil = this->chooseTarget(s, this->refOnArmy);
 
     if (retEvil.second < 10.0 && retEvil.second != 0.0 && retEvil.second != -1.0)
     {
-        std::cerr << "fuyons !" << std::endl;
         return (this->runAway(s, retEvil));
     }
-    std::cerr << "taper/se rapprocher " << retEvil.second << std::endl;
     return (this->HitOrRun(retEvil, s));
 }

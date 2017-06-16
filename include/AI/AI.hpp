@@ -17,10 +17,13 @@ namespace Gauntlet
     private:
         unsigned int     _level;
         unsigned int     _wave;
+        std::uniform_int_distribution<int> x;
+        std::uniform_int_distribution<int> z;
 
         std::vector<std::shared_ptr<Entity> > _army;
         std::vector<std::shared_ptr<Entity> > _AIheroes;
         std::vector< std::vector<int> >       _armyCounter;
+;
 
     private:
         std::pair<Gauntlet::Entity*, float >  findNearestHero(std::shared_ptr<Entity> const&,
@@ -35,7 +38,7 @@ namespace Gauntlet
         virtual ~AI() {};
 
     private:
-        void placeBadGuy(std::shared_ptr<Gauntlet::Entity> const& entity) const;
+        void placeBadGuy(std::shared_ptr<Gauntlet::Entity> const& entity);
         bool createSoldier();
 
     public:

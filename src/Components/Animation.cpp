@@ -31,7 +31,7 @@ void				Gauntlet::Animation::setAnimation(std::string name, bool repeat, double 
     if (this->on)
         this->getState()->setEnabled(false);
     else
-        this->on = true;
+      this->on = true;
     this->actualAnim = name;
     this->loop = repeat;
     this->speed = speed;

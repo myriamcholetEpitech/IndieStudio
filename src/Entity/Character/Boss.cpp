@@ -18,12 +18,12 @@ Gauntlet::Boss::Boss(int id) :
   Gauntlet::Weapon              *weapon = new Gauntlet::Weapon(80, 1.5, Weapon::Type::ZONE_DIST,
 							       Ogre::Vector3(5, 1, 5),
 							       Ogre::Vector3(35, 1, 35));
-  Gauntlet::Stats		*stat = new Gauntlet::Stats(300, 300, 1.5);
+  Gauntlet::Stats		*stat = new Gauntlet::Stats(1000, 1000, 1.5);
   Gauntlet::Animation		*animation = new Gauntlet::Animation(model->ent);
 
-  auto death = " ";
-  auto move = " ";
-  auto attack = " ";
+  auto death = "../audio/sfx/boss//dinosaur/trex.ogg";
+  auto move = "";
+  auto attack = "";
   Gauntlet::Sound       *sound = new Gauntlet::Sound(death, move, attack);
 
   this->attach<Gauntlet::Weapon>(weapon);
@@ -32,6 +32,6 @@ Gauntlet::Boss::Boss(int id) :
   this->attach<Gauntlet::Model>(model);
   this->attach<Gauntlet::Animation>(animation);
   Gauntlet::CoreGame::core->getMovementMgr().addEntity(this);
-  this->attach<Gauntlet::IAIScript>(new Gauntlet::PigScript);
+  this->attach<Gauntlet::IAIScript>(new Gauntlet::BossScript);
   this->attach<Gauntlet::Sound>(sound);
 }

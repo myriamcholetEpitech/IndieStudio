@@ -9,9 +9,7 @@
 
 Gauntlet::MenuManager::MenuManager()
 	: mRenderer(),
-	  _menus(),
-	  _root(nullptr),
-	  _menuIdx(-1)
+	  _root(nullptr)
 {
   this->mRenderer = &CEGUI::OgreRenderer::bootstrapSystem();
 
@@ -39,27 +37,33 @@ Gauntlet::MenuManager::~MenuManager()
 }
 
 void			Gauntlet::MenuManager::takeEvent(Event const &event)
-{    
+{
   switch (event._type)
     {
       case (Gauntlet::EventType::VICTORY) :
-	this->setActiveMenu(Gauntlet::MenuType::ENDGAME);
+	this->setActiveMenu(Gauntlet::MenuType::ENDGAME, true);
       break;
       case (Gauntlet::EventType::DEFEAT) :
-	  this->setActiveMenu(Gauntlet::MenuType::ENDGAME);
+	this->setActiveMenu(Gauntlet::MenuType::ENDGAME, true);
       break;
       default:
 	break;
     }
-  if (!this->_menus.empty() && this->_menuIdx != -1)
-    this->_menus[this->_menuIdx]->takeEvent(event);
+  for (auto &menu : this->_menus)
+    {
+      if (menu->getActive())
+	menu->takeEvent(event);
+    }
 }
 
 
 void			Gauntlet::MenuManager::updateMenu()
 {
-  if (!this->_menus.empty() && this->_menuIdx != -1)
-    this->_menus[this->_menuIdx]->updateMenu();
+  for (auto &menu : this->_menus)
+    {
+      if (menu->getActive())
+	menu->updateMenu();
+    }
 }
 
 void			Gauntlet::MenuManager::addHud(std::vector<std::shared_ptr<Gauntlet::Entity> > const &heroes)
@@ -69,54 +73,70 @@ void			Gauntlet::MenuManager::addHud(std::vector<std::shared_ptr<Gauntlet::Entit
   if ((hud = this->getMenu(Gauntlet::MenuType::HUD)) != nullptr)
     static_cast<Gauntlet::Hud*>(hud)->initStats(heroes);
   else
-    {
-      this->_menus.emplace_back(new Gauntlet::Hud(heroes));
-      this->_menus.back()->show(false);
-    }
+    this->_menus.emplace_back(new Gauntlet::Hud(heroes));
 }
 
 void			Gauntlet::MenuManager::addGameMenu()
 {
   if (this->getMenu(Gauntlet::MenuType::GAME_MENU) == nullptr)
-    {
-      this->_menus.emplace_back(new Gauntlet::GameMenu());
-      this->_menus.back()->show(false);
-    }
+    this->_menus.emplace_back(new Gauntlet::GameMenu());
 }
 
 void			Gauntlet::MenuManager::addEndGame()
 {
   if (this->getMenu(Gauntlet::MenuType::ENDGAME) == nullptr)
-    {
-      this->_menus.emplace_back(new Gauntlet::EndGame());
-      this->_menus.back()->show(false);
-    }
+    this->_menus.emplace_back(new Gauntlet::EndGame());
 }
 
 void			Gauntlet::MenuManager::addMainMenu()
 {
   if (this->getMenu(Gauntlet::MenuType::MAIN_MENU) == nullptr)
-    {
-      this->_menus.emplace_back(new Gauntlet::MainMenu());
-      this->_menus.back()->show(false);
-    }
+    this->_menus.emplace_back(new Gauntlet::MainMenu());
 }
 
-bool			Gauntlet::MenuManager::setActiveMenu(Gauntlet::MenuType menuType)
+void                    Gauntlet::MenuManager::addSplashScreen()
 {
-  int 			newIdx = 0;
+  if (this->getMenu(Gauntlet::MenuType::SPLASHSCREEN) == nullptr)
+    this->_menus.emplace_back(new Gauntlet::SplashScreen());
+}
 
+bool			Gauntlet::MenuManager::setActiveMenu(Gauntlet::MenuType menuType, bool active)
+{
+  bool 			isMenuOn;
+
+  switch (menuType)
+    {
+      case (Gauntlet::MenuType::HUD) :
+	isMenuOn = false;
+      break;
+      default:
+	isMenuOn = true;
+      break;
+    }
+
+  for (auto & subMenu : this->_menus)
+    {
+      if (subMenu->getMenu(menuType))
+	{
+	  subMenu->setActive(active);
+	  subMenu->setActiveMenu(menuType, active);
+	  if (active)
+	    Gauntlet::CoreGame::core->isMenuOn = isMenuOn;
+	  return (true);
+	}
+    }
+  return (false);
+}
+
+bool				Gauntlet::MenuManager::showMenu(Gauntlet::MenuType menuType, bool show)
+{
   for (auto & menu : this->_menus)
     {
       if (menu->getMenuType() == menuType)
 	{
-	  if (this->_menuIdx != -1)
-	    this->_menus[this->_menuIdx]->show(false);
-	  menu->show(true);
-	  this->_menuIdx = newIdx;
+	  menu->show(show);
 	  return (true);
 	}
-      newIdx++;
     }
   return (false);
 }
@@ -128,4 +148,3 @@ Gauntlet::IMenu			*Gauntlet::MenuManager::getMenu(Gauntlet::MenuType menuType)
       return (menu.get());
   return (nullptr);
 }
-

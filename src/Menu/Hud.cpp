@@ -8,16 +8,24 @@
 #include "Menu/Hud.hpp"
 
 Gauntlet::Hud::Hud(std::vector<std::shared_ptr<Gauntlet::Entity> > const &heroes)
-	: IMenu(Gauntlet::MenuType::HUD)
+	: IMenu(Gauntlet::MenuType::HUD),
+	  _root(nullptr),
+	  _player(),
+	  _score(nullptr),
+	  _text(nullptr),
+	  levelstr("Level I")
 {
   CEGUI::WindowManager	&mgr = CEGUI::WindowManager::getSingleton();
 
   this->_root = mgr.loadLayoutFromFile("GameHUD.layout");
   this->_score = this->_root->getChild("ScoreBox")->getChild("Score");
+  this->_text = this->_root->getChild("LevelText");
   this->initStats(heroes);
-  this->levelstr = "Level I";
- 
+
   CEGUI::System::getSingleton().getDefaultGUIContext().getRootWindow()->addChild(this->_root);
+
+  this->setActive(false);
+  this->show(false);
 }
 
 Gauntlet::Hud::~Hud()
@@ -66,20 +74,26 @@ void			Gauntlet::Hud::updateMenu()
 
 void			Gauntlet::Hud::takeEvent(Gauntlet::Event const &event)
 {
+  if (Gauntlet::CoreGame::core->isMenuOn)
+    return ;
+
   switch (event._type)
     {
     case (Gauntlet::EventType::MENU):
-      Gauntlet::CoreGame::core->getMenuMgr().setActiveMenu(Gauntlet::MenuType::GAME_MENU);
+      Gauntlet::CoreGame::core->getMenuMgr().setActiveMenu(Gauntlet::MenuType::GAME_MENU, true);
       break;
     case (Gauntlet::EventType::LEVEL_END):
       this->newLevel();
       break;
-      case (Gauntlet::EventType::VICTORY) :
-	this->levelstr = "Level I";
+    case (Gauntlet::EventType::VICTORY) :
+      this->levelstr = "Level I";
       break;
-      case (Gauntlet::EventType::DEFEAT) :
-	this->levelstr = "Level I";
+    case (Gauntlet::EventType::DEFEAT) :
+      this->levelstr = "Level I";
       break;
+    case (Gauntlet::EventType::SPAWN_BOSS):
+      std::cout << "BOOOOSSSSSSSS" << std::endl;
+      this->_root->getChild("Boss")->getChild("Life")->setProperty("Visible", "True");
     default:
       break;
     }
@@ -90,16 +104,9 @@ void Gauntlet::Hud::show(bool isShowed)
   if (isShowed)
     {
       this->_root->show();
-      Gauntlet::CoreGame::core->isMenuOn = false;
     }
   else
     this->_root->hide();
-}
-
-void		Gauntlet::Hud::swapMenu()
-{
-  Gauntlet::CoreGame::isMenuOn = !Gauntlet::CoreGame::isMenuOn;
-  this->show(Gauntlet::CoreGame::isMenuOn);
 }
 
 Gauntlet::PlayerHudData::PlayerHudData(CEGUI::Window *paramLife,
@@ -115,7 +122,16 @@ Gauntlet::PlayerHudData::PlayerHudData(CEGUI::Window *paramLife,
 
 void		Gauntlet::Hud::newLevel()
 {
-  this->_text = this->_root->getChild("LevelText");
   this->levelstr += "I";
   this->_text->setProperty("Text", this->levelstr);
+}
+
+void		Gauntlet::Hud::setActive(bool active)
+{
+  if (!active)
+    {
+      this->levelstr = "Level I";
+      this->_text->setProperty("Text", this->levelstr);
+    }
+  IMenu::setActive(active);
 }

@@ -13,22 +13,25 @@
 #include <Entity/Character/Boss.hpp>
 #include <Entity/Character/MiniBoss.hpp>
 
-Gauntlet::AI::AI() : _level(0), _wave(0)
+Gauntlet::AI::AI() : _level(0), _wave(0), x(50, 75), z(50, 70)
 {
   auto _waves = std::vector<int>();
   _waves.push_back(3);
   _waves.push_back(9);
+  _waves.push_back(12);
   _waves.push_back(18);
   _armyCounter.push_back(_waves);
   _waves.clear();
   _waves.push_back(2);
   _waves.push_back(4);
   _waves.push_back(8);
+  _waves.push_back(11);
   _waves.push_back(15);
   _waves.push_back(30);
   _armyCounter.push_back(_waves);
   _waves.clear();
   _waves.push_back(1);
+  _waves.push_back(10);
   _armyCounter.push_back(_waves);
 }
 
@@ -38,57 +41,60 @@ void Gauntlet::AI::addPlayer(std::shared_ptr<Gauntlet::Entity> const &hero)
     _AIheroes.push_back(hero);
 }
 
-void Gauntlet::AI::placeBadGuy(std::shared_ptr<Gauntlet::Entity> const& entity) const
+void Gauntlet::AI::placeBadGuy(std::shared_ptr<Gauntlet::Entity> const& entity)
 {
-    std::random_device rd;
-    std::default_random_engine gen(rd());
-    std::uniform_int_distribution<int> x(50, 75);
-    std::uniform_int_distribution<int> z(50, 70);
-    /* à mettre dans le constructeur ? */
+    auto pr = std::make_pair(x(Gauntlet::CoreGame::core->gen), z(Gauntlet::CoreGame::core->gen));
 
-        auto pr = std::make_pair(x(gen), z(gen));
+    if (pr.first % 2 == 0)
+        pr.first *= -1;
+    if (pr.second % 2 == 0)
+        pr.second *= -1;
 
-        if (pr.first % 2 == 0)
-            pr.first *= -1;
-        if (pr.second % 2 == 0)
-            pr.second *= -1;
+    auto pos = Ogre::Vector3(pr.first, 0, pr.second);
 
-        auto pos = Ogre::Vector3(pr.first, 0, pr.second);
-
-            entity->setEntityTrans(pos, Ogre::Vector3(-1, 0, 0));
+    entity->setEntityTrans(pos, Ogre::Vector3(-1, 0, 0));
 }
 
 bool        Gauntlet::AI::createSoldier()
 {
-    if (_level == _armyCounter.size() - 1 && _wave >= _armyCounter[_level].size())
-      return (false);
-    if (_level == CoreGame::levels)
+    if (_level >= _armyCounter.size() - 1 && _wave >= _armyCounter[_level].size())
+      {
+	    Gauntlet::CoreGame::core->addEvent(EventType::LEVEL_END);
+    	return (false);
+      }
+    if (_wave < _armyCounter[_level].size())
     {
-        CoreGame::core->addEvent(Gauntlet::EventType::QUIT);
-        return (false);
-    }
-    auto nbEntities = _armyCounter[_level][_wave];
-    while (nbEntities > 0)
-    {
-        std::shared_ptr<Entity> entity;
-        if (_level == 0)
-            entity = EntityFactory::create<Pig>();
-        else if (_level == 1)
-            entity = EntityFactory::create<Ghost>();
-	    else if (_level == 2)
-	      entity = EntityFactory::create<Boss>();
-        this->placeBadGuy(entity);
-        this->_army.push_back(entity);
-        CoreGame::core->addEntity(entity);
-        nbEntities--;
-	std::cout << "while (nbEntities != 0)" << nbEntities << _level << "  " << _wave << std::endl;
+        auto nbEntities = _armyCounter[_level][_wave];
+        while (nbEntities > 0)
+        {
+            std::shared_ptr<Entity> entity;
+            if (_level == 0) {
+                entity = EntityFactory::create<Pig>();
+            }
+            else if (_level == 1)
+                entity = EntityFactory::create<Ghost>();
+            else if (_level == 2)
+            {
+                if (_wave == 0)
+                {
+                    entity = EntityFactory::create<Boss>();
+                    Gauntlet::CoreGame::core->addEvent(Gauntlet::EventType::SUMMONING);
+                    Gauntlet::CoreGame::core->addEvent(Gauntlet::EventType::SPAWN_BOSS, entity);
+                }
+                else
+                    entity = EntityFactory::create<MiniBoss>();
+            }
+            this->placeBadGuy(entity);
+            this->_army.push_back(entity);
+            CoreGame::core->addEntity(entity);
+            nbEntities--;
+        }
     }
     _wave++;
     if (_wave > _armyCounter[_level].size())
     {
         _level++;
         _wave = 0;
-        //std::cerr << "pop level_end : " << _level << std::endl;
         Gauntlet::CoreGame::core->addEvent(Gauntlet::EventType::LEVEL_END);
     }
     return (false);
@@ -96,7 +102,6 @@ bool        Gauntlet::AI::createSoldier()
 
 float		Gauntlet::AI::calculDir(float a, float b)
 {
-    //std::cout << "diff = " << a - b << std::endl;
     if (a - b < -1.0f)
         return (-1.0f);
     else if (a - b > 1.0f)
@@ -113,7 +118,7 @@ void		Gauntlet::AI::play(std::vector<std::shared_ptr<Gauntlet::Entity>> const& h
 
     for (auto const& h : _AIheroes)
     {
-        auto const& scriptComponent = h->get<Gauntlet::IAIScript>();
+        auto& scriptComponent = h->get<Gauntlet::IAIScript>();
         if (h)
         {
             auto event = scriptComponent.makeAction(h, heroes);
@@ -139,6 +144,8 @@ void Gauntlet::AI::takeEvent(Event const &evt)
 {
   if (evt._type == Gauntlet::EventType::DESTROY && evt._entities[0]->type == Entity::Type::EVIL)
     this->destroyEnt(evt._entities[0].get());
+  else if (evt._type == Gauntlet::EventType::SUMMONING)
+    this->createSoldier();
 }
 
 void		Gauntlet::AI::destroyEnt(Gauntlet::Entity* ent)

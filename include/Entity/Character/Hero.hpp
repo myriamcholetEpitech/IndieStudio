@@ -7,7 +7,6 @@
 
 namespace Gauntlet
 {
-    /* base interface for heroes */
     class Hero : public Gauntlet::Entity
     {
     public:

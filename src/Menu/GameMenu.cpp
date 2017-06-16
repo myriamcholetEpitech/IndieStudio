@@ -14,10 +14,12 @@ Gauntlet::GameMenu::GameMenu()
 
   this->_root = winMgr.loadLayoutFromFile("GameMenu.layout");
   auto menu = this->_root->getChild("Menu");
-  for (unsigned int id = 0; id < 4; id++)
+  for (unsigned int id = 0; id < 2; id++)
     this->_menuEntries.push_back(menu->getChild(200 + id)->getChild(0));
 
   CEGUI::System::getSingleton().getDefaultGUIContext().getRootWindow()->addChild(this->_root);
+
+  this->setActive(false);
 }
 
 Gauntlet::GameMenu::~GameMenu()
@@ -34,7 +36,8 @@ void		Gauntlet::GameMenu::takeEvent(Gauntlet::Event const &event)
   switch (event._type)
     {
       case (Gauntlet::EventType::MENU) :
-	Gauntlet::CoreGame::core->getMenuMgr().setActiveMenu(Gauntlet::MenuType::HUD);
+	Gauntlet::CoreGame::core->getMenuMgr().setActiveMenu(Gauntlet::MenuType::HUD, true);
+      Gauntlet::CoreGame::core->getMenuMgr().setActiveMenu(Gauntlet::MenuType::GAME_MENU, false);
       break;
       case (Gauntlet::EventType::MOVE) :
 	{
@@ -45,7 +48,7 @@ void		Gauntlet::GameMenu::takeEvent(Gauntlet::Event const &event)
 	  else
 	    if (move.type.front() == MoveEvent::Type::DOWN &&
 		this->_idx + 1 < this->_menuEntries.size())
-	      _idx += 1;
+	      this->_idx += 1;
 	  this->updateButtonSize();
 	}
       break;
@@ -64,7 +67,6 @@ void		Gauntlet::GameMenu::show(bool isShowed)
       this->_root->show();
       this->_idx = 0;
       this->updateButtonSize();
-      Gauntlet::CoreGame::core->isMenuOn = true;
     }
   else
     this->_root->hide();
@@ -84,16 +86,14 @@ void		Gauntlet::GameMenu::validateMenu()
   switch(this->_idx)
     {
       case 0 :
-	break;
-      case 1 :
-	Gauntlet::CoreGame::core->getMenuMgr().setActiveMenu(Gauntlet::MenuType::HUD);
+	Gauntlet::CoreGame::core->getMenuMgr().setActiveMenu(Gauntlet::MenuType::HUD, true);
+      Gauntlet::CoreGame::core->getMenuMgr().setActiveMenu(Gauntlet::MenuType::GAME_MENU, false);
       break;
-      case 2 :
-	Gauntlet::CoreGame::core->addEvent(Gauntlet::EventType::NEW_GAME);
-	break;
-      case 3 :
-	Gauntlet::CoreGame::core->getMenuMgr().setActiveMenu(Gauntlet::MenuType::MAIN_MENU);
-	Gauntlet::CoreGame::core->addEvent(Gauntlet::EventType::MAIN_MENU);
+      case 1 :
+	Gauntlet::CoreGame::core->getMenuMgr().setActiveMenu(Gauntlet::MenuType::MAIN_MENU, true);
+      Gauntlet::CoreGame::core->getMenuMgr().setActiveMenu(Gauntlet::MenuType::GAME_MENU, false);
+      Gauntlet::CoreGame::core->getMenuMgr().setActiveMenu(Gauntlet::MenuType::HUD, false);
+      Gauntlet::CoreGame::core->addEvent(Gauntlet::EventType::MAIN_MENU);
       break;
       default :
 	break;

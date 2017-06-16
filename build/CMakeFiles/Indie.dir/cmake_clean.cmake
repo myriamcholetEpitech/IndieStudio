@@ -54,6 +54,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Indie.dir/src/Menu/GameMenu.cpp.o"
   "CMakeFiles/Indie.dir/src/Menu/EndGame.cpp.o"
   "CMakeFiles/Indie.dir/src/Menu/MainMenu.cpp.o"
+  "CMakeFiles/Indie.dir/src/Menu/SplashScreen.cpp.o"
   "CMakeFiles/Indie.dir/src/RP/RP.cpp.o"
   "CMakeFiles/Indie.dir/src/AI/AI.cpp.o"
   "CMakeFiles/Indie.dir/src/Saving/Saving.cpp.o"

@@ -31,7 +31,6 @@ void			Gauntlet::MovementMgr::handleMove(Gauntlet::Event const &event)
   auto const		&revent = static_cast<Gauntlet::MoveEvent const &>(event);
 
   Gauntlet::Model	*model = revent._entities[0]->getPtr<Gauntlet::Model>();
-  //Gauntlet::Stats	*stats = revent._entities[0]->getPtr<Gauntlet::Stats>();
 
   if (!model)
     return ;

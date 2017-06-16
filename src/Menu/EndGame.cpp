@@ -23,6 +23,7 @@ Gauntlet::EndGame::EndGame()
   this->_rootDefeat->hide();
   this->_rootVictory->hide();
   this->_root = this->_rootDefeat;
+  this->show(false);
 }
 
 Gauntlet::EndGame::~EndGame()
@@ -35,7 +36,10 @@ void			Gauntlet::EndGame::takeEvent(Gauntlet::Event const &event)
   switch (event._type)
     {
       case (Gauntlet::EventType::MENU) :
-	Gauntlet::CoreGame::core->getMenuMgr().setActiveMenu(Gauntlet::MenuType::MAIN_MENU);
+	Gauntlet::CoreGame::core->getMenuMgr().setActiveMenu(Gauntlet::MenuType::MAIN_MENU, true);
+      Gauntlet::CoreGame::core->addEvent(EventType::MAIN_MENU);
+      Gauntlet::CoreGame::core->getMenuMgr().setActiveMenu(Gauntlet::MenuType::ENDGAME, false);
+      Gauntlet::CoreGame::core->getMenuMgr().setActiveMenu(Gauntlet::MenuType::HUD, false);
       break;
       case (Gauntlet::EventType::VICTORY):
 	this->victoryScreen();
@@ -67,7 +71,6 @@ void            Gauntlet::EndGame::show(bool isShowed)
   if (isShowed)
     {
       this->_root->show();
-      Gauntlet::CoreGame::core->isMenuOn = true;
     }
   else
     this->_root->hide();

@@ -46,7 +46,6 @@ Gauntlet::CollisionManager::~CollisionManager()
 void				Gauntlet::CollisionManager::updateSimulation()
 {
   this->_world->stepSimulation(Gauntlet::CoreGame::frameRate);
-  //auto a = this->_objects.end() - 1; std::cout << (*a)->getPosition() << std::endl;
 }
 
 Gauntlet::CollisionBody		*Gauntlet::CollisionManager::addPlane(Ogre::SceneNode			*node,

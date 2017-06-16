@@ -77,6 +77,12 @@ Components.hpp
 .././include/Components/Components.hpp
 
 .././include/CoreGame.hpp
+random
+-
+thread
+-
+chrono
+-
 Systems/Attack/AttackManager.hpp
 .././include/Systems/Attack/AttackManager.hpp
 Systems/Displayer/Displayer.hpp
@@ -87,6 +93,8 @@ Systems/Map/MapLoader.hpp
 .././include/Systems/Map/MapLoader.hpp
 Systems/Loot/LootManager.hpp
 .././include/Systems/Loot/LootManager.hpp
+Systems/Saving/Saving.hpp
+.././include/Systems/Saving/Saving.hpp
 RP/RP.hpp
 .././include/RP/RP.hpp
 AI/AI.hpp
@@ -527,6 +535,18 @@ Menu/MainMenu.hpp
 .././include/Menu/Menu/MainMenu.hpp
 Menu/EndGame.hpp
 .././include/Menu/Menu/EndGame.hpp
+Menu/SplashScreen.hpp
+.././include/Menu/Menu/SplashScreen.hpp
+
+.././include/Menu/SplashScreen.hpp
+CEGUI/CEGUI.h
+-
+CoreGame.hpp
+-
+CEGUI/RendererModules/Ogre/Renderer.h
+-
+IMenu.hpp
+.././include/Menu/IMenu.hpp
 
 .././include/Movement/MovementManager.hpp
 Systems/System.hpp
@@ -1067,6 +1087,8 @@ Components/Stats.hpp
 /home/myriam/Projet/cpp_indie_studio/src/Components/Components/Stats.hpp
 
 /home/myriam/Projet/cpp_indie_studio/src/Components/Animation.cpp
+CoreGame.hpp
+-
 Components/Animation.hpp
 /home/myriam/Projet/cpp_indie_studio/src/Components/Components/Animation.hpp
 
@@ -1384,6 +1406,10 @@ CoreGame.hpp
 Menu/MenuManager.hpp
 /home/myriam/Projet/cpp_indie_studio/src/Menu/Menu/MenuManager.hpp
 
+/home/myriam/Projet/cpp_indie_studio/src/Menu/SplashScreen.cpp
+Menu/SplashScreen.hpp
+/home/myriam/Projet/cpp_indie_studio/src/Menu/Menu/SplashScreen.hpp
+
 /home/myriam/Projet/cpp_indie_studio/src/Movement/MovementMgr.cpp
 CoreGame.hpp
 -
@@ -1403,6 +1429,8 @@ RP/RP.hpp
 /home/myriam/Projet/cpp_indie_studio/src/RP/RP/RP.hpp
 
 /home/myriam/Projet/cpp_indie_studio/src/Saving/Saving.cpp
+CoreGame.hpp
+-
 Systems/Saving/Saving.hpp
 /home/myriam/Projet/cpp_indie_studio/src/Saving/Systems/Saving/Saving.hpp
 

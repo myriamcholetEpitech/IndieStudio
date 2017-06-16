@@ -5,7 +5,7 @@
 // Login   <myriam.cholet@epitech.eu>
 // 
 // Started on  Fri May 12 17:06:35 2017 Myriam
-// Last update Mon May 22 19:57:26 2017 Mymy Aragon
+// Last update Fri Jun 16 13:46:17 2017 benito
 //
 
 #ifndef SOUND_HPP_
@@ -37,17 +37,25 @@ namespace Gauntlet
         private:
             std::vector< std::unique_ptr<sf::Music> > _musicBuffers;
             std::vector< std::unique_ptr<sf::Music> > _defeat;
+            std::vector< std::unique_ptr<sf::Music> > _victory;
             std::vector< std::unique_ptr<sf::Music> > _mainMenu;
             sf::Music       *playing;
-            unsigned int    counter;
+            float    counter;
             static const std::string musicByLevelPath;
             static const std::string soundPath;
             static const std::string musicForMenuPath;
-            //static const std::string musicForDefeatPath;
+            static const std::string musicForDefeatPath;
+            static const std::string musicForVictoryPath;
 
         public:
             void             stopMusic();
+            void             setSoundVolume(float volume);
+            void             setMusicVolume(float volume);
+            float     getSoundVolume() const;
+            float     getMusicVolume() const;
         private:
+            float        soundVolume;
+            float        musicVolume;
             void             loadDirOfMusic(std::string const&, std::vector<std::string>&,
                                             std::vector< std::unique_ptr<sf::Music> >&) const;
             void             playSound(std::string const&);
@@ -57,8 +65,11 @@ namespace Gauntlet
             void             handleAttack(std::shared_ptr<Gauntlet::Entity> const& entity);
             void             handleIdle(std::shared_ptr<Gauntlet::Entity> const& entity);
             void             handleDestroy(std::shared_ptr<Gauntlet::Entity> const& entity);
+            void             handleBoss(std::shared_ptr<Gauntlet::Entity> const& entity);
             void             handleLevelEnd();
             void             handleMenu();
+            void             handleVictory();
+            void             handleDefeat();
             std::unordered_map<std::string, std::pair<sf::SoundBuffer, sf::Sound> > _soundBuffers;
     };
 }

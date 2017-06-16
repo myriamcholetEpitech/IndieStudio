@@ -150,7 +150,6 @@ bool Gauntlet::KeyListener::povMoved(const OIS::JoyStickEvent &e, int pov)
 
 bool Gauntlet::KeyListener::axisMoved(const OIS::JoyStickEvent&, int)
 {
-    //std::cout << e.state.mAxes[nb].cType << std::endl;
     return (true);
 }
 
@@ -218,7 +217,6 @@ bool			Gauntlet::KeyListener::keyPressed(const OIS::KeyEvent &arg)
 	      return (true);
 	    }
 	}
-      std::cout << "while (i != size) 1" << std::endl;
       i = i + 1;
     }
 
@@ -264,7 +262,6 @@ bool			Gauntlet::KeyListener::keyReleased(const OIS::KeyEvent &arg)
                 }
             }
         }
-      std::cout << "while i != size 2" << std::endl;
         i = i + 1;
     }
 

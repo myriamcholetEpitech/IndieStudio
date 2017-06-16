@@ -24,8 +24,9 @@ void			Gauntlet::AnimationManager::animate(Gauntlet::Animation *animation)
 
   if (!animation->loop)
     ogreAnim->setTimePosition(0);
-  return ;
+  return;
 }
+
 
 
 void			Gauntlet::AnimationManager::render(Ogre::Real const &time)
@@ -35,7 +36,7 @@ void			Gauntlet::AnimationManager::render(Ogre::Real const &time)
   for (auto &anim : this->_animationVector)
     {
       if ((ogreAnim = anim->getState()) != nullptr)
-	ogreAnim->addTime(time * anim->speed);
+	ogreAnim->addTime(Ogre::Real(time * anim->speed));
     }
 }
 
@@ -51,8 +52,7 @@ void			Gauntlet::AnimationManager::clear(Gauntlet::Animation *animation)
 					 animation);
   if (this->_animationVector.end() != a)
     {
-      this->_animationVector.erase(a,
-				   this->_animationVector.end());
+      this->_animationVector.erase(a);
     }
 }
 
@@ -150,5 +150,5 @@ void		Gauntlet::AnimationManager::animationDead(Gauntlet::Animation *anim, Gaunt
 
 void		Gauntlet::AnimationManager::addAnimation(Gauntlet::Animation *animation)
 {
-    this->_animationVector.push_back(animation);
+  this->_animationVector.push_back(animation);
 }

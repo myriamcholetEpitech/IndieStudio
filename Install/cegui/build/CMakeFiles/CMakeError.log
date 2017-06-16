@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/myriam/IndieStudio/Install/cegui/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_30de8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_30de8.dir/build.make CMakeFiles/cmTC_30de8.dir/build
+make[1] : on entre dans le répertoire « /home/myriam/IndieStudio/Install/cegui/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_30de8.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -std=c99    -o CMakeFiles/cmTC_30de8.dir/CheckSymbolExists.c.o   -c /home/myriam/IndieStudio/Install/cegui/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_30de8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_30de8.dir/link.txt --verbose=1
+/usr/bin/cc   -std=c99     CMakeFiles/cmTC_30de8.dir/CheckSymbolExists.c.o  -o cmTC_30de8 -rdynamic 
+CMakeFiles/cmTC_30de8.dir/CheckSymbolExists.c.o : Dans la fonction « main » :
+CheckSymbolExists.c:(.text+0x16) : référence indéfinie vers « pthread_create »
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_30de8.dir/build.make:97 : la recette pour la cible « cmTC_30de8 » a échouée
+make[1]: *** [cmTC_30de8] Erreur 1
+make[1] : on quitte le répertoire « /home/myriam/IndieStudio/Install/cegui/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_30de8/fast » a échouée
+make: *** [cmTC_30de8/fast] Erreur 2
+
+File /home/myriam/IndieStudio/Install/cegui/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/myriam/IndieStudio/Install/cegui/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_39147/fast"
+/usr/bin/make -f CMakeFiles/cmTC_39147.dir/build.make CMakeFiles/cmTC_39147.dir/build
+make[1] : on entre dans le répertoire « /home/myriam/IndieStudio/Install/cegui/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_39147.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -std=c99 -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_39147.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_39147
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_39147.dir/link.txt --verbose=1
+/usr/bin/cc   -std=c99 -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_39147.dir/CheckFunctionExists.c.o  -o cmTC_39147 -rdynamic -lpthreads 
+/usr/bin/ld : ne peut trouver -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_39147.dir/build.make:97 : la recette pour la cible « cmTC_39147 » a échouée
+make[1]: *** [cmTC_39147] Erreur 1
+make[1] : on quitte le répertoire « /home/myriam/IndieStudio/Install/cegui/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_39147/fast » a échouée
+make: *** [cmTC_39147/fast] Erreur 2
+
+

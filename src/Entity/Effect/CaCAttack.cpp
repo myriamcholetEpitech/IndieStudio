@@ -5,7 +5,7 @@
 #include "Entity/Effect/CaCAttack.hpp"
 
 Gauntlet::CaCAttack::CaCAttack(int id)
-	: Attack(id, "R_knife.mesh")
+	: Attack(id, "empty.mesh")
 {
 
 }

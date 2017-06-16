@@ -67,6 +67,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/myriam/Projet/cpp_indie_studio/src/Menu/IMenu.cpp" "/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles/Indie.dir/src/Menu/IMenu.cpp.o"
   "/home/myriam/Projet/cpp_indie_studio/src/Menu/MainMenu.cpp" "/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles/Indie.dir/src/Menu/MainMenu.cpp.o"
   "/home/myriam/Projet/cpp_indie_studio/src/Menu/MenuManager.cpp" "/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles/Indie.dir/src/Menu/MenuManager.cpp.o"
+  "/home/myriam/Projet/cpp_indie_studio/src/Menu/SplashScreen.cpp" "/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles/Indie.dir/src/Menu/SplashScreen.cpp.o"
   "/home/myriam/Projet/cpp_indie_studio/src/Movement/MovementMgr.cpp" "/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles/Indie.dir/src/Movement/MovementMgr.cpp.o"
   "/home/myriam/Projet/cpp_indie_studio/src/RP/RP.cpp" "/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles/Indie.dir/src/RP/RP.cpp.o"
   "/home/myriam/Projet/cpp_indie_studio/src/Saving/Saving.cpp" "/home/myriam/Projet/cpp_indie_studio/build/CMakeFiles/Indie.dir/src/Saving/Saving.cpp.o"
