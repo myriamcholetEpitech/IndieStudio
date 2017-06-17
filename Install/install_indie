@@ -1,11 +1,14 @@
 #!/bin/bash
 set -e
 
+directory="/usr/local/games"
 
 #preliminaries
 cd ../..
-mkdir /usr/local/games
-mv IndieStudio /usr/local/games
+if [ ! -d $directory ]; then
+    mkdir $directory
+fi
+mv IndieStudio $directory
 cd /usr/local/games/IndieStudio/Install
 
 #dependancies
@@ -60,4 +63,4 @@ cd build
 cmake ..
 make -j4
 cp Indie /usr/local/bin/Gauntlet
-echo "Gauntlet has been installed with success, type 'Gauntlet' from command-line to play\n"
+echo "\033[32m Gauntlet has been installed with success, type 'Gauntlet' from command-line to play\n\e[0m"

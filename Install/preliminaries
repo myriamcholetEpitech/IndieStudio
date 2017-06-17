@@ -11,4 +11,4 @@ fi
 cd /usr/local/games
 sudo git clone https://github.com/myriamcholetEpitech/IndieStudio.git
 cd IndieStudio/Install
-echo -e "Preliminary install was successful, please run install_indie in order to install the game\n"
+echo -e "\033[32m Preliminary install was successful, please run install_indie (in /usr/local/games/IndieSudio/Install/) in order to install the game\n\e[0m"
