@@ -62,5 +62,7 @@ mkdir build
 cd build
 cmake ..
 make -j4
+cd ../Install
+cp resources.cfg ogre.cfg plugins.cfg ../build
 cp Indie /usr/local/bin/Gauntlet
-echo "\033[32m Gauntlet has been installed with success, type 'Gauntlet' from command-line to play\n\e[0m"
+echo -e "\033[32m Gauntlet has been installed with success, type 'Gauntlet' from command-line to play\n\e[0m"
