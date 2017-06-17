@@ -22,7 +22,10 @@ git clone https://github.com/OGRECave/ogre
 ./build.sh
 cd ogre
 git checkout v1-9
-mkdir build && cd build
+if [ ! -d "build" ]; then
+    mkdir "build"
+fi
+cd build
 cmake ..
 make -j2
 sudo make install
