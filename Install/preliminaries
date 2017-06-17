@@ -1,3 +1,5 @@
+#!/bin/bash
+
 mkdir /usr/local/games
 cd /usr/local/games
 git clone https://github.com/myriamcholetEpitech/IndieStudio.git
