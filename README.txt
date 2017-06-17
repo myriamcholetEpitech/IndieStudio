@@ -1,24 +1,8 @@
-Pour installer ogre (1.9):
+c++ Gauntlet-like made during the 2nd year at Epitech Paris in 6 weeks
+Authors : Aragon My-Lan, Cholet Myriam, Puentes Timothée, Réchou Benjamin, Nakache Vincent and Benoît Linsey
 
-NE PAS ETRE SUR BLINUX !!!!
 
-https://github.com/OancaAndrei/ogre_build
-	./install_dependencies.sh
-	git clone https://github.com/OGRECave/ogre
-	in build.sh
-	   replace line par "make -DCMAKE_BUILD_TYPE=Release -DOGRE_BUILD_SAMPLES=TRUE .."
-	./build.sh
-	cd ogre
-	mkdir build
-	cd build
-	cmake ..
-	make -j2
-	sudo make install
-	/!\ DONE /!\
-	
-Dépendances:
- - Ogre (affichage)
- - SFML (son)
- - bullet (physique)
- - OIS (touches)
- - CEGUI (menu/hud)
+Install:
+
+	cd Install
+	./install_indie

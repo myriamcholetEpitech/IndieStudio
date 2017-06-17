@@ -1,4 +1,14 @@
 #!/bin/bash
+set -e
+
+
+#preliminaries
+cd ../..
+mkdir /usr/local/games
+mv IndieStudio /usr/local/games
+cd /usr/local/games/IndieStudio/Install
+
+#dependancies
 
 cd ogre_build-master
 ./install_dependencies.sh
@@ -42,3 +52,12 @@ sudo apt-get install libsfml-dev
 sudo apt-get install libois-dev
 
 
+#compiling
+
+cd /usr/local/games/IndieStudio
+mkdir build
+cd build
+cmake ..
+make -j4
+cp Indie /usr/local/bin/Gauntlet
+echo "Gauntlet has been installed with success, type 'Gauntlet' from command-line to play\n"
