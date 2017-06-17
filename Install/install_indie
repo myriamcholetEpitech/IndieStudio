@@ -2,13 +2,16 @@
 set -e
 
 directory="/usr/local/games"
+gameDir="/usr/local/games/IndieStudio"
 
 #preliminaries
 cd ../..
 if [ ! -d $directory ]; then
     mkdir $directory
 fi
-mv IndieStudio $directory
+if [ ! -d $gameDir ]; then
+    mv IndieStudio $directory
+fi
 cd /usr/local/games/IndieStudio/Install
 
 #dependancies
