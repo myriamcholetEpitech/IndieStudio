@@ -6,3 +6,5 @@ Install:
 
 	cd Install
 	./install_indie
+
+	NB : If your distribution doesn't use apt as package manager, feel free to replace it by yours
