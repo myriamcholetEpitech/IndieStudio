@@ -18,7 +18,9 @@ cd /usr/local/games/IndieStudio/Install
 
 cd ogre_build-master
 ./install_dependencies.sh
-git clone https://github.com/OGRECave/ogre
+if [ ! -d "ogre" ]; then
+    sudo git clone https://github.com/OGRECave/ogre
+fi
 ./build.sh
 cd ogre
 git checkout v1-9
