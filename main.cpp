@@ -5,7 +5,7 @@
 // Login   <Mymy@epitech.net>
 // 
 // Started on  Wed May  3 14:06:57 2017 My-Lan Aragon
-// Last update Thu May 11 15:42:53 2017 Mymy Aragon
+// Last update Sun Jun 18 20:49:23 2017 benito
 //
 
 #include <iostream>
@@ -19,13 +19,19 @@ int	main(int, char **, char **env)
       return (1);
     }
   try
- {
+    {
+      if (chdir("/usr/local/games/IndieStudio/Install") == -1)
+	{
+	  std::cerr << "Couldn't load my environment" << std::endl;
+	  return (1);
+	}
       Gauntlet::CoreGame::core = std::make_unique<Gauntlet::CoreGame>();
       Gauntlet::CoreGame::core->go();
-   }
-catch (std::exception const& e)
-  {
+    }
+  catch (std::exception const& e)
+    {
       std::cerr << e.what() << std::endl;
-  }
+      return (1);
+    }
   return (0);
 }
