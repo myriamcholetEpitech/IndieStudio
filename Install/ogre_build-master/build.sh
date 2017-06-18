@@ -12,7 +12,7 @@ allert () { echo -e "${RED}$1${NC}"; }
 
 # Build ogre
 cd ogre
-mkdir -p build
+sudo mkdir -p build
 cd build
 cmake -DCMAKE_BUILD_TYPE=Release -DOGRE_BUILD_SAMPLES=TRUE ..
 make -j8
