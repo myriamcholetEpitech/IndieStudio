@@ -26,6 +26,8 @@ fi
 sudo chmod -R a+rw ogre
 cd ogre
 git checkout v1-9
+cd ..
+sudo chmod -R a+rw ogre
 if [ ! -d "build" ]; then
     mkdir "build"
 fi
