@@ -12,6 +12,7 @@ fi
 if [ ! -d $gameDir ]; then
     mv IndieStudio $directory
 fi
+sudo chmod a+rw /usr/local/games/IndieStudio
 cd /usr/local/games/IndieStudio/Install
 
 #dependancies
@@ -19,7 +20,7 @@ cd /usr/local/games/IndieStudio/Install
 cd ogre_build-master
 ./install_dependencies.sh
 if [ ! -d "ogre" ]; then
-    sudo git clone https://github.com/OGRECave/ogre
+    git clone https://github.com/OGRECave/ogre
 fi
 ./build.sh
 cd ogre
@@ -29,14 +30,14 @@ if [ ! -d "build" ]; then
 fi
 cd build
 cmake ..
-make -j2
+make -j8
 sudo make install
 cd ../../../
 
 sudo apt-get install libbullet-dev
 sudo apt-get install libbullet-extras-dev
 if [ ! -d "ogrebullet" ]; then
-    sudo git clone https://bitbucket.org/alexeyknyshev/ogrebullet.git
+    git clone https://bitbucket.org/alexeyknyshev/ogrebullet.git
     cd ogrebullet
     cmake .
     sudo make install
