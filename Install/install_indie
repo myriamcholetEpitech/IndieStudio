@@ -35,11 +35,13 @@ cd ../../../
 
 sudo apt-get install libbullet-dev
 sudo apt-get install libbullet-extras-dev
-git clone https://bitbucket.org/alexeyknyshev/ogrebullet.git
-cd ogrebullet
-cmake .
-sudo make install
-cd ../
+if [ ! -d "ogrebullet" ]; then
+    sudo git clone https://bitbucket.org/alexeyknyshev/ogrebullet.git
+    cd ogrebullet
+    cmake .
+    sudo make install
+    cd ../
+fi
 
 sudo apt-get --reinstall install mercurial mercurial-common
 sudo apt-get -y install build-essential automake libtool
