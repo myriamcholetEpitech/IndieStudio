@@ -30,9 +30,10 @@ if [ ! -d "build" ]; then
     mkdir "build"
 fi
 cd build
+sudo chmod -R a+rw ..
 cmake ..
 make -j8
-sudo make install
+make install
 cd ../../../
 
 sudo apt-get install libbullet-dev
