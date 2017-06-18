@@ -33,7 +33,7 @@ if [ ! -d "build" ]; then
 fi
 cd build
 sudo chmod -R a+rw ..
-cmake ..
+sudo cmake ..
 make -j8
 make install
 cd ../../../
