@@ -97,7 +97,7 @@ Gauntlet::HitBox			*Gauntlet::CollisionManager::addHitBox(Ogre::SceneNode *node,
   return (object);
 }
 
-void 					Gauntlet::CollisionManager::getCollision()
+void 					Gauntlet::CollisionManager::getCollision() const
 {
   for (auto & obj : this->_objects)
     obj.obj->getEvent();

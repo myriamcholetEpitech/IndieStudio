@@ -16,7 +16,7 @@ int Gauntlet::Entity::typeID;
 void		Gauntlet::Entity::setEntityTrans(const Ogre::Vector3 &pos,
                                              const Ogre::Vector3 &dir)
 {
-    Gauntlet::Model	*model = getPtr<Gauntlet::Model>();
+    Gauntlet::Model	*model = this->getPtr<Gauntlet::Model>();
 
     if (model != nullptr)
     {

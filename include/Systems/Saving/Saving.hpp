@@ -12,8 +12,7 @@ namespace Gauntlet
 {
     class Saving : public System
     {
-      void generateSaving();
-      void saveScore();
+      void saveScore() const;
 
     public:
       Saving() {};

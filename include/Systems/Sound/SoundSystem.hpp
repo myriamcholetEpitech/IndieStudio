@@ -66,7 +66,8 @@ namespace Gauntlet
             void             handleIdle(std::shared_ptr<Gauntlet::Entity> const& entity);
             void             handleDestroy(std::shared_ptr<Gauntlet::Entity> const& entity);
             void             handleBoss(std::shared_ptr<Gauntlet::Entity> const& entity);
-            void             handleLevelEnd();
+      void             handleLevelEnd();
+      void             handleNewGame();
             void             handleMenu();
             void             handleVictory();
             void             handleDefeat();

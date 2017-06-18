@@ -18,7 +18,7 @@ Gauntlet::Boss::Boss(int id) :
   Gauntlet::Weapon              *weapon = new Gauntlet::Weapon(80, 1.5, Weapon::Type::ZONE_DIST,
 							       Ogre::Vector3(5, 1, 5),
 							       Ogre::Vector3(35, 1, 35));
-  Gauntlet::Stats		*stat = new Gauntlet::Stats(1000, 1000, 1.5);
+  Gauntlet::Stats		*stat = new Gauntlet::Stats(50, 50, 1.5);
   Gauntlet::Animation		*animation = new Gauntlet::Animation(model->ent);
 
   auto death = "../audio/sfx/boss//dinosaur/trex.ogg";

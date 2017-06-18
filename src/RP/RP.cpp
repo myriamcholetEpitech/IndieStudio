@@ -2,10 +2,8 @@
 // Created by mymy on 25/05/17.
 //
 
-#include <Components/EntityState.hpp>
-#include <Components/Model.hpp>
+
 #include <CoreGame.hpp>
-#include <Components/PowerUpStats.hpp>
 #include "RP/RP.hpp"
 
 void    Gauntlet::RP::takeEvent(Event const &event)
@@ -40,7 +38,7 @@ void    Gauntlet::RP::takeEvent(Event const &event)
     }
 }
 
-void    Gauntlet::RP::handleAttack(Event const &event)
+void    Gauntlet::RP::handleAttack(Event const &event) const
 {
   State *state;
 
@@ -51,7 +49,7 @@ void    Gauntlet::RP::handleAttack(Event const &event)
     }
 }
 
-void			Gauntlet::RP::handleDash(Event const &event)
+void			Gauntlet::RP::handleDash(Event const &event) const
 {
   State			*state;
   Stats                 *stats;
@@ -70,7 +68,7 @@ void			Gauntlet::RP::handleDash(Event const &event)
     }
 }
 
-void			Gauntlet::RP::handleMove(Event const &event)
+void			Gauntlet::RP::handleMove(Event const &event) const
 {
   State			*state;
 
@@ -81,7 +79,7 @@ void			Gauntlet::RP::handleMove(Event const &event)
     }
 }
 
-void			Gauntlet::RP::handleCollision(Event const &event)
+void			Gauntlet::RP::handleCollision(Event const &event) const
 {
   Gauntlet::State       *state;
 
@@ -97,7 +95,7 @@ void			Gauntlet::RP::handleCollision(Event const &event)
     }
 }
 
-void                Gauntlet::RP::handlePowerUp(Event const &event)
+void                Gauntlet::RP::handlePowerUp(Event const &event) const
 {
   Gauntlet::PowerUpStats *powerUpStats;
   Gauntlet::Stats        *statsPlayer;
@@ -138,7 +136,7 @@ void                Gauntlet::RP::handlePowerUp(Event const &event)
   Gauntlet::CoreGame::core->addEvent(Gauntlet::EventType::DESTROY, event._entities[0]);
 }
 
-void		    Gauntlet::RP::handleIdle(Event const &event)
+void		    Gauntlet::RP::handleIdle(Event const &event) const
 {
   State *state;
 
@@ -149,7 +147,7 @@ void		    Gauntlet::RP::handleIdle(Event const &event)
     }
 }
 
-void                    Gauntlet::RP::handleRevive(Event const &event)
+void                    Gauntlet::RP::handleRevive(Event const &event) const
 {
   State *state;
   Stats *stats;
@@ -166,7 +164,7 @@ void                    Gauntlet::RP::handleRevive(Event const &event)
     }
 }
 
-void			Gauntlet::RP::fightEngaged(Event const &event)
+void			Gauntlet::RP::fightEngaged(Event const &event) const
 {
   Gauntlet::Stats	*statsTarget;
   Gauntlet::Weapon      *weapon;
@@ -199,7 +197,7 @@ void			Gauntlet::RP::fightEngaged(Event const &event)
       }
 }
 
-bool    Gauntlet::RP::isEnnemy(Entity::Type const &attacker, Entity::Type const &attacked)
+bool    Gauntlet::RP::isEnnemy(Entity::Type const &attacker, Entity::Type const &attacked) const
 {
   switch (attacked)
     {
@@ -248,7 +246,7 @@ void Gauntlet::RP::checkVictory(std::vector<std::shared_ptr<Entity>> const &enti
 {
   int nbEvilAlive = 0;
 
-  if (this->nbLevel == Gauntlet::CoreGame::core->levels)
+  if (static_cast<unsigned int>(this->nbLevel) == Gauntlet::CoreGame::core->levels)
     {
       for (auto entity : entities)
 	{

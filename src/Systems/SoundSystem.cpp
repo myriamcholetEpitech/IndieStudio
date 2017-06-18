@@ -131,7 +131,7 @@ void Gauntlet::SoundSystem::handleMenu()
     }
 }
 
-void Gauntlet::SoundSystem::handleLevelEnd()
+void		Gauntlet::SoundSystem::handleLevelEnd()
 {
     if (this->_victory.size() > 0 && this->playing == this->_victory.front().get())
         return ;
@@ -172,6 +172,12 @@ float     Gauntlet::SoundSystem::getMusicVolume() const
     return (musicVolume);
 }
 
+void				Gauntlet::SoundSystem::handleNewGame()
+{
+  this->stopMusic();
+  this->counter = 0;
+}
+
 void Gauntlet::SoundSystem::handleDefeat()
 {
     this->stopMusic();
@@ -198,8 +204,6 @@ void Gauntlet::SoundSystem::handleBoss(std::shared_ptr<Gauntlet::Entity> const &
 {
     _soundBuffers[entity->get<Gauntlet::Sound>().death].second.play();
     _soundBuffers[entity->get<Gauntlet::Sound>().death].second.setVolume(this->soundVolume);
-
-    std::cerr << entity->get<Gauntlet::Sound>().death << "  -    " << _soundBuffers[entity->get<Gauntlet::Sound>().death].second.getStatus() << std::endl;
 }
 
 void            Gauntlet::SoundSystem::takeEvent(Gauntlet::Event const &event)
@@ -226,7 +230,7 @@ void            Gauntlet::SoundSystem::takeEvent(Gauntlet::Event const &event)
                 this->handleLevelEnd();
                 break;
             case EventType::NEW_GAME :
-                this->handleLevelEnd();
+                this->handleNewGame();
                 break;
             case EventType::MAIN_MENU :
                 this->handleMenu();

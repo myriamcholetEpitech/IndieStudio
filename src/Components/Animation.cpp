@@ -21,7 +21,7 @@ Gauntlet::Animation::~Animation()
 }
 
 
-Ogre::AnimationState*		Gauntlet::Animation::getState()
+Ogre::AnimationState*		Gauntlet::Animation::getState() const
 {
   return this->ent->getAnimationState(this->actualAnim);
 }

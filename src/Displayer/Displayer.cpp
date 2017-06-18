@@ -25,7 +25,7 @@ Gauntlet::Displayer::Displayer() :
    */
   this->root->setRenderSystem(this->rs);
   this->rs->setConfigOption("Full Screen", "Yes");
-  this->window = root->initialise(true, "Gauntlet");
+    this->window = root->initialise(true, "Gauntlet");
   this->setupResources();
 
   /*

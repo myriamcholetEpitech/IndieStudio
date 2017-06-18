@@ -35,7 +35,7 @@ namespace Gauntlet
     void				addAnimation(Gauntlet::Animation *animation);
     void				render(Ogre::Real const &time);
 
-    virtual void				takeEvent(Gauntlet::Event const &event) override ;
+    virtual void			takeEvent(Gauntlet::Event const &event) override ;
 
     void				animationAttack(Gauntlet::Animation *anim, Gauntlet::State *state, double speed);
     void				animationRun(Gauntlet::Animation *anim, Gauntlet::State *state, double speed);

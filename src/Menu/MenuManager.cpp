@@ -100,7 +100,7 @@ void                    Gauntlet::MenuManager::addSplashScreen()
     this->_menus.emplace_back(new Gauntlet::SplashScreen());
 }
 
-bool			Gauntlet::MenuManager::setActiveMenu(Gauntlet::MenuType menuType, bool active)
+bool			Gauntlet::MenuManager::setActiveMenu(Gauntlet::MenuType const &menuType, bool active)
 {
   bool 			isMenuOn;
 
@@ -128,7 +128,7 @@ bool			Gauntlet::MenuManager::setActiveMenu(Gauntlet::MenuType menuType, bool ac
   return (false);
 }
 
-bool				Gauntlet::MenuManager::showMenu(Gauntlet::MenuType menuType, bool show)
+bool				Gauntlet::MenuManager::showMenu(Gauntlet::MenuType const &menuType, bool show)
 {
   for (auto & menu : this->_menus)
     {
@@ -141,7 +141,7 @@ bool				Gauntlet::MenuManager::showMenu(Gauntlet::MenuType menuType, bool show)
   return (false);
 }
 
-Gauntlet::IMenu			*Gauntlet::MenuManager::getMenu(Gauntlet::MenuType menuType)
+Gauntlet::IMenu			*Gauntlet::MenuManager::getMenu(Gauntlet::MenuType const &menuType)
 {
   for (auto & menu : this->_menus)
     if (menu->getMenuType() == menuType)

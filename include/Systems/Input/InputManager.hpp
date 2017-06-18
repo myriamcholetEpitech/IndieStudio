@@ -23,7 +23,7 @@ namespace Gauntlet
       std::array<std::unique_ptr<Gauntlet::KeyListener>, 4>	_player;
 
     static int const						_MAX_PLAYER = 4;
-      int _id;
+    unsigned int						_id;
    public:
 
     InputManager(Ogre::RenderWindow *win);

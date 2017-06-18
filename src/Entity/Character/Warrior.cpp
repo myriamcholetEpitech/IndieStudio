@@ -17,7 +17,7 @@ Gauntlet::Warrior::Warrior(int id) : Hero(id)
 							       Weapon::Type::CAC,
 							       Ogre::Vector3(5, 1, 15),
 							       Ogre::Vector3(5, 1, -15));
-  Gauntlet::Stats		*stat = new Gauntlet::Stats(300, 300, 1);
+  Gauntlet::Stats		*stat = new Gauntlet::Stats(300, 300, 3);
   Gauntlet::Animation		*animation = new Gauntlet::Animation(model->ent);
 
   auto death = "../audio/sfx/player//guerrier/hmm.wav";

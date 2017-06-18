@@ -29,7 +29,7 @@ Gauntlet::Valkyrie::Valkyrie(int id) : Hero(id)
   Gauntlet::Weapon              *weapon = new Gauntlet::Weapon(50, 1.5, Weapon::Type::CAC,
                                                                Ogre::Vector3(5, 1, 0),
                                                                Ogre::Vector3(15, 1, 0));
-  Gauntlet::Stats		        *stat = new Gauntlet::Stats(120, 120, 1.5);
+  Gauntlet::Stats		        *stat = new Gauntlet::Stats(120, 120, 2);
   Gauntlet::Animation		    *animation = new Gauntlet::Animation(model->ent);
 
   this->attach<Gauntlet::Weapon>(weapon);

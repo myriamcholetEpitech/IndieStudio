@@ -8,8 +8,8 @@ Gauntlet::OgreMotionState::OgreMotionState(btTransform const &defaultPos,
 					   Ogre::SceneNode *node,
 					   Ogre::Vector3 const & offset)
 	: _node(node),
-	  _defaultPos(defaultPos),
-	  _offset(offset)
+	  _offset(offset),
+	  _defaultPos(defaultPos)
 {
 
 }

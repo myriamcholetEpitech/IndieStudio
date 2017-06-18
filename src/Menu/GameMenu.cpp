@@ -40,16 +40,19 @@ void		Gauntlet::GameMenu::takeEvent(Gauntlet::Event const &event)
       Gauntlet::CoreGame::core->getMenuMgr().setActiveMenu(Gauntlet::MenuType::GAME_MENU, false);
       break;
       case (Gauntlet::EventType::MOVE) :
-	{
-	  auto const &move = static_cast<MoveEvent const &>(event);
-	  if (move.type.front() == MoveEvent::Type::UP &&
-	      this->_idx > 0)
-	    this->_idx--;
-	  else
-	    if (move.type.front() == MoveEvent::Type::DOWN &&
-		this->_idx + 1 < this->_menuEntries.size())
-	      this->_idx += 1;
-	  this->updateButtonSize();
+    	{
+	      auto const &move = static_cast<MoveEvent const &>(event);
+        /* segfault ici, pas de front */
+          if (move.type.size() > 0)
+          {
+              if (move.type.front() == MoveEvent::Type::UP &&
+                  this->_idx > 0)
+                  this->_idx--;
+              else if (move.type.front() == MoveEvent::Type::DOWN &&
+                       this->_idx + 1 < this->_menuEntries.size())
+                  this->_idx += 1;
+              this->updateButtonSize();
+          }
 	}
       break;
       case (Gauntlet::EventType::ENTER) :
@@ -81,7 +84,7 @@ void		Gauntlet::GameMenu::updateButtonSize()
     this->_menuEntries[this->_idx + 1]->setProperty("Font", "Runic-MT-18");
 }
 
-void		Gauntlet::GameMenu::validateMenu()
+void		Gauntlet::GameMenu::validateMenu() const
 {
   switch(this->_idx)
     {

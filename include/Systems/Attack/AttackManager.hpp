@@ -38,7 +38,7 @@ namespace Gauntlet
    private:
     std::vector<Gauntlet::AttackData> _attacks;
 
-    void generateAttack(std::shared_ptr<Gauntlet::Entity> const&);
+    void	generateAttack(std::shared_ptr<Gauntlet::Entity> const&);
 
    public:
     AttackManager() {};

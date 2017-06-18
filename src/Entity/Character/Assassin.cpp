@@ -22,7 +22,7 @@ Gauntlet::Assassin::Assassin(int id) : Hero(id)
   Gauntlet::Weapon              *weapon = new Gauntlet::Weapon(40, 2, Weapon::DIST,
 							       Ogre::Vector3(5, 1, 0),
 							       Ogre::Vector3(15, 1, 0));
-  Gauntlet::Stats		*stat = new Gauntlet::Stats(100, 100, 2);
+  Gauntlet::Stats		*stat = new Gauntlet::Stats(100, 100, 2.5);
   Gauntlet::Animation		*animation = new Gauntlet::Animation(model->ent);
 
   auto death = "../audio/sfx/player//assassin/cri_mignon.wav";

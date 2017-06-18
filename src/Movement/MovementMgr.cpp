@@ -26,7 +26,7 @@ void		Gauntlet::MovementMgr::takeEvent(Gauntlet::Event const &event)
     }
 }
 
-void			Gauntlet::MovementMgr::handleMove(Gauntlet::Event const &event)
+void			Gauntlet::MovementMgr::handleMove(Gauntlet::Event const &event) const
 {
   auto const		&revent = static_cast<Gauntlet::MoveEvent const &>(event);
 

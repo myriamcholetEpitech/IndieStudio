@@ -7,20 +7,11 @@
 
 void    Gauntlet::Saving::takeEvent(Gauntlet::Event const &event)
 {
-  if (event._type == EventType::SAVE)
-    this->generateSaving();
-  else if (event._type == EventType::VICTORY || event._type == EventType::DEFEAT)
+  if (event._type == EventType::VICTORY || event._type == EventType::DEFEAT)
       this->saveScore();
 }
 
-void    Gauntlet::Saving::generateSaving()
-{
-  Json::Value root;
-
-  root["caca"] = "prout";
-}
-
-void    Gauntlet::Saving::saveScore()
+void    Gauntlet::Saving::saveScore() const
 {
   std::ifstream		f("../saving/scores.txt");
   Json::Value scores(Json::arrayValue);
