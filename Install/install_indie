@@ -12,7 +12,7 @@ fi
 if [ ! -d $gameDir ]; then
     mv IndieStudio $directory
 fi
-sudo chmod a+rw /usr/local/games/IndieStudio
+sudo chmod -R a+rw /usr/local/games/IndieStudio
 cd /usr/local/games/IndieStudio/Install
 
 #dependancies
