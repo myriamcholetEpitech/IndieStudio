@@ -33,7 +33,7 @@ namespace Gauntlet
     virtual void			setLinearVelocity(Ogre::Vector3	const &) = 0;
     virtual void			addLinearVelocity(Ogre::Vector3	const &) = 0;
 
-    virtual void 			getEvent() {};
+    virtual void 			getEvent() const {};
     btCollisionObject			*getBtObj() const;
   };
 };

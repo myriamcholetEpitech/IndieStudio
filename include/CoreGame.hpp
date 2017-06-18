@@ -63,7 +63,6 @@ namespace	Gauntlet
     static const unsigned int					levels;
     static unsigned int						numberOfPlayer;
 
-
   public:
     CoreGame();
     ~CoreGame();

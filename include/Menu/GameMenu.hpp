@@ -19,7 +19,7 @@ namespace	Gauntlet
     std::vector<CEGUI::Window*>		_menuEntries;
     unsigned int 			_idx;
 
-    void 				validateMenu();
+    void 				validateMenu() const;
     void 				updateButtonSize();
    public:
    GameMenu();

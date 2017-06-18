@@ -45,8 +45,7 @@ namespace	Gauntlet
     std::vector<Gauntlet::PlayerHudData>	_player;
     CEGUI::Window				*_score;
 
-    std::string			        	getNewBar(int value);
-
+    std::string					getNewBar(int value) const;
     CEGUI::Window				*_text;
     std::string					levelstr;
     void					newLevel();

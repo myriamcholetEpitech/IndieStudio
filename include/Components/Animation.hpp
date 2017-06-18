@@ -32,7 +32,7 @@ namespace Gauntlet
 
     void			setAnimation(std::string name,
 					     bool repeat = true, double speed = 1);
-    Ogre::AnimationState	*getState();
+    Ogre::AnimationState	*getState() const;
   };
 };
 

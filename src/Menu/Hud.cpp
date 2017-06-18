@@ -21,7 +21,7 @@ Gauntlet::Hud::Hud(std::vector<std::shared_ptr<Gauntlet::Entity> > const &heroes
   this->_score = this->_root->getChild("ScoreBox")->getChild("Score");
   this->_text = this->_root->getChild("LevelText");
   this->initStats(heroes);
-
+  
   CEGUI::System::getSingleton().getDefaultGUIContext().getRootWindow()->addChild(this->_root);
 
   this->setActive(false);
@@ -33,7 +33,7 @@ Gauntlet::Hud::~Hud()
   
 }
 
-std::string		Gauntlet::Hud::getNewBar(int value)
+std::string	Gauntlet::Hud::getNewBar(int value) const
 {
   std::string	str = "{{0, ";
   std::string	end = "}, {0, 10}}";
@@ -85,15 +85,6 @@ void			Gauntlet::Hud::takeEvent(Gauntlet::Event const &event)
     case (Gauntlet::EventType::LEVEL_END):
       this->newLevel();
       break;
-    case (Gauntlet::EventType::VICTORY) :
-      this->levelstr = "Level I";
-      break;
-    case (Gauntlet::EventType::DEFEAT) :
-      this->levelstr = "Level I";
-      break;
-    case (Gauntlet::EventType::SPAWN_BOSS):
-      std::cout << "BOOOOSSSSSSSS" << std::endl;
-      this->_root->getChild("Boss")->getChild("Life")->setProperty("Visible", "True");
     default:
       break;
     }

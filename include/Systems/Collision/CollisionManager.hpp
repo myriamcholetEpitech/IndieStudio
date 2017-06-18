@@ -56,7 +56,7 @@ namespace Gauntlet
 					       Ogre::Quaternion const	&rot);
 
     void			updateSimulation();
-    void 			getCollision();
+    void 			getCollision() const;
     bool			addToListOfHit(btCollisionObject const *obj,
 					       int id);
     void 			deleteBody(Gauntlet::CollisionObject *obj);

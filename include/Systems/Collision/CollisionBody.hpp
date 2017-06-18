@@ -51,8 +51,8 @@ namespace Gauntlet
     void		setLinearVelocity(Ogre::Vector3	const &dir);
     void		addLinearVelocity(Ogre::Vector3	const &dir);
 
-    virtual void setPosition(Ogre::Vector3 const &pos);
-    virtual void setOrientation(Ogre::Quaternion const &dir);
+    virtual void	setPosition(Ogre::Vector3 const &pos);
+    virtual void	setOrientation(Ogre::Quaternion const &dir);
   };
 }
 

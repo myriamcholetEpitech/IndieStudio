@@ -21,7 +21,7 @@ namespace Gauntlet
 
       std::vector<CEGUI::Window*>	_menuEntries;
 
-      int 				_idx;
+      unsigned int			_idx;
 
       void 				validateMenu();
       void 				updateButtonSize();

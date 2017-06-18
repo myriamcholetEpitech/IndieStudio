@@ -33,7 +33,7 @@ namespace Gauntlet
    private:
     std::vector<Gauntlet::MovementData>		_entity;
 
-    void		handleMove(Gauntlet::Event const &event);
+    void		handleMove(Gauntlet::Event const &event) const;
     void		handleDash(Gauntlet::Event const &event);
     void		handleOther(Gauntlet::Event const &event);
 

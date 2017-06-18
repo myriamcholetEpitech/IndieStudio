@@ -22,7 +22,7 @@ Gauntlet::Priest::Priest(int id) : Hero(id)
   Gauntlet::Weapon              *weapon = new Gauntlet::Weapon(30, 1.5, Weapon::Type::HEAL,
 							       Ogre::Vector3(5, 1, 0),
 							       Ogre::Vector3(25, 1, 0));
-  Gauntlet::Stats		*stat = new Gauntlet::Stats(85, 85, 1.5);
+  Gauntlet::Stats		*stat = new Gauntlet::Stats(85, 85, 2);
   Gauntlet::Animation		*animation = new Gauntlet::Animation(model->ent);
 
   auto death = "../audio/sfx/player//pretre/death2.wav";

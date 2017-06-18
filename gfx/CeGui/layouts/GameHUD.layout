@@ -200,7 +200,7 @@
             </Window>
         </Window>
         <Window type="Generic/Label" name="LevelText" >
-            <Property name="Area" value="{{0,860},{0,10},{0,1135},{0,66}}" />
+            <Property name="Area" value="{{0,810},{0,10},{0,1110},{0,66}}" />
             <Property name="Font" value="Runic-MT-28" />
             <Property name="Text" value="Level I" />
             <Property name="MaxSize" value="{{1,0},{1,0}}" />
@@ -228,10 +228,6 @@
                 <Property name="MaxSize" value="{{1,0},{1,0}}" />
                 <Property name="ImageColours" value="tl:FF004D90 tr:FF348CD9 bl:FF004D90 br:FF8F71D4" />
             </Window>
-        </Window>
-        <Window type="Generic/Image" name="Image" >
-            <Property name="Area" value="{{0,0},{0,0},{0,128},{0,128}}" />
-            <Property name="MaxSize" value="{{1,0},{1,0}}" />
         </Window>
     </Window>
 </GUILayout>

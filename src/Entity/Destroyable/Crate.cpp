@@ -12,7 +12,7 @@ Gauntlet::Crate::Crate(int id) :
 							      "crate" + std::to_string(id),
 							      Ogre::Vector3(4, 10, 4));
   Gauntlet::State		*entState = new Gauntlet::State();
-  Gauntlet::Stats		*stat = new Gauntlet::Stats(20, 50, 0);
+  Gauntlet::Stats		*stat = new Gauntlet::Stats(20, 20, 0);
 
   auto death = "../audio/sfx/cursor/select.wav";
   auto move = " ";

@@ -154,9 +154,15 @@ Gauntlet::Event* Gauntlet::BossScript::HitOrRun(std::pair<std::shared_ptr<Gauntl
             auto &dirZ = dir[1];
 
             if (x(CoreGame::core->gen) == 1)
+            {
                 dirX *= -1.0;
+                dirZ = 0.0;
+            }
             if (z(CoreGame::core->gen) == 1)
+            {
                 dirZ *= -1.0;
+                dirX = 0.0;
+            }
             this->youMayTurn(dir, s);
             event = new Gauntlet::Event(Gauntlet::EventType::ATTACK);
         } else if (ret.second != -1.0) {

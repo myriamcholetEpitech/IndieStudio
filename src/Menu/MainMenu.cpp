@@ -279,7 +279,7 @@ void		Gauntlet::MainMenu::HighScore::updateMenu()
   try
     {
       std::vector<int> score;
-      int c = 0;
+      unsigned int c = 0;
 
       Gauntlet::Saving::fillScores(score);
       std::sort(score.begin(), score.end(), std::greater<int>());
