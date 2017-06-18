@@ -23,6 +23,7 @@ if [ ! -d "ogre" ]; then
     git clone https://github.com/OGRECave/ogre
 fi
 ./build.sh
+sudo chmod -R a+rw ogre
 cd ogre
 git checkout v1-9
 if [ ! -d "build" ]; then
@@ -38,6 +39,7 @@ sudo apt-get install libbullet-dev
 sudo apt-get install libbullet-extras-dev
 if [ ! -d "ogrebullet" ]; then
     git clone https://bitbucket.org/alexeyknyshev/ogrebullet.git
+    sudo chmod -R a+rw ogrebullet
     cd ogrebullet
     cmake .
     sudo make install
