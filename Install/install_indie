@@ -21,22 +21,24 @@ cd ogre_build-master
 ./install_dependencies.sh
 if [ ! -d "ogre" ]; then
     git clone https://github.com/OGRECave/ogre
+
+    ./build.sh
+    sudo chmod -R a+rw ogre
+    cd ogre
+    git checkout v1-9
+    cd ..
+    sudo chmod -R a+rw ogre
+    if [ ! -d "build" ]; then
+	mkdir "build"
+    fi
+    cd build
+    sudo chmod -R a+rw ..
+    sudo cmake ..
+    make -j8
+    make install
+    cd ..
 fi
-./build.sh
-sudo chmod -R a+rw ogre
-cd ogre
-git checkout v1-9
-cd ..
-sudo chmod -R a+rw ogre
-if [ ! -d "build" ]; then
-    mkdir "build"
-fi
-cd build
-sudo chmod -R a+rw ..
-sudo cmake ..
-make -j8
-make install
-cd ../../../
+cd ../../
 
 sudo apt-get install libbullet-dev
 sudo apt-get install libbullet-extras-dev
@@ -54,11 +56,11 @@ sudo apt-get -y install build-essential automake libtool
 sudo apt-get -y install libfreetype6-dev libfreeimage-dev libzzip-dev
 sudo apt-get -y install libxrandr-dev libxaw7-dev freeglut3-dev libgl1-mesa-dev libglu1-mesa-dev
 sudo apt-get -y install nvidia-cg-toolkit libois-dev libboost-thread-dev libboost-all-dev
-sudo apt-get -y install cmake cmake-gui
+sudo apt-get -y install cmake cmake-data
 sudo apt-get -y install build-essential libiconv-hook-dev libfribidi-dev
 sudo apt-get -y install libpcre3-dev libfreetype6-dev freeglut3-dev libpython-dev
 sudo apt-get -y install libglew-dev libglm-dev libois-dev libxml2-dev python-opengl pyside-tools libboost-python-dev libboost-dev -y
-sudo apt-get -y install libcpprest-dev
+#sudo apt-get -y install libcpprest-dev
 hg clone https://bitbucket.org/cegui/cegui
 cd cegui && hg update v0-8 && hg checkout 75b9fcc4e3cb
 mkdir build && cd build
@@ -80,5 +82,5 @@ cmake ..
 make -j4
 cd ../Install
 cp resources.cfg ogre.cfg plugins.cfg ../build
-cp Indie /usr/local/bin/Gauntlet
+cp ../build/Indie /usr/local/bin/Gauntlet
 echo -e "\033[32m Gauntlet has been installed with success, type 'Gauntlet' from command-line to play\n\e[0m"
