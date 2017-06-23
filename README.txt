@@ -8,4 +8,10 @@ Install:
 	./install_indie
 
 	NB : If your distribution doesn't use apt as package manager, feel free to replace it by yours
-	NB2 : Make sure that resources.cfg plugins.cfg and ogre.cfg are in build directory when launching the game
+
+dependancies :
+
+- ogre
+- bullet
+- cegui
+- sfml

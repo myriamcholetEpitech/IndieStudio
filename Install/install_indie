@@ -28,11 +28,12 @@ if [ ! -d "ogre" ]; then
     git checkout v1-9
     cd ..
     sudo chmod -R a+rw ogre
+    cd ogre
     if [ ! -d "build" ]; then
 	mkdir "build"
     fi
     cd build
-    sudo chmod -R a+rw ..
+    echo -e "waye\n"
     sudo cmake ..
     make -j8
     make install
@@ -76,11 +77,14 @@ sudo apt-get install libois-dev
 #compiling
 
 cd /usr/local/games/IndieStudio
-mkdir build
-cd build
-cmake ..
-make -j4
-cd ../Install
-cp resources.cfg ogre.cfg plugins.cfg ../build
-cp ../build/Indie /usr/local/bin/Gauntlet
+
+if [ ! -d "build" ]; then
+    mkdir build
+    cd build
+    cmake ..
+    make -j4
+    cd ../Install
+    cp resources.cfg ogre.cfg plugins.cfg ../build
+    sudo cp ../build/Indie /usr/local/bin/Gauntlet
+fi
 echo -e "\033[32m Gauntlet has been installed with success, type 'Gauntlet' from command-line to play\n\e[0m"
